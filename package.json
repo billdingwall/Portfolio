@@ -26,7 +26,7 @@
     "metalsmith-serve": "0.0.7",
     "metalsmith-watch": "^1.0.3",
     "minimist": ">=0.2.1",
-    "tar": "^6.0.2"
+    "tar": "^6.1.2"
   },
   "scripts": {
     "prestart": "npm install",
