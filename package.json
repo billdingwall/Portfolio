@@ -16,7 +16,7 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "handlebars-layouts": "^3.1.4",
-    "metalsmith": "^2.3.0",
+    "metalsmith": "^2.5.1",
     "metalsmith-assets": "^0.1.0",
     "metalsmith-collections": "^0.9.0",
     "metalsmith-layouts": "^1.8.1",
@@ -25,8 +25,8 @@
     "metalsmith-sass": "^1.7.0",
     "metalsmith-serve": "0.0.7",
     "metalsmith-watch": "^1.0.3",
-    "minimist": ">=1.2.6",
-    "tar": "^6.0.2"
+    "minimist": "^1.2.8",
+    "tar": "^6.1.14"
   },
   "scripts": {
     "prestart": "npm install",
