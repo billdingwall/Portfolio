@@ -31,9 +31,18 @@ body {
 
 }
 
+p {
+  padding-bottom: $su-medium;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+}
+
 b,
 strong {
-  font-weight: bolder;
+  font-weight: $tu-bold-fontWeight;
 }
 
 small {
@@ -61,11 +70,16 @@ a {
 
 h1, h2 {
   font-family: $heading-font-family;
-  font-weight: normal;
+  font-weight: $tu-base-fontWeight;
 }
 
-h3, h4, h5, h6 {
+h3, h4, h6 {
   font-family: $base-font-family;
+  font-weight: $tu-semibold-fontWeight;
+}
+
+h5 {
+  font-weight: $tu-bold-fontWeight;
 }
 
 h1 {
@@ -88,14 +102,12 @@ h3 {
 
 h4 {
   font-size: $tu-base-fontSize;
-  font-weight: $tu-bold-fontWeight;
   line-height: $tu-small-lineHeight;
   letter-spacing: $tu-base-letterSpacing;
 }
 
 h5 {
-  font-size: $tu-base-fontSize;
-  font-weight: $tu-bold-fontWeight;
+  font-size: $tu-small-fontSize;
   line-height: $tu-small-lineHeight;
   letter-spacing: $tu-small-letterSpacing;
 }
@@ -113,21 +125,4 @@ h1, h2, h3, h4 {
 
 h2, h3, h4 {
   padding-bottom: $su-medium;
-}
-
-h1, h2, h3, p {
-  font-weight: normal;
-}
-
-h4, h5, b {
-  font-weight: bold;
-}
-
-p {
-  padding-bottom: $su-medium;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
-
 }
