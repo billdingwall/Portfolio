@@ -9,4 +9,4 @@ layout: blank.html
 date: 2000-04-01
 ---
 
-<p>Designed parts of their mobile app and web presence, as well as collaborated on copy writing. Got introduced to working with a product team.</p>
+Designed parts of their mobile app and web presence, as well as collaborated on copy writing and development. Got introduced to working with a cross functional product team.
