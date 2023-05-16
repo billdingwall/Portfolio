@@ -99,7 +99,7 @@
 }
 
 .Resume-experienceYear {
-  font-size: scaleFont($fontSize, 16);
+  font-size: scaleFont($fontSize, 15);
   font-weight: light;
   color: scaleColor($cu-primary, 8);
   font-style: italic;
@@ -115,7 +115,7 @@
   }
 
   sup {
-    font-size: 40%;
+    font-size: 30%;
     vertical-align: super;
   }
 
