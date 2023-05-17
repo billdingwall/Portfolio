@@ -3,7 +3,7 @@ title: "Green Elephant Juicery"
 intro: Building a brand for local juicery and restaurant in Vail, Colorado.
 thumb: img/green-elephant-cover-2.jpg
 collection: portfolioWork
-collection_label: Identity Design
+collection_label: Product Design
 project_link: true
 featured: true
 layout: article.html
@@ -14,7 +14,11 @@ order: 4
 
 <div class="Article-section">
 
-### The Situation
+<header>
+
+<h2 class="Section-title">Project Background</h2>
+
+</header>
 
 Entrepreneurs from Vail, Colorado are launching a new organic juice and vegetarian café restaurant brand, Green Elephant Juicery. Green Elephant will be based in Edwards, Colorado. Edwards is likely the location for the first café and juice production.
 
