@@ -5,11 +5,10 @@ thumb: img/Matic-funnel-cover.jpg
 collection: portfolioWork
 collection_label: Product Design
 project_link: true
-featured: true
+featured: false
 layout: article.html
 id: Matic
-date: 2020-04-01
-order: 5
+date: 2000-02-01
 ---
 
 <div class="Article-section">

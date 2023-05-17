@@ -5,11 +5,10 @@ thumb: img/Kava-Earn-Cover.jpg
 collection: portfolioWork
 collection_label: Identity Design
 project_link: true
-featured: true
+featured: false
 layout: article.html
 id: Kava-Labs
-date: 2020-04-01
-order: 4
+date: 2000-01-01
 ---
 
 <div class="Article-section">
