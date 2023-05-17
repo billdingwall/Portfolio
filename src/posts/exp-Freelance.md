@@ -6,7 +6,7 @@ duration: Jan '12 ~ Jan '15
 specifics: UX Design, UI Design, UI development, Visual Design, Graphic Design, A/B Testing, Analytics, Usability Testing, Customer Interviews, Mentoring, React, Ruby, Git, Remote work
 collection: workExperience
 layout: blank.html
-date: 2000-02-01
+date: 2001-05-01
 ---
 
 Freelanced with clients to build websites, design identities, create print materials, develop products and connect with customers. Sharpened my skills in multiple areas of design, development and marketing.

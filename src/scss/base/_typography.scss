@@ -42,7 +42,7 @@ p {
 
 b,
 strong {
-  font-weight: $tu-bold-fontWeight;
+  font-weight: bold;
 }
 
 small {
@@ -70,16 +70,18 @@ a {
 
 h1, h2 {
   font-family: $heading-font-family;
-  font-weight: $tu-base-fontWeight;
 }
 
 h3, h4, h6 {
   font-family: $base-font-family;
-  font-weight: $tu-semibold-fontWeight;
+}
+
+h1, h2, h3, h4, h6 {
+  font-weight: normal;
 }
 
 h5 {
-  font-weight: $tu-bold-fontWeight;
+  font-weight: bold;
 }
 
 h1 {
