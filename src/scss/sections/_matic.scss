@@ -1,0 +1,38 @@
+//------------------------------------------------------------//
+
+// * Home Page Introduction
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : Make About-title a modifier of section title
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+$spotColor: #5064AA;
+
+#Matic {
+  background-color: #fafafa;
+
+  .Icon--logo {
+    fill: $spotColor;
+    color: $spotColor;
+  }
+
+  .Article {
+    @include articleTheme($spotColor);
+  }
+
+  .MiddleGround {
+    background-color: #f6f6f6;
+  }
+
+}
+
+#TS-Search #footer a {
+  color: $spotColor;
+}
