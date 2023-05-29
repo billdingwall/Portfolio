@@ -1,5 +1,3 @@
-
-
 // conditionally load livereload & GA based on host
 
 var hostName = window.location.hostname;
@@ -8,7 +6,7 @@ if (hostName === 'williamdingwall.com') {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-163835667-1');
+  gtag('config', 'G-3TT3B4FD2T');
 }
 
 if (hostName === 'localhost') {
@@ -16,3 +14,5 @@ if (hostName === 'localhost') {
   livereloadScript.setAttribute('src','http://localhost:35729/livereload.js');
   document.head.appendChild(livereloadScript);
 }
+
+//
