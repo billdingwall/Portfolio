@@ -102,25 +102,21 @@ $introPadding: scaleGrid(8);
 
 }
 
-.IntroTitle-product,
-.IntroTitle-identity,
+.IntroTitle-primary,
+.IntroTitle-secondary,
 .IntroText {
   color: $wd-white;
 }
 
-.IntroTitle-and {
+.IntroTitle-secondary i {
   color: $cu-primary;
   font-style: italic;
   font-size: 0.8em;
 }
 
-.IntroTitle-product {
+.IntroTitle-primary {
   display: block;
 }
-
-.IntroTitle-and {}
-
-.IntroTitle-identity {}
 
 
 // * 2. Services Offered
