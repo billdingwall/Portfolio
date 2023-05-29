@@ -1,9 +1,7 @@
 <div class="PortfolioItem Grid-cell u-sm-size1of2">
-  <a href="/{{path}}">
+  <a class="PortfolioItem-container" href="/{{path}}">
     <img class="PortfolioItem-image" src="{{this.thumb}}" />
+    <p class="PortfolioItem-title">{{intro}}</p>
+    <span class="PortfolioItem-link" href="/{{path}}">View Project</span>
   </a>
-  <p class="PortfolioItem-title">{{intro}}</p>
-  {{#if project_link}}
-    <a class="PortfolioItem-link" href="/{{path}}">View Project</a>
-  {{/if}}
 </div>
