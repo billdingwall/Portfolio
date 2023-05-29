@@ -5,7 +5,7 @@ thumb: img/Kava-Earn-Cover.jpg
 collection: portfolioWork
 collection_label: Product Design
 project_link: true
-featured: false
+featured: true
 layout: article.html
 id: Kava-Labs
 date: 2000-01-01
