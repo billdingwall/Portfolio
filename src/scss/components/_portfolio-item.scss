@@ -16,18 +16,20 @@
 .PortfolioItem {
   padding-bottom: $su-medium * 2;
 
-  &:nth-child(2n + 1) {
-    padding-right: $su-medium;
-  }
+  @include min-width('sm') {
 
-  &:nth-child(2n) {
-    padding-left: $su-medium;
+    &:nth-child(2n + 1) {
+      padding-right: $su-medium;
+    }
+
+    &:nth-child(2n) {
+      padding-left: $su-medium;
+    }
+
   }
 
   @include max-width('sm') {
-    border-bottom: 1px dotted $cu-divider;
-    padding-bottom: $su-medium;
-    margin-bottom: $su-large;
+    padding-bottom: $su-large;
   }
 
 }
@@ -63,6 +65,7 @@
   display: inline-block;
   color: $cu-primary;
   position: relative;
+  padding-bottom: $su-small;
 
   @include max-width('sm') {
     margin-top: $su-small;
@@ -74,6 +77,6 @@
     height: 1px;
     width: 100%;
     background-color: $cu-primary--light;
-    bottom: -1px;
+    bottom: $su-small - 1px;
   }
 }
