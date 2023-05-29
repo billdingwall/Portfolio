@@ -50,8 +50,8 @@ $cu-background--light:    scaleColor($wd-black, 0) !default;
 $cu-background--dark:     scaleColor($wd-black, 0) !default;
 
 $cu-divider:               scaleColor($wd-grey, 0) !default;
-$cu-divider--light:        scaleColor($wd-grey, 0) !default;
-$cu-divider--dark:         scaleColor($wd-grey, 0) !default;
+$cu-divider--light:        scaleColor($wd-grey, 2) !default;
+$cu-divider--dark:         scaleColor($wd-grey, -2) !default;
 
 $cu-primary:                             $wd-brown !default;
 $cu-primary--light:     scaleColor($cu-primary, 1) !default;
@@ -174,9 +174,9 @@ $duration-short: 250ms;
 
 // * 7. Box Shadows
 
-$box-shadow-small:  0 0 2px $cu-divider !default;
-$box-shadow-medium: 0 0 4px $cu-divider !default;
-$box-shadow-large:  0 0 6px $cu-divider !default;
+$box-shadow-small:  0 0 2px $cu-divider--light !default;
+$box-shadow-medium: 0 0 4px $cu-divider--light !default;
+$box-shadow-large:  0 0 6px $cu-divider--light !default;
 
 $inset-box-shadow-small:  1px 1px 1px $cu-divider--light inset !default;
 $inset-box-shadow-medium: 1px 1px 2px $cu-divider--light inset !default;

@@ -14,10 +14,10 @@
 // * 1. Contents Grouping One
 
 .PortfolioItem {
-  margin-bottom: $su-large;
+  padding-bottom: $su-medium * 2;
 
   &:nth-child(2n + 1) {
-    padding-right: $su-large;
+    padding-right: $su-medium;
   }
 
   &:nth-child(2n) {
@@ -32,6 +32,22 @@
 
 }
 
+.PortfolioItem-container {
+  padding: $su-large;
+  border: 1px solid $cu-divider;
+  box-shadow: $box-shadow-small;
+  display: block;
+
+  &:hover {
+    box-shadow: $box-shadow-medium;
+    transition: box-shadow $duration-short ease-in-out;
+  }
+}
+
+.PortfolioItem-image {
+  border: 1px solid $cu-divider--light;
+}
+
 .PortfolioItem-title,
 .PortfolioItem-collection {
   display: block;
@@ -39,25 +55,25 @@
 
 .PortfolioItem-title {
   font-weight: bolder;
+  color: $base-font-color;
   margin-top: $su-small;
 }
 
 .PortfolioItem-link {
-  display: block;
+  display: inline-block;
   color: $cu-primary;
+  position: relative;
 
   @include max-width('sm') {
     margin-top: $su-small;
   }
 
   &:before { 
-    content: '[ ';
-  }
-  &:after { 
-    content: ' ]';
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $cu-primary--light;
+    bottom: -1px;
   }
 }
-
-.PortfolioItem-blurb {}
-
-.PortfolioItem-image {}
