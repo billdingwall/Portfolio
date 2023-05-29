@@ -38,16 +38,16 @@
 }
 
 .PortfolioItem-title {
-  font-size: $tu-large-fontSize;
+  font-weight: bolder;
+  margin-top: $su-small;
 }
 
 .PortfolioItem-link {
   display: block;
   color: $cu-primary;
-  font-weight: bolder;
 
   @include max-width('sm') {
-    margin-top: $su-medium;
+    margin-top: $su-small;
   }
 
   &:before { 
