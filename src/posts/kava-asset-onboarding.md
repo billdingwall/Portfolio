@@ -1,6 +1,6 @@
 ---
 title: "Kava Onboarding"
-intro: Simplifying a suite of decentralized crypto apps.
+intro: Streamlining user value for a decentralized crypto finance platform platform.
 thumb: img/Kava-Earn-Cover.jpg
 collection: portfolioWork
 collection_label: Product Design
@@ -15,13 +15,11 @@ date: 2000-01-01
 
 <h2 class="Section-title">Introduction</h2>
 
-Decentralized Finance (DeFi) is hard for most users to understand. It’s an interesting blend of stock trading, technical hurdles, anonymity and peer to peer economics, wrapped in the form of a n online bank. For many users, it takes hours of personal time with a friend to help them get started. The value prop in it all though, is simply “Earn More With Your Crypto”.
+Decentralized Finance (DeFi) is hard for most users to understand. It’s an interesting blend of stock trading, technical hurdles, anonymity and peer to peer economics, wrapped in the form of an online bank. For many users, it takes hours of personal time with a friend to help them get started. The value prop in it all though, is simply “Earn More With Your Crypto”.
  
 Most DeFi apps focused on one aspect of finance like peer to peer Lending and Borrowing. So one user could Lend Bitcoin and another user could pay interest to the Lender to borrow Bitcoin. Rather than just hold Bitcoin, users can lend it to earn an extra 2-5%. This is peer to peer lending and borrowing system is called a Money Market. 
 
 Kava Labs focused on multiple aspects of DeFi; Money Markets, Stablecoin Minting, Decentralized Trading, Staking and Farming. The goal of this project is to take all these aspects DeFi and streamline it into a simple to use product.
-
-[ mint, lend, swap, staking …. Btc, BNB, Arom… diagram]
 
 </section>
 
@@ -29,16 +27,38 @@ Kava Labs focused on multiple aspects of DeFi; Money Markets, Stablecoin Minting
 
 <h2 class="Section-title">The Challenge</h2>
 
-Onboarding rates for users visiting the app and actually supplying was around xxxxxx, despite some yield opportunities ranging as high as 200%. When trying to bring in brand new users from marketing channels, that number was even less. Typically it took users coming to the app multiple times before actually supplying.
+The full funnel for actually supplying assets to a DeFi app is pretty combersome to begin with. It involves multiple steps controlled by multiple companies and products that may or may not easily connect with they other.
 
 <figure class="Article-image">
-  <img src="/../../img/kava-onboarding/Mint-Lend-Swap.jpg" />
+  <img src="/../../img/kava-onboarding/Overall-DeFi-Flow.jpg" />
+</figure>
+
+The first two steps in this funnel require users to on central exchanges like Coinbase or Binance to first purchase assets there, then withdraw to self custody wallets like MetaMask, Keplr and Ledger. Being a decentralized finance platform, we didn't require KYC and therefore couldn't sell coins directly with cash or credit cards. So our part of the funnel focused on the assets that had already been withdrawn from central exchanges (CEXs) to a self custody wallet that supported them.
+
+<figure class="Article-image">
+  <img src="/../../img/kava-onboarding/Overall-Kava-Flow.jpg" />
+</figure>
+
+There was value on the Kava platform, but it was a spread across multiple apps and barried in tables that simply listed market parameters. While valuable information, it did make that first part of the funnel a little more challenging.
+
+<figure class="Article-image">
+  <img src="/../../img/kava-onboarding/Mint-Focus.jpg" />
+</figure>
+
+After finding an interesting use case, users still had to bounce between multiple pages and modals to then connect their wallet, deposit to the Kava blockchain and use the various apps.
+
+<figure class="Article-image">
+  <img src="/../../img/kava-onboarding/Supply-BTC-Lend.jpg" />
   <figcaption class="u-padBottomMd">Kava Mint, Kava Lend, Kava Swap</figcaption>
 </figure>
 
+Onboarding rates for users visiting the app and actually supplying was around xxxxxx, despite some yield opportunities ranging as high as 200%. When trying to bring in brand new users from marketing channels, that number was even less. Typically it took users coming to the app multiple times before actually supplying.
+
+
+
+
 Not only was there there a lot to take in, but also a lot of steps to take to get to the point of supplying. Unless you have understand the nuances of Defi it can be difficult for figure out what those steps were.
 
-[ user flow for depositing assets: Find Use Case > Connect Wallet > Deposit > … > Supply ]
 
 /Note, this doesn’t include adding assets to your wallet and assumes the user has the required assets in their wallet already./
 
