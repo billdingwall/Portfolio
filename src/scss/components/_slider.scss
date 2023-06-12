@@ -1,0 +1,83 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+.splide__arrows {
+    display: none;
+}
+
+button.splide__pagination__page {
+    background: $cu-primary;
+    height: $su-small;
+    width: $su-small;
+    opacity: 0.5;
+
+    &.is-active {
+        background: $cu-primary;
+        opacity: 1;
+        transform: scale(1.25);
+    }
+}
+
+ul.splide__pagination {
+    bottom: $su-small;
+}
+
+.Slider--slide,
+.splide__slide {
+    padding-bottom: 0;
+}
+
+.splide {
+   padding-bottom: $su-large;
+   padding-bottom: $su-xxlarge;
+}
+
+div.splide__progress__bar {
+    height: $su-xxsmall;
+    background: $cu-primary;
+}
+
+.splide__toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: scaleGrid(10);
+    width: scaleGrid(10);
+}
+
+.splide__toggle {
+    background: transparent;
+    border: none;
+    color: $cu-primary;
+    z-index: -100;
+    opacity: 0;
+    transition: all .5s ease;
+    display: none; // temp cut
+    
+    &, svg {
+        height: scaleGrid(10);
+        width: scaleGrid(10);
+        fill: currentColor;
+    }
+
+}
+
+.splide:hover .splide__toggle {
+    z-index: 100;
+    opacity: 1;
+}
