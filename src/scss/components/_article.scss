@@ -80,6 +80,11 @@ $spot-color: $cu-primary !default;
     cursor: pointer;
   }
 
+  figcaption {
+    color: $cu-info--light;
+    font-size: $tu-small-fontSize;
+  }
+
 } 
 
 .Article-image--center {

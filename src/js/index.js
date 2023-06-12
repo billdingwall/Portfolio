@@ -15,4 +15,19 @@ if (hostName === 'localhost') {
   document.head.appendChild(livereloadScript);
 }
 
-//
+window.onload = function(){
+  // run after page load 
+
+  var splide = new Splide( '.splide', {
+                type    : 'loop',
+                autoplay: 'play',
+                interval: 10000
+              } );
+
+  splide.on( 'autoplay:playing', function ( rate ) {
+    console.log( rate ); // 0-1
+  } );
+
+  splide.mount();
+
+};

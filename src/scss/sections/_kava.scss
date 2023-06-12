@@ -31,8 +31,22 @@ $spotColor: #FF232F;
     background-color: #f6f6f6;
   }
 
+  .splide__toggle {
+    color: $spotColor;
+  }
+  
+  div.splide__progress__bar {
+    background: scaleColor($spotColor, 8)
+  }
+
+  .splide__pagination__page {
+    &, &.is-active {
+        background: $spotColor;
+    }
+  }
+
 }
 
-#TS-Search #footer a {
+#Kava-Labs #footer a {
   color: $spotColor;
 }
