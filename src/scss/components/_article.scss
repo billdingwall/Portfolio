@@ -25,6 +25,10 @@ $spot-color: $cu-primary !default;
     padding: $su-medium 0;
   }
 
+  a {
+    text-decoration: underline;
+  }
+
 }
 
 .Article-container {
@@ -106,46 +110,4 @@ $spot-color: $cu-primary !default;
     margin: 0 auto;
     max-width: scaleGrid(30);
   }
-}
-
-// * 6. articleTheme($color)
-
-@mixin articleTheme($spotColor) {
-
-  h1, h2, h3, h4,
-  .u-colorPrimary,
-  .figma_badge {
-    color: $spotColor;
-  }
-
-  .u-colorInfo {
-    color: $cu-info;
-  }
-
-  blockquote {
-    border-color: $spotColor;
-  }
-
-  .Blockquote--centered {
-    &:before, &:after {
-      background-color: $spotColor;
-    }
-  }
-
-  .Article-footer {
-    border-top: 1px solid $spotColor;
-  }
-
-  .Reverse-text {
-    color: $cu-foreground;
-    background-color: $spotColor;
-
-    h1, h2, h3, h4 {
-      color: $cu-foreground;
-    }
-
-  }
-
-  
-
 }

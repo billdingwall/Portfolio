@@ -18,11 +18,16 @@
 
   @include min-width('sm') {
 
-    &:nth-child(2n + 1) {
+    &:nth-child(3n + 1) {
       padding-right: $su-medium;
     }
 
-    &:nth-child(2n) {
+    &:nth-child(3n + 2) {
+      padding-left: $su-small;
+      padding-right: $su-small;
+    }
+
+    &:nth-child(3n + 3) {
       padding-left: $su-medium;
     }
 
@@ -35,7 +40,6 @@
 }
 
 .PortfolioItem-container {
-  padding: $su-large;
   border: 1px solid $cu-divider;
   box-shadow: $box-shadow-small;
   display: block;
@@ -47,7 +51,11 @@
 }
 
 .PortfolioItem-image {
-  border: 1px solid $cu-divider--light;
+  border-bottom: 1px solid $cu-divider--light;
+}
+
+.PortfolioItem-content {
+  padding: $su-medium;
 }
 
 .PortfolioItem-title,
@@ -58,14 +66,12 @@
 .PortfolioItem-title {
   font-weight: bolder;
   color: $base-font-color;
-  margin-top: $su-small;
 }
 
 .PortfolioItem-link {
   display: inline-block;
   color: $cu-primary;
   position: relative;
-  padding-bottom: $su-small;
 
   @include max-width('sm') {
     margin-top: $su-small;
