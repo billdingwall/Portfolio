@@ -3,7 +3,7 @@ title: "Matic Servicing Funnel"
 intro: Refining the growth funnel for Matic's servicing line of business
 thumb: img/Matic-funnel-cover.jpg
 collection: portfolioWork
-collection_label: Product Design
+collection_label: Product Design, Product Management, Research, AB Testing
 project_link: true
 featured: true
 layout: article.html
@@ -15,7 +15,7 @@ date: 2000-02-01
 
 <h2 class="Section-title">Introduction</h2>
 
-Matic insurance services was essentially a full service insurance aggregator, so users could submit details about their home and financial history to receive dozens of quotes from various insurance companies. There was an online presence for people to find us, but the primary line of business our “Servicing” line of business. Matic would pair with mortgage providers and sent emails to lists of people who’s insurance was reaching it’s renewal period.
+Matic insurance services was essentially a full service insurance aggregator, so users could submit details about their home and financial history to receive dozens of quotes from various insurance companies. There was an online presence for people to find us, but the primary line of business our “Servicing” line of business. Matic would pair with mortgage providers and sent emails to lists of people whose insurance was reaching it’s renewal period.
 
 The experience consisted of three functions; an insurance agency to sell policies, a product to automatically aggregate quotes from different insurance companies and a marketing touch-points guide users to those quotes. The growth team worked collaboratively with all three functions to refine the Servicing Funnel.
 
@@ -35,7 +35,9 @@ Through these mortgages partnerships we had email lists of 10,000 - 30,000 home 
 
 <h2 class="Section-title">The Challenge</h2>
 
-The current servicing funnel was successful. The growth team had been working on it for a couple years, polishing the UI, massaging the copy and iterating on the offering, resulting in a conversion rates of 40% for lead generation, 22% APIC(contact) and 3% monotization. Commisions for policies sold varied around $100, so for every 10,000 visits roughly $30,000 revenue was generated.
+The current servicing funnel was successful. The growth team had been working on it for a couple years, polishing the UI, massaging the copy and iterating on the offering, resulting in a conversion rates of 40% for lead generation, 22% APIC(contact) and 3% monetization. Commissions for policies sold varied around $100, so for every 10,000 visits roughly $30,000 revenue was generated.
+
+For customers, the further down the funnel customers went, the more value they actually got out of the experience. As more user data could be collected, the better our quoting services could find savings. If pre-score could find a good quote, the quotes page could. If the quoting service couldn’t return competitive quotes, our agents might still be able to. The more data we had the more we could personalize the quote, the more value we could provide.
 
 <figure class="Article-image">
   <figcaption>Funnel Conversion Rates</figcaption>
@@ -44,13 +46,15 @@ The current servicing funnel was successful. The growth team had been working on
 
 #### Funnel Breakdown
 
+0. **Pre-Score:** Run simulated quotes based on customer info provided by mortgage partners to determine which experience the user receives.
+
 1. **Email Marketing:** Send them an email introducing our selves and directing them a landing page.
 
-2. **Landing & Quote Display:** Depending on the user's prescore results, they were either taken to a landing highlighting savings found or a landing to run and display home insurance quotes. Consent to call (TCPA) is collected on the landing and a lead us generated.
+2. **Landing & Quote Display:** Depending on the user's pre-score results, they were either taken to a landing highlighting savings found or a landing to run and display home insurance quotes. Consent to call (TCPA) is collected on the landing and a lead us generated.
 
 3. **Contact with an agent:** An agent calls the lead generated on the landing if they have not scheduled a call in advance. If the agent is able to get a customer on the phone it contributes to APIC(contact) rate.
 
-4. **Agent sells a policy:** If an agent sells a policy Matic gets a commission. Monotization rate is a refacltion of customers that make it to this step in the process.
+4. **Agent sells a policy:** If an agent sells a policy Matic gets a commission. Monetization rate is a reflection of customers that make it to this step in the process.
 
 <figure class="Article-image">
   <figcaption>Servicing User Journey</figcaption>
@@ -67,48 +71,57 @@ The agency was growing and could easily handle any lead that came it’s way. So
 
 <h2 class="Section-title">The Approach</h2>
 
-#### A/B Testing Process
+#### Research
 
-Both tracks lead to a handful positive A/B tests and spanned about about 2-3 weeks to collect statistically significant data. At times tests we’re stacked in different parts of the funnel, but how those tests potentially interacted was definitely under consideration.
+ With the goal of “get customers on the phone with agents” being top of mind, I kicked this off round of research to uncover how and why potential customers would want to talk with an agent. This was done with a combination of UserTesting and Survey Monkey. I used UserTestings unlimited panel to recruit 150 participants  and Survey Monkey as a way to lead discussion and collect data points. While filling out the form, participants where asked to verbally explain answers and elaborate when possible. this created a nice data set of quantitative and qualitative data points to help determine design direction. The <a href="https://docs.google.com/presentation/d/10_B3aTIKXEO-3gXG2D3Pdl4_tpefpvh0agqo90e0sXI/edit?usp=sharing" target="_blank">full report can be found here</a>. 
+
+<figure class="Article-image">
+  <figcaption>Contact Preferences Survey Data Point</figcaption>
+  <img src="/../../img/matic-testing/Research-findings.jpg" />
+</figure>
+
+<blockquote class="Blockquote Blockquote--largeText">
+Ultimitally people wanted to talk to an agent, but they wanted to do it on their own terms and feel like they we're working with the agent, and not being sold by the agent.
+</blockquote>
+
+#### Direction
+
+There were a few strategies outlined in the research, but I ultimately settled on 2 primary avenues of testing. Both were geared around building trust with the agent and agency.
+
+##### Position our agents as expert advisors
+I found that people do find value in talking to agents, especially if they have any questions about a policy. They just don’t want to be “sold” a policy. So the idea here is to let them know our agents are here to answer whatever questions they might have, make sure they understand the details and feel confident in they’re policy and potentially get them better deals. All of which was true for our agents.
+
+##### Personalize the experience
+In listening to participants answer questions about getting in contact with agents, several mentioned wanting that experience to be more personal. So the idea here is to show them we know who they are, they’re situation and that we’re providing value unique to them. Make it as relevant as possible to that specific person. This also ties in well with the "position our agents as experts" strategy.
+
+#### Process
+
+We had the ability run A/B tests across all the digital touch points in the servicing user flow. Our email marketing manager was focused on emails, while I was focused on the landing pages, quotes page and confirmation/contact screen.
 
 <figure class="Article-image">
   <figcaption>Servicing User Flow</figcaption>
   <img src="/../../img/matic-testing/User-Flow.jpg" />
 </figure>
 
-Both tracks lead to a handful positive A/B tests and spanned about about 2-3 weeks to collect statistically significant data. At times tests we’re stacked in different parts of the funnel, but how those tests potentially interacted was definitely under consideration.
+As tests we’re run on various parts of the funnel I’d look at results for key metrics like lead generation (conversion%), contact rate(APIC%) and policies sold(monetization%) to determine winners. Then I’d dimension the data by things like device, age, location, etc, to determine next steps.
+
+<figure class="Article-image">
+  <figcaption>A/B Test Funnel</figcaption>
+  <img src="/../../img/matic-testing/matic-ab-testing.jpg" />
+</figure>
+
+Tests took about 2-3 weeks to collect statistically significant data. So in order to at times, tests had to run concurrently in different parts of the funnel. How different tests interacted was definitely under consideration when stacking. At times, end to end tests we're run across multiple test lanes.
 
 <figure class="Article-image">
   <figcaption>A/B Test Lanes</figcaption>
   <img src="/../../img/matic-testing/matic-funnel-test-lanes.jpg" />
 </figure>
 
-#### Research
-
-To set a direction for the what tests to run was lacking. So, with the goal of “get customers on the phone with agents” being top of mind, I kicked this off round of research to uncover how and why potential customers would want to talk with an agent. 
-
-<figure class="Article-image">
-  <figcaption>Contact Preferences Survey</figcaption>
-  <img src="/../../img/matic-testing/Research-findings.jpg" />
-</figure>
-
-<blockquote class="Blockquote Blockquote--largeText">
-This <a href="https://docs.google.com/presentation/d/10_B3aTIKXEO-3gXG2D3Pdl4_tpefpvh0agqo90e0sXI/edit?usp=sharing" target="_blank">contact study research</a> lead to a few potential strategies and two primary avenues of testing.
-</blockquote>
-
-#### Strategies
-
-##### Position our agents as expert advisors
-I found that people do find value in talking to agents, especually if they have any questions about a policy. They just don't want to be "sold" a policy. So the idea here is to let them know our agents are here to answer whatever questions they might have, make sure they understand the details and feel confident in they’re policy and potentailly get them better deals. All of which was true for our agents.
-
-##### Personalize the experience
-In listening to participants answer questions about getting in contact with agents, several mentioned wanting that experience to be more personal. So the idea here is to show them we know who they are, they’re situation and that we’re providing value unique to them. Make it as relevant as possible to that specific person. This also ties in well with the "position our agents as experts" strategy.
-
 </div>
 
 <div class="Article-section">
 
-<h2 class="Section-title">The Specifics</h2>
+<h2 class="Section-title">Experiment Details</h2>
 
 <div class="Article-feature">
 
@@ -121,9 +134,7 @@ In listening to participants answer questions about getting in contact with agen
 
 **Conversation Rate:** 22%
 
-**Background:** It wasn’t pretty, but for over a year this version of the savings landing beat tests versions in conversion and APIC rate. 
-
-**Analysis:** When user testing, Some common feedback was it’s OK, makes sense, etc. It seemed all the elements were there but it wasn’t anything exciting. In Fullstory, noticed the elements the FAQ saw as many clicks as the primary CTA.
+**Background:** It wasn’t pretty, but for over a year this version of the savings landing beat tests versions in conversion and APIC rate. When user testing, Some common feedback was it’s OK, makes sense, etc. It seemed all the elements were there but it wasn’t anything exciting. In Fullstory, noticed the elements the FAQ saw as many clicks as the primary CTA.
 
 <hr class="Divider u-spaceBottomLg" />
 
@@ -133,7 +144,7 @@ In listening to participants answer questions about getting in contact with agen
   <img src="/../../img/matic-testing/Savings-revamp.jpg" />
 </figure>
 
-**Background:** Given the FAQ interaction this seemed like a great fit for testing the agent focus strategy, or in this case just agency in general. 
+**Background:** Given the FAQ interaction this seemed like a great fit for testing the agent focus strategy, or in this case just agency in general.
 
 **Hypothesis:** By keeping the elements of the original version above the fold and introducing elements that better played up the agency & process below the fold, we could better capitalize on initial interest and retain interest of users not immediately sold.
 
@@ -170,7 +181,7 @@ In listening to participants answer questions about getting in contact with agen
 
 **Conversation Rate:** 6%
 
-Background: We knew that if a customer selected a quote, they were much more likely to purchase a policy. Quote selection rate was 3% if we didn’t find savings and nearly 30% if we did. Other then our quoting service finding them savings and a few carriers we searched, there wasn’t much else for users to consider in the quoting process.
+Background: We knew that if a customer selected a quote, they were much more likely to purchase a policy. Quote selection rate was 3% if we didn’t find savings and nearly 30% if we did. Other than our quoting service finding them savings and a few carriers we searched, there wasn’t much else for users to consider in the quoting process.
 
 <hr class="Divider u-spaceBottomLg" />
 
@@ -186,7 +197,7 @@ Background: We knew that if a customer selected a quote, they were much more lik
 
 **Result:** While only 1% of customers actually clicked the new offerings, APIC saw an xxx% increase.
 
-Learning:
+**Learning:** It seemed that the content added was much more valuable then the functionally. Scroll rates on the page we’re deep, so I know customers were seeing those services.
 
 <hr class="Divider u-spaceBottomLg" />
 
@@ -196,13 +207,13 @@ Learning:
   <img src="/../../img/matic-testing/Quotes-agent-services-savings.jpg" />
 </figure>
 
-**Background:** With the first agent services test being successful the idea here was to continue that strategy on the savings found version of quotes page.
+**Background:** Given the value of that agent services messaging, the next logical step seemed expand on that in other parts of the customer journey and test to confirm the value of that content.
 
 **Hypothesis:** If we added similar elements to other parts of the quotes page variations we could see similar success.
 
-**Result:** APIC rate for the savings segment of went up by xxx
+**Result:** APIC rate for the savings segment of went up by xxx. Not as dominant of a win, but a win nonetheless.
 
-**Learning:** Seems like the  Agent Promo strategy seems to be working well, at least within this part of the user experience.
+**Learning:** Seems like the Agent Promo strategy seems to be working well, at least within this part of the user experience. Bringing it up further in the funnel, maybe as high as the email could see similar returns.
 
 </div>
 
@@ -218,7 +229,7 @@ Learning:
 
 **Conversation Rate:** 6%
 
-**Background:**
+**Background:** If we couldn’t find savings for customers during the pre-score process, we sent them through a generic lead gen landing which took them to the quotes page. Even though we couldn’t find them savings in pre-score, a lot of the time we could find them competitive quotes through the quoting service and quotes page.
 
 <hr class="Divider u-spaceBottomLg" />
 
@@ -234,45 +245,36 @@ Learning:
   <img src="/../../img/matic-testing/Florida-Quotes.jpg" />
 </figure>
 
-**Background:** This was a larger project after a several tests at various points of the user journey. I was working with our team of Florida insurance experts to understand the unique challenges of selling insurance in Florida.
+**Background:** For customers in Florida however, there were so many regulatory loops to jump through and extra inspections required, that our pre-score and quoting services didn’t return savings very often. It was a struggle to show them value up front in the UI, so to find quotes customers most likely needed work directly with an agent.
 
-**Hypothesis:** By both playing up our agents and customizing their value props to users in Florida, we can make a personal connection with them an better entice them to speak with an agent.
+Since Florida was our 3rd biggest market and selling insurance in Florida was such a challenge, our agency had an entire team of agents dedicated to servicing these customers. 
 
-**Result:** lead gen rate and APIC both say nice boosts. 
-Learning: there seems to be a lot of merit to the personalized agent based on location idea. Some other great places to expand this idea would
+I worked pretty closely with our Florida agents to better understand that user segment, as well as the internal processes of the team. I also interviewed a few home owners in Florida to better understand their points of view. 
 
-**Learning:**
+> Much more so then other markets, Florida customers desired and benefited from the agent experience as opposed to fully digital one.
+
+**Hypothesis:** By making our Florida team the focal point this flow and better preparing users for the call with an agent, we can boost lead generation and APIC%, but also reduce agent call time and overall policies sold.
+
+**Result:** lead gen rate and APIC both say nice boosts. Learning: there seems to be a lot of merit to the personalized agent based on location idea. Some other great places to expand this idea would
+
+**Learning:** over and over again, playing up our agents as the service seems to be a really effective strategy. The customer onboarding for working with agents had some positive sentiment from the Florida team too. I think moving forward this could be a larger area of focus.
 
 </div>
 
-### The cumulative result
+## The cumulative result
 
 <figure class="Article-image">
   <img src="/../../img/matic-testing/matic-funnel-cohort-update.jpg" />
 </figure>
 
-#### Key Wins:
+### Key Wins:
 * 20% Increase in Lead Gen Rate
 * 10% Incfease in APIC Rate
 
-#### Primary Takeways:
-* 
-* The Position our agents as expert advisors strategy seemed to work really well while users we're evaluating different quotes, but I think there could be more testing higher up in the funnel. For example, the into email could better job introducing the agent over the agency
-* The Personalized experience strategy
-* There were a few tests that focused more on workflow and UI upgrades rather then content updates and 
-
-<div class="Article-section">
-
-<h2 class="Section-title">Next Steps</h2>
-
-#### Expand on personalizing the experience
-here
-
-#### Further Workflow & UI Refinements
-here
-
-#### Create more qualified leads
-here
+### Primary Takeways:
+* The Position our agents as expert advisors strategy seemed to work really well while users were evaluating different quotes, but I think there could be more testing higher up in the funnel. For example, the intro email could feature an agent and advisor services.
+* There were a few tests that focused more on workflow and UI upgrades rather then content or functionality updates that performed well. When thinking about "growth" and growing a user base, I think it's important to remember the importance of UX/UI and not just focus on "hacks".
+* Between the lead gen and APIC rates going and a few changes on the agency side, we started to become flooded with leads. We had hit the limit of our orginal goal and it was time to start pivoting towards stiking a balance between lead gen and agent efficiancy. I think when AB testing in this manor, it's important check in on a consistent base as to what the over arching goal is and shifting the according to current conditions.
 
 </div>
 
