@@ -11,7 +11,7 @@ id: Matic
 date: 2000-02-01
 ---
 
-<div class="Article-section">
+<section class="Article-section">
 
 <h2 class="Section-title">Introduction</h2>
 
@@ -29,11 +29,14 @@ Through these mortgages partnerships we had email lists of 10,000 - 30,000 home 
 * Iterated on UX/UI designs based on previous tests
 * Visual design, UI, illustration and copy writing to progress projects
 
-</div>
+</section>
 
-<div class="Article-section">
+<section class="Article-section">
 
-<h2 class="Section-title">The Challenge</h2>
+<h2 class="Section-title">
+  The Challenge
+  <small class="u-block u-padTopSm u-padBottomSm">Refining a well functioning funnel</small>
+</h2>
 
 The current servicing funnel was successful. The growth team had been working on it for a couple years, polishing the UI, massaging the copy and iterating on the offering, resulting in a conversion rates of 40% for lead generation, 22% APIC(contact) and 3% monetization. Commissions for policies sold varied around $100, so for every 10,000 visits roughly $30,000 revenue was generated.
 
@@ -65,11 +68,14 @@ For customers, the further down the funnel customers went, the more value they a
 The agency was growing and could easily handle any lead that came it’s way. So for growth team the goal was simple; get customers on the phone with agents.
 </blockquote>
 
-</div>
+</section>
 
-<div class="Article-section">
+<section class="Article-section">
 
-<h2 class="Section-title">The Approach</h2>
+<h2 class="Section-title">
+  The Approach
+  <small class="u-block u-padTopSm u-padBottomSm">Building up our agents</small>  
+</h2>
 
 #### Research
 
@@ -117,11 +123,14 @@ Tests took about 2-3 weeks to collect statistically significant data. So in orde
   <img src="/../../img/matic-testing/matic-funnel-test-lanes.jpg" />
 </figure>
 
-</div>
+</section>
 
-<div class="Article-section">
+<section class="Article-section">
 
-<h2 class="Section-title">Experiment Details</h2>
+<h2 class="Section-title">
+  Experiment Details
+  <small class="u-block u-padTopSm u-padBottomSm">A/B test iterations across the funnel</small>
+</h2>
 
 <div class="Article-feature">
 
@@ -261,22 +270,29 @@ I worked pretty closely with our Florida agents to better understand that user s
 
 </div>
 
-## The cumulative result
+</section>
+
+<section class="Article-section">
+
+<h2 class="Section-title">
+  The Challenge
+  <small class="u-block u-padTopSm u-padBottomSm">Started stretching the limits of the agency</small>
+</h2>
 
 <figure class="Article-image">
   <img src="/../../img/matic-testing/matic-funnel-cohort-update.jpg" />
 </figure>
 
 ### Key Wins:
-* 20% Increase in Lead Gen Rate
-* 10% Incfease in APIC Rate
+* 21% Increase in Lead Gen Rate
+* 13% Increase in APIC Rate
 
-### Primary Takeways:
+### Primary Takeaways:
 * The Position our agents as expert advisors strategy seemed to work really well while users were evaluating different quotes, but I think there could be more testing higher up in the funnel. For example, the intro email could feature an agent and advisor services.
 * There were a few tests that focused more on workflow and UI upgrades rather then content or functionality updates that performed well. When thinking about "growth" and growing a user base, I think it's important to remember the importance of UX/UI and not just focus on "hacks".
-* Between the lead gen and APIC rates going and a few changes on the agency side, we started to become flooded with leads. We had hit the limit of our orginal goal and it was time to start pivoting towards stiking a balance between lead gen and agent efficiancy. I think when AB testing in this manor, it's important check in on a consistent base as to what the over arching goal is and shifting the according to current conditions.
+* Between the lead gen and APIC rates going and a few changes on the agency side, we started to become flooded with leads. We had hit the limit of our original goal and it was time to start pivoting towards sticking a balance between lead gen and agent efficiency. I think when AB testing in this manor, it's important check in on a consistent base as to what the over arching goal is and shifting the according to current conditions.
 
-</div>
+</section>
 
 <footer class="Article-footer">
   <div class="Grid">
