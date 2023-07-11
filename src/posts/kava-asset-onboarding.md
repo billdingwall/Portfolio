@@ -34,13 +34,16 @@ Kava Labs focused on multiple aspects of DeFi; Money Markets, Stablecoin Minting
 
 <section class="Article-section">
 
-<h2 class="Section-title">The Challenge</h2>
+<h2 class="Section-title">
+  The Challenge
+  <small class="u-block u-padTopSm u-padBottomSm">Decentralized Finance is Complex</small>
+</h2>
 
 <blockquote class="Blockquote Blockquote--largeText">
-There was value on the Kava platform, but it was spread across multiple apps, burried in tables and communicated through market parameters. While valuable information, it was hard to see that value, even harder to take advantage of it. It took a good amount of industry experience to get onboarded and even more experience to really use the platform to its fullest.
+There was value on the Kava platform, but it was spread across multiple apps, berried in tables and communicated through market parameters. It took a good amount of industry experience to use the platform to its fullest.
 </blockquote>
 
-Each product on the Kava platform had at least one interesting selling point. Kava Mint for example had 0% interest rates on stablecoin loans. Kava Lend offered 20%+ yield opportunities with minimal risk. Kava Kava Swap had yields crossing the 200% return mark.
+Each product on the Kava platform had at least one interesting selling point. Kava Mint for example had 0% interest rates on stablecoin loans. Kava Lend offered 20%+ yield opportunities with minimal risk. Kava Swap had yields crossing the 200% return mark.
 
 <section class="splide" aria-label="Splide Basic HTML Example">
   <div class="splide__track">
@@ -76,41 +79,34 @@ Each product on the Kava platform had at least one interesting selling point. Ka
   </button>
 </section>
 
-#### The DeFi funnel is cumbersome
-
-It involves multiple steps controlled by multiple companies and products that may or may not easily connect with they other. Being a decentralized finance platform, we didn’t require KYC, so couldn’t sell coins directly with cash or credit cards. So we largely had to focus on users that had already withdrawn assets from central exchanges (CEXs) to a self custody wallet.
-
-<figure class="Article-image">
-  <img src="/../../img/kava-onboarding/Overall-DeFi-Flow.jpg" />
-</figure>
-
-#### Finding value in the App was overwhelming
+### Finding value in the App was overwhelming
 
 After pulling assets off a central exchange and finding Kava, there was a lot to take in, a lot of data in tables. Unless you understand the nuances of Defi it can be difficult to figure out what to do and where to go. We often got feedback that users wanted some guidance when landing on the app. Most users were drawn to simply supplying to Kava Lend since all uses had to do to earn was supply.
 
 <figure class="Article-image">
-  <img src="/../../img/kava-onboarding/Kava-side-by-side.jpg" />
   <figcaption class="u-padBottomMd">Side by Side Kava Feature app and Staking in Trust Wallet (right)</figcaption>
+  <img src="/../../img/kava-onboarding/Kava-side-by-side.jpg" />
 </figure>
 
-#### Deposting & supplying was scattered
+### Depositing & supplying was scattered
 
 Even with the simplest use case of supplying to Kava Lend, users had to bounce between multiple pages and modals to then connect their wallet, deposit to the Kava blockchain and and supply to Lend.
 
 <figure class="Article-image">
-  <img src="/../../img/kava-onboarding/Supply-BTC-Lend.jpg" />
   <figcaption class="u-padBottomMd">Workflow for Supplying BTC to Lend</figcaption>
+  <img src="/../../img/kava-onboarding/Supply-BTC-Lend.jpg" />
 </figure>
 
-#### Had to deal with Technical Hurdles
+### Had to deal with Technical Hurdles
 
 Lastly, different wallets and assets came with certain technical hurdles to compounded the complexity in workflows. For example, depositing the asset ATOM initially required the use of the Keplr wallet although it was visible within Trust wallet. BNB assets also had some quirks between Trust Wallet and Keplr.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Workflow for supplying ATOM to Lend</figcaption>
   <img src="/../../img/kava-onboarding/ATOM-lend-workflow.jpg" />
 </figure>
 
-#### Onboarding Rates Where Rough
+### Onboarding Rates Where Rough
 
 For users visiting the app and actually supplying was around 2-5%, despite some of the crazy high yield opportunities. When trying to bring in brand new users from marketing channels, that number was even less. Typically it took users coming to the app multiple times before actually supplying.
 
@@ -122,21 +118,25 @@ For users visiting the app and actually supplying was around 2-5%, despite some 
 
 <section class="Article-section">
 
-<h2 class="Section-title">The Approach</h2>
+<h2 class="Section-title">
+  The Approach
+  <small class="u-block u-padTopSm u-padBottomSm">Assets over apps</small>
+</h2>
 
-#### Strategy
+### Strategy
 
 <blockquote class="Blockquote Blockquote--largeText">
 Flip the user experience around to be more asset driven rather than product driven and streamline the user workflow from top of funnel to bottom by giving users a simple and consistent CTA throughout. Earn X% interest with Y asset.
 </blockquote>
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Asset onboarding wireframes</figcaption>
   <img src="/../../img/kava-onboarding/Strategy-workflow.jpg" />
 </figure>
 
-So rather then onboarding users to a Lending product, we onboard Bitcoin (BTC) holders to earn an extra 20%+ with the asset they already hold and created dedicated spaces to give them any extra guidance that was needed for specific use cases.
+So rather then onboarding users to a Lending product, we onboard Bitcoin (BTC) holders to earn an extra 20%+ with the asset they already hold and created dedicated spaces to give them any extra guidance that was needed for specific use cases. I had run a few tests both through UserTesting and through our marketing channels to get a sense of blockers for new users coming to to the app. One common finding between tests was that newer users really struggled with guidance and knowing where to start.
 
-#### Key Metrics
+### Key Metrics
 
 ##### Total visitors
 How many people visit the app and feature. Serves as a measure of how interesting the value prop is, how much interest we can generate with holders of specific assets. 
@@ -157,7 +157,10 @@ Gave use insight as to the size of our users based on wallet size. While not a p
 
 <section class="Article-section">
 
-<h2 class="Section-title">Project Details</h2>
+<h2 class="Section-title">
+  Project Details
+    <small class="u-block u-padTopSm u-padBottomSm">Iterating into a 150 million dollar feature</small>
+</h2>
 
 <div class="Article-feature">
 
@@ -168,39 +171,46 @@ While adding new assets to Lend we noticed an interesting use case where users w
 </blockquote>
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">ATOM Surge page, tweet and banner</figcaption>
   <img src="/../../img/kava-onboarding/Atom-Surge-Flow-Funnel.jpg" />
 </figure>
 
 Marketing put together some great branding for the concept and launched twitter campaigns specifically targeting ATOM holders. Once users landed on the page, we reiterated the promotional value of the “Surge”, created clear steps for users to take supply ATOM to Kava Lend.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">ATOM Surge page breakdown</figcaption>
   <img src="/../../img/kava-onboarding/AtomSurge-Page-Overview.jpg" />
 </figure>
 
 Rather then sending users out to the balances page and Kava Lend to complete the steps, we gave users the ability to take those steps without leaving the page by loading in the modals directly to this ATOM Surge Landing. It was a single place where user’s could learn about the Surge, Connect, Deposit, Supply and earn 200%+ on their ATOM.
+
+<hr class="Divider u-spaceBottomLg" />
 
 #### Primary Takeaways
 
 Overall this approach worked great! Each time we launched a new surge event, we created large traffic spikes and were growing the user base by roughly 260%. Conversion rate for surge page users compared to standard was 355% higher (5.13% vs 23.33%).
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Kava app campaign user growth</figcaption>
   <img src="/../../img/kava-onboarding/Surge-Usage-Spikes.jpg" />
 </figure>
 
 Traffic however wasn’t that impressive and these pages had a shelf life. In this use case too, our users didn’t have much trouble supplying to money markets. Still, brand new users favored the asset landing approach.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Surge page usage compared to Kava Lend</figcaption>
   <img src="/../../img/kava-onboarding/Lend-Surge-Comparison.jpg" />
 </figure>
 
 Shelf life wasn’t great either. Since the use case itself was fleeting, the usefulness of the feature was too.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Surge page traffic over time</figcaption>
   <img src="/../../img/kava-onboarding/Surge-Page-Trafifc.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--centered Blockquote--largeText">
-The asset focused landing page did a great job of converting users, but the value was fleeting and was most effective with brand new users who deposited small amounts. Ultimatly, we needed to find a way of providing sustained user value that catered to a wider user base.
+The asset focused landing page did a great job of converting users, but the value was fleeting and was most effective with brand new users who deposited small amounts. Ultimately, we needed to find a way of providing sustained user value that catered to a wider user base.
 </blockquote>
 
 </div>
@@ -215,21 +225,24 @@ Seeing success with conversion rates on the surge pages, we felt that was enough
 
 In this case, users supplying BUSD to Kava Lend would earn 5% (which was inline with other Lending products), but if a user used their BUSD to borrow USDX on Kava Mint at 0% interest and a 99% loan to value ratio, then supplied that USDX to Kava Lend, they would earn 20%+ through the USDX money market on Kava Lend. 
 
-Being Kava’s native stable coin, it was overly incentivized to facilitate more Kava Mint usage. This strategy provided BUSD holders with a 2.5x higher yield than just supplying BUSD directly to a lending product.
+Being Kava’s native stable coin, it was overly incentivize to facilitate more Kava Mint usage. This strategy provided BUSD holders with a 2.5x higher yield than just supplying BUSD directly to a lending product.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn strategy using Kava Mint and Kava Lend</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Strategy.jpg" />
 </figure>
 
 Collaborating with the dev team, we realized transaction messages for this strategy could be condensed down to a single user action. So rather than having a user do upwards of 4 different transactions, we could actually condense it down to 1 or 2, depending on how far down they funnel users already were. We could turn this strategy into a very simple supply & withdraw experience.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn strategy using BUSD Earn page</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Breakdown.jpg" />
 </figure>
 
 To continue helping users move along the funnel stages, we also built the step logic into the supply modal using depending on the state of the user’s wallet. For example, IF they weren’t connected we prompted them to connect, then directly taken to the next step. This was a new pattern that could & would also be applied to other actions on the platform, like supplying to Lend.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn modal guidance</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Modal-Workflow.jpg" />
 </figure>
 
@@ -237,31 +250,37 @@ The Primary value prop was, simple Earn 2.5x more with your BUSD.  But in survey
 Among the experience overwhelming.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Tying the simplified strategy to educational content</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Learn-More.jpg" />
 </figure>
+
+<hr class="Divider u-spaceBottomLg" />
 
 #### Primary Takeaways
 
 Usage was promising. In the first few months over 40 million BUSD had been supplied and usage was consistent. Conversion rates for this BUSD Earn page didn't get to the levels of the surge pages, but still outperformed the baseline at a good rate by 25%.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn page usage</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Stats.jpg" />
 </figure>
 
 Right from the start, BUSD Earn was a competitor for the number one source of BUSD being supplied to the app. It the cumulative amount supplied trailed Kava Mint, but it gaining. 
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn usage compared to BUSD use cases on Kava</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Transactions-early.jpg" />
 </figure>
 
  Secondary to the BUSD Earn page, the learn more article that went into detail on how te strategy worked was also seeing continued interest and was out performing other medium articles by a good amount.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn learn more article compared to other product articles</figcaption>
   <img src="/../../img/kava-onboarding/Medium-traffic.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--centered Blockquote--largeText">
-The asset & use case focused landing still performed well with cconversion rate and the usage of both page & article was a clear indicator of interest. We didn't seem to be earning the trust of experienced users though.  
+The asset & use case focused landing still performed well with conversion rate and the usage of both page & article was a clear indicator of interest. We didn't seem to be earning the trust of experienced users though.  
 </blockquote>
 
 </div>
@@ -277,25 +296,30 @@ There was enough success with BUSD Earn to expand on the idea and setup Earn pag
 Things were working well with BUSD Earn, so during the next major release we launched 3 more strategies and built them into a more dedicated feature. KAVA, USDC and USDT. KAVA was a staking strategy while USDT and USDC both supplied to a new protocol called KAVA Boost. While the USDT, USDC and KAVA pages didn't take off initially, BUSD saw a big jump in usage.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Kava Earn feature</figcaption>
   <img src="/../../img/kava-onboarding/Kava-Earn-Feature.jpg" />
 </figure>
 
+<hr class="Divider u-spaceBottomLg" />
+
 #### Primary Takeaways
 
-While the USDC, USDT and KAVA Earn pages were slow to start, BUSD Earn immediatly took off to become the #1 source of BUSD supplied and TVL generated. Later on, Kava Earn would see over 50 million in TVL, but the startegies using the new Boost protocol lagged behind.
+While the USDC, USDT and KAVA Earn pages were slow to start, BUSD Earn immediately took off to become the #1 source of BUSD supplied and TVL generated. Later on, Kava Earn would see over 50 million in TVL, but the startegies using the new Boost protocol lagged behind.
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">BUSD Earn page usage spike</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Earn-Transactions-full.jpg" />
 </figure>
 
 As the other pages were added within the Kava Earn feature, the conversion rate for BUSD Earn started taking off too. Now the page was starting to see similar conversion rates to that initial surge page. It seemed like building out other Earn pages into a larger feature really helped build trust around the concept as a whole. 
 
 <figure class="Article-image">
+  <figcaption class="u-padBottomMd">Earn page conversion rate spike</figcaption>
   <img src="/../../img/kava-onboarding/BUSD-Conversion-Rate-overtime.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--centered Blockquote--largeText">
-As soon as we started adding more strategies and building this concept into a larger feature, adoption immediatly started taking off. vAll in all, we tracked over 130 Million supplied to the BUSD Earn  page and over 40 million supplied to the KAVA Earn page.
+As soon as we started adding more strategies and building this concept into a larger feature, adoption immediately started taking off. vAll in all, we tracked over 130 Million supplied to the BUSD Earn  page and over 40 million supplied to the KAVA Earn page.
 </blockquote>
 
 </div>
