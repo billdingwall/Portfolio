@@ -1,7 +1,7 @@
 ---
 title: TeamSnap Design System
 intro: Modernizing TeamSnap's web presence with a pattern-driven approach.
-thumb: img/TeamSnap_UI_cover.jpg
+thumb: img/teamsnap-system-cover.jpg
 collection: portfolioWork
 collection_label: UI Design + Development, Visual Design
 project_link: true
