@@ -1,7 +1,7 @@
 ---
 title: "TeamSnap Search Patterns"
 intro: Simplifying search patterns for TeamSnap's enterprise app.
-thumb: img/search-patterns/portfolio_search_cover.jpg
+thumb: img/teamsnap-search-cover.jpg
 collection: portfolioWork
 collection_label: UX, UI, Research, Design Systems
 project_link: true

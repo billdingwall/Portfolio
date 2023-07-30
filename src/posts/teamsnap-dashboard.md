@@ -1,7 +1,7 @@
 ---
 title: "TeamSnap Dashboard"
 intro: An onboarding experiences for TeamSnap's enterprise app
-thumb: img/dashboard/portfolio_dashboard_cover.jpg
+thumb: img/portfolio_dashboard_cover.jpg
 collection: portfolioWork
 collection_label: UX + UI Design, Visual Design
 project_link: true
@@ -17,7 +17,7 @@ date: 2000-05-01
 
 TeamSnap’s Sports Org product is a an all in one platform for sports businesses of all sizes and sport to manage their business. Smaller organizations might have less than a hundred members across a handful of teams, while larger ones may have up to 10,000 members and over a hundred teams. Features range from scheduling games, running tournaments, league standings, managing locations, organizing teams, messaging members, invoicing, registration, data exports and so on.
 
-Originally it was built as an MVP by duplicating the team product then adding in capabilities to link multiple teams together and organize them within divisions. Given that, there wasn’t always a lot of initial thought into usability of the app, more just the basic functionality. There were a number of issues ranging from onboaridng and reporting, to member management and so on.
+Originally it was built as an MVP by duplicating the team product then adding in capabilities to link multiple teams together and organize them within divisions. Given that, there wasn’t always a lot of initial thought into usability of the app, more just the basic functionality. There were a number of issues ranging from onboarding and reporting, to member management and so on.
 
 In the spring of 2019, execs at TeamSnap decided to run a company wide hackathon where teams were assigned, but teams were able to work on any user problem they wanted. I saw this as a chance to fix some of the issues I was seeing with the app, so decided to volunteer as a team lead. 
 
