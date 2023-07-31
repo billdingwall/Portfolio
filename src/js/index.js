@@ -6,7 +6,7 @@ if (hostName === 'williamdingwall.com') {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-3TT3B4FD2T');
+  gtag('config', 'G-KH99855ZFW');
 }
 
 if (hostName === 'localhost') {
@@ -16,18 +16,23 @@ if (hostName === 'localhost') {
 }
 
 window.onload = function(){
-  // run after page load 
 
-  var splide = new Splide( '.splide', {
-                type    : 'loop',
-                autoplay: 'play',
-                interval: 10000
-              } );
+  var splideCheck = u('.splide').length;
+  
+  if(splideCheck > 0) {
 
-  splide.on( 'autoplay:playing', function ( rate ) {
+    var splide = new Splide( '.splide', {
+      type    : 'loop',
+      autoplay: 'play',
+      interval: 10000
+    } );
+
+    splide.on( 'autoplay:playing', function ( rate ) {
     console.log( rate ); // 0-1
-  } );
+    } );
 
-  splide.mount();
+    splide.mount();
+
+  }
 
 };
