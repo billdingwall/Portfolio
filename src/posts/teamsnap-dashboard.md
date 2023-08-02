@@ -1,7 +1,7 @@
 ---
 title: "TeamSnap Dashboard"
-intro: An onboarding experiences for TeamSnap's enterprise app
-thumb: img/portfolio_dashboard_cover.jpg
+intro: Upgrading the onboarding experiences for TeamSnap's club & league app.
+thumb: img/teamsnap-dashboard-cover.jpg
 collection: portfolioWork
 collection_label: UX + UI Design, Visual Design
 project_link: true

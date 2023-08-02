@@ -1,7 +1,7 @@
 ---
 title: "Green Elephant Juicery"
-intro: Building a brand for local juicery and restaurant in Vail, Colorado.
-thumb: img/green-elephant-cover-2.jpg
+intro: Brand design for a local juicery and restaurant in Vail, Colorado.
+thumb: img/green-elephant-cover.jpg
 collection: portfolioWork
 collection_label: Product Design
 project_link: true

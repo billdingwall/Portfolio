@@ -1,7 +1,7 @@
 ---
 title: "Kava Onboarding"
-intro: Streamlining user value for a decentralized crypto finance platform platform.
-thumb: img/Kava-Earn-Cover.jpg
+intro: Streamlining user value for a decentralized finance platform at Kava.
+thumb: img/kava-earn-cover.jpg
 collection: portfolioWork
 collection_label: Product Design
 project_link: true
@@ -26,7 +26,7 @@ Kava Labs focused on multiple aspects of DeFi; Money Markets, Stablecoin Minting
 #### Product Design Lead & Manager
 * Defined strategy based on user testing and competitive research findings.
 * Outlined user flows and wireframes to uncover implementation details with devs. 
-* Managed design of the UI, as well as copy writing.
+* Managed & designed UI, as well wrote copy push projects towards launch.
 * Developed metrics for success and worked with dev team to implement.
 * Data analysis on how releases performed then outlined next steps.
 
@@ -195,7 +195,7 @@ Overall this approach worked great! Each time we launched a new surge event, we 
   <img src="/../../img/kava-onboarding/Surge-Usage-Spikes.jpg" />
 </figure>
 
-Traffic however wasn’t that impressive and these pages had a shelf life. In this use case too, our users didn’t have much trouble supplying to money markets. Still, brand new users favored the asset landing approach.
+Traffic however wasn’t that impressive and in this use case our users didn’t have much trouble supplying to money markets. Still, brand new users favored the asset landing approach.
 
 <figure class="Article-image">
   <figcaption class="u-padBottomMd">Surge page usage compared to Kava Lend</figcaption>
@@ -330,11 +330,11 @@ As soon as we started adding more strategies and building this concept into a la
 
 <h2 class="Section-title">Key Learnings</h2>
 
-#### Trust is in DeFi is Underrated
+#### Trust is an Underrated Concept in DeFi.
 Trust is important with all financial products, but it’s especially true in DeFi. Sometimes a product or feature may not take off immediately, but sky rocket later as users become more comfortable with it. It also plays a big factor in conversion rates along with simplicity.
 
 #### Education in DeFi is important.
-This has been a lesson learned across multiple projects and numerous research initiatives, but always seems to come through as a take away. With BUSD Earn specifically vs the other Earn pages, we heard from users that they appreciated seeing their postions in Mint and Lend because helped them understand Mint/borrowing better. It was an reducational moment.
+This has been a lesson learned across multiple projects and numerous research initiatives, but always seems to come through as a take away. With BUSD Earn specifically vs the other Earn pages, we heard from users that they appreciated seeing their positions in Mint and Lend because helped them understand Mint/borrowing better. It was an educational moment.
 
 
 </section>
