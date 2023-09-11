@@ -16,15 +16,15 @@
 @import "../config/index.scss";
 
 .u-textSmall {
-  font-size: $tu-small-fontSize;
+  font-size: $tuSize-sm1;
 }
 
 .u-textMedium {
-  font-size: $tu-base-fontSize;
+  font-size: $tuSize-base;
 }
 
 .u-textLarge {
-  font-size: $tu-large-fontSize;
+  font-size: $tuSize-lg3;
 }
 
 /**

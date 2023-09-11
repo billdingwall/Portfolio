@@ -38,8 +38,8 @@
 
   .List--dotSeperated + .List--dotSeperated {
     @include max-width('sm') {
-      border-top: 1px solid $cu-divider;
-      padding-top: $su-small;
+      border-top: 1px solid $cu-border;
+      padding-top: $su-base;
     }
   }  
 
@@ -65,7 +65,7 @@
 
 .copyright {
   display: block;
-  padding: $su-medium;
-  padding-bottom: $su-xxlarge;
+  padding: $su-lg1;
+  padding-bottom: $su-lg4;
   text-align: center;
 }

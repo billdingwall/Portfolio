@@ -37,12 +37,12 @@
 
 $spaces: (
   'None': 0,
-  'Xs': $su-xsmall,
-  'Sm': $su-small,
-  'Md': $su-medium,
-  'Lg': $su-large,
-  'Xl': $su-xlarge,
-  'Xxl': $su-xxlarge
+  'Xs': $su-sm1,
+  'Sm': $su-base,
+  'Md': $su-lg1,
+  'Lg': $su-lg2,
+  'Xl': $su-lg3,
+  'Xxl': $su-lg4
 );
 
 @each $name, $value in $spaces {

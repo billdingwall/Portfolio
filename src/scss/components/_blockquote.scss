@@ -13,37 +13,37 @@
 
 blockquote,
 .Blockquote {
-  border-left: $su-xsmall solid $cu-primary; 
-  padding: $su-medium;
-  margin-bottom: $su-medium;
+  border-left: $su-sm1 solid $color-blue; 
+  padding: $su-lg1;
+  margin-bottom: $su-lg1;
   max-width: 900px;
 }
 
 .Blockquote--thickBorder {
-  border-left: $su-medium solid $cu-primary; 
-  padding-left: $su-large;
+  border-left: $su-lg1 solid $color-blue; 
+  padding-left: $su-lg2;
 }
 
 .Blockquote--largeText {
-  font-size: $tu-large-fontSize;
+  font-size: $tuSize-lg3;
 }
 
 .Blockquote--centered {
   border-left: none; 
   position: relative;
   text-align: center;
-  margin-bottom: $su-xlarge;
+  margin-bottom: $su-lg3;
   padding: {
     left: 0;
-    top: $su-large;
-    bottom: $su-large;
+    top: $su-lg2;
+    bottom: $su-lg2;
   }
 
   &:before, &:after {
     content: '';
     display: block;
-    background: $cu-primary;
-    height: $su-xxsmall;
+    background: $color-blue;
+    height: $su-sm2;
     width: scaleGrid(15);
     position: absolute;
     left: 0;

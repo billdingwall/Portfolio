@@ -18,20 +18,20 @@
 }
 
 button.splide__pagination__page {
-    background: $cu-primary;
-    height: $su-small;
-    width: $su-small;
+    background: $color-blue;
+    height: $su-base;
+    width: $su-base;
     opacity: 0.5;
 
     &.is-active {
-        background: $cu-primary;
+        background: $color-blue;
         opacity: 1;
         transform: scale(1.25);
     }
 }
 
 ul.splide__pagination {
-    bottom: $su-small;
+    bottom: $su-base;
 }
 
 .Slider--slide,
@@ -40,13 +40,13 @@ ul.splide__pagination {
 }
 
 .splide {
-   padding-bottom: $su-large;
-   padding-bottom: $su-xxlarge;
+   padding-bottom: $su-lg2;
+   padding-bottom: $su-lg4;
 }
 
 div.splide__progress__bar {
-    height: $su-xxsmall;
-    background: $cu-primary;
+    height: $su-sm2;
+    background: $color-blue;
 }
 
 .splide__toggle {
@@ -63,7 +63,7 @@ div.splide__progress__bar {
 .splide__toggle {
     background: transparent;
     border: none;
-    color: $cu-primary;
+    color: $color-blue;
     z-index: -100;
     opacity: 0;
     transition: all .5s ease;

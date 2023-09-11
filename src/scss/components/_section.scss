@@ -14,29 +14,29 @@
 // * 1. Contents Grouping One
 
 .Section {
-  background-color: $cu-foreground;
+  background-color: $cu-Background-dark;
 }
 
 .Section-content {
-  padding: scaleGrid(6) $su-medium;
+  padding: scaleGrid(6) $su-lg1;
 
   @include max-width('sm') {
-    padding: scaleGrid(4) $su-medium;
+    padding: scaleGrid(4) $su-lg1;
   }
 
 }
 
 .Section-title {
   position: relative;
-  padding-bottom: $su-small;
-  margin-bottom: $su-xlarge;
+  padding-bottom: $su-base;
+  margin-bottom: $su-lg3;
 
   &:after {
     content: '';
     display: block;
     height: 2px;
     width: scaleGrid(7);
-    background-color: $cu-divider;
+    background-color: $cu-border;
     position: absolute;
     bottom: 0;
     left: 0;
