@@ -13,16 +13,16 @@
 
 // * 1. Contents Grouping One
 
-$spot-color: $cu-primary !default;
+$spot-color: $color-blue !default;
 
 .Article {
   @include siteContainer;
-  background-color: $cu-foreground;
-  border: 1px solid $cu-divider;
+  background-color: $cu-Background-dark;
+  border: 1px solid $cu-border;
   margin-top: scaleGrid(8);
 
   h3 {
-    padding: $su-medium 0;
+    padding: $su-lg1 0;
   }
 
   a {
@@ -62,15 +62,15 @@ $spot-color: $cu-primary !default;
 
 .Article-title {
   position: relative;
-  padding-bottom: $su-small;
-  margin-bottom: $su-xxlarge;
+  padding-bottom: $su-base;
+  margin-bottom: $su-lg4;
 
   &:after {
     content: '';
     display: block;
     height: 2px;
     width: scaleGrid(7);
-    background-color: $cu-divider;
+    background-color: $cu-border;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -78,15 +78,15 @@ $spot-color: $cu-primary !default;
 }
 
 .Article-image {
-  padding-bottom: $su-large;
+  padding-bottom: $su-lg2;
 
   img {
     cursor: pointer;
   }
 
   figcaption {
-    color: $cu-info--light;
-    font-size: $tu-small-fontSize;
+    color: $cu-Paragraph;
+    font-size: $tuSize-sm1;
   }
 
 } 
@@ -97,10 +97,10 @@ $spot-color: $cu-primary !default;
 }
 
 .Article-feature {
-  background-color: $cu-middleground;
-  border: 1px solid $cu-divider--light;
-  padding: $su-medium;
-  margin-bottom: $su-xxlarge;
+  background-color: $cu-Background-dark;
+  border: 1px solid $cu-border;
+  padding: $su-lg1;
+  margin-bottom: $su-lg4;
 }
 
 .figma_badge {

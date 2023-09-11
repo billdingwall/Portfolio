@@ -23,14 +23,14 @@
 }
 
 .SocialMedia {
-  padding: $su-xsmall 0 0 0;
+  padding: $su-sm1 0 0 0;
   margin: 0;
 }
 
 .SocialMedia-item {
   list-style: none;
   display: inline-block;
-  padding: $su-small;
+  padding: $su-base;
 
   &:first-child {
     padding-left: 0;

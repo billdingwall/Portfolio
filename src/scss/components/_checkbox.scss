@@ -18,14 +18,14 @@
 // * 1. Checkbox Settings
 
 $Checkbox-size: scaleGrid(2) !default;
-$Checkbox-icon-size: scaleFont($fontSize, -3) !default;
-$Checkbox-bg-color: $cu-foreground !default;
+$Checkbox-icon-size: scaleFont($font-Size, -3) !default;
+$Checkbox-bg-color: $cu-Background-dark !default;
 
 // * 2. Default Checkbox
 
 .Checkbox {
   position: relative;
-  padding-bottom: $su-medium;
+  padding-bottom: $su-lg1;
 }
 
 .Checkbox-input {
@@ -44,14 +44,14 @@ $Checkbox-bg-color: $cu-foreground !default;
   position: relative;
   display: block;
   cursor: pointer;
-  padding-left: $Checkbox-size + $su-xsmall;
+  padding-left: $Checkbox-size + $su-sm1;
   min-height: $Checkbox-size;
 
   &:before {
     content: '';
     display: block;
     cursor: pointer;
-    color: $wd-white;
+    color: $color-white;
     text-align: center;
     font-size: $Checkbox-icon-size;
     height: $Checkbox-size;
@@ -59,7 +59,7 @@ $Checkbox-bg-color: $cu-foreground !default;
     line-height: $Checkbox-size + 1; // ss-pika checkmark sits up high
     background-color: $Checkbox-bg-color;
     //box-shadow: $inset-box-shadow-small;
-    border: $border-width-small solid $cu-divider;
+    border: $border-width-small solid $cu-border;
     border-radius: $border-radius-small;
     margin: auto;
     position: absolute;
@@ -72,7 +72,7 @@ $Checkbox-bg-color: $cu-foreground !default;
 .Checkbox-input:checked {
   & + .Checkbox-label:before {
     content: '✓';
-    background-color: $cu-primary;
+    background-color: $color-blue;
     box-shadow: none;
     border: none;
   }
@@ -87,7 +87,7 @@ $Checkbox-bg-color: $cu-foreground !default;
   &:before {
     content: '🔒';
     box-shadow: none;
-    background-color: $cu-divider;
+    background-color: $cu-border;
     line-height: $Checkbox-size;
     color: $Checkbox-bg-color;
   }
@@ -95,7 +95,7 @@ $Checkbox-bg-color: $cu-foreground !default;
 
 .Checkbox-input:disabled:checked + .Checkbox-label {
   &:before {
-    background-color: $cu-primary;
+    background-color: $color-blue;
   }
 }
 
@@ -121,11 +121,11 @@ $Checkbox-bg-color: $cu-foreground !default;
   padding-bottom: 0;
 
   & + .Checkbox--inline {
-    margin-left: $su-xsmall;
-    padding-left: $su-small;
-    border-left: $border-width-small solid $cu-divider;
+    margin-left: $su-sm1;
+    padding-left: $su-base;
+    border-left: $border-width-small solid $cu-border;
     .Checkbox-input {
-      left: $su-small;
+      left: $su-base;
     }
   }
 

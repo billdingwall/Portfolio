@@ -14,7 +14,7 @@
 $introPadding: scaleGrid(8);
 
 #Intro {
-  background-color: $cu-background;
+  background-color: $cu-Background-dark;
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -26,7 +26,7 @@ $introPadding: scaleGrid(8);
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba($cu-foreground, .85);
+    background-color: rgba($cu-Background-dark, .85);
   }
 
   .Section-content {
@@ -35,30 +35,10 @@ $introPadding: scaleGrid(8);
     padding-bottom: $introPadding;
 
     @include max-width('sm') {
-      padding-top: $su-xlarge;
-      padding-bottom: $su-xlarge;
+      padding-top: $su-lg3;
+      padding-bottom: $su-lg3;
     }
 
-    @include horizontal-gradient(rgba($cu-background, 0.8), transparent, transparent);
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      width: 100%;
-      display: block;
-    }
-    &:before {
-      @include vertical-gradient(rgba($cu-background, 0.35), $cu-background, rgba($cu-background, 0.35));
-      height: 100%;
-      opacity: 0.8;
-      bottom: 0;
-    }
-    &:after {
-      @include vertical-gradient($cu-background, transparent, transparent);
-      height: scaleGrid(6);
-      opacity: 0.35;
-      top: 0;
-    }
   }
 
   & .Section-container {
@@ -71,31 +51,30 @@ $introPadding: scaleGrid(8);
 // * 1. Intro Text
 
 .IntroTitle {
-  font-size: scaleFont($fontSize, 10);
+  font-size: scaleFont($font-Size, 10);
   font-weight: 400;
-  line-height: scaleFont($lineHeight, -3);
-  padding-bottom: $su-medium;
-  margin-bottom: $su-medium;
+  line-height: scaleFont($font-LineHeight, -3);
+  padding-bottom: $su-lg1;
+  margin-bottom: $su-lg1;
   position: relative;
 
   @include max-width('sm') {
-    font-size: scaleFont($fontSize, 9);
+    font-size: scaleFont($font-Size, 9);
     font-style: normal;
   }
 
   @include max-width('xs') {
-    font-size: scaleFont($fontSize, 8);
+    font-size: scaleFont($font-Size, 8);
   }
 
   &:after {
     content: '';
-    background: $cu-primary;
-    @include horizontal-gradient($cu-primary, transparent, $cu-primary);
+    background: $color-blue;
     display: block;
-    height: $su-xxsmall;
+    height: $su-sm2;
     width: 100%;
     position: absolute;
-    bottom: 0 - $su-xxsmall;
+    bottom: 0 - $su-sm2;
     left: 0;  
 
   }
@@ -105,11 +84,11 @@ $introPadding: scaleGrid(8);
 .IntroTitle-primary,
 .IntroTitle-secondary,
 .IntroText {
-  color: $wd-white;
+  color: $color-white;
 }
 
 .IntroTitle-secondary i {
-  color: $cu-primary;
+  color: $color-blue;
   font-style: italic;
   font-size: 0.8em;
 }
@@ -122,30 +101,30 @@ $introPadding: scaleGrid(8);
 // * 2. Services Offered
 
 .FeatureCollections {
-  padding: $su-medium $su-large;
-  font-family: $heading-font-family;
-  font-size: scaleFont($fontSize, 3);
+  padding: $su-lg1 $su-lg2;
+  font-family: $cu-Heading;
+  font-size: scaleFont($font-Size, 3);
   list-style: none;
-  background-color: rgba($wd-black, 0.35);
-  box-shadow: 0 0 $su-medium $wd-black inset;
+  background-color: rgba($color-black, 0.35);
+  box-shadow: 0 0 $su-lg1 $color-black inset;
   border: {
-      color: rgba($cu-primary, 0.7);
-      width: $su-medium;
+      color: rgba($color-blue, 0.7);
+      width: $su-lg1;
       style: solid;
       position: outside;
   }
 
   @include max-width('lg') {
-    font-size: scaleFont($fontSize, 2);
+    font-size: scaleFont($font-Size, 2);
   }
 
 }
 
 .FeatureCollections-item {
-  padding: 0 0 $su-xxsmall 0;
+  padding: 0 0 $su-sm2 0;
 }
 
 .FeatureCollections,
 .FeatureCollections-link {
-  color: $wd-white;
+  color: $color-white;
 }

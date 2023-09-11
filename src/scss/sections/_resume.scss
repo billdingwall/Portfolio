@@ -19,18 +19,18 @@
 
 .Resume-title {
   margin-bottom: 0;
-  padding-bottom: $su-small;
+  padding-bottom: $su-base;
   overflow: hidden;
   position: relative;
-  margin-bottom: $su-small;
+  margin-bottom: $su-base;
 
   @include max-width('sm') {
-    font-size: scaleFont($fontSize, 3);
+    font-size: scaleFont($font-Size, 3);
   }
 
   &:after {
     content: '';
-    background-color: $cu-primary;
+    background-color: $color-blue;
     height: 1px;
     width: 100%;
     display: block;
@@ -47,7 +47,6 @@
     right: 0;
     top: 60%;
     position: absolute;
-    @include horizontal-gradient(transparent, $wd-white, transparent);
   }
 
   &:before {
@@ -55,7 +54,6 @@
     left: scaleGrid(10);
     width: 60%;
     height: 1px;
-    @include horizontal-gradient($wd-white, transparent, transparent);
 
     @include max-width('sm') {
       left: scaleGrid(7);
@@ -69,39 +67,39 @@
   display: inline-block;
   padding: {
     left: 0;
-    right: $su-small;
-    top: $su-small;
-    bottom: $su-small;
+    right: $su-base;
+    top: $su-base;
+    bottom: $su-base;
   }
-  background: $wd-white;
+  background: $color-white;
   z-index: 10;
   position: relative;
 }
 
 .Resume-experience {
-  border: $su-medium solid $cu-primary;
+  border: $su-lg1 solid $color-blue;
   list-style: none;
-  padding: $su-small;
+  padding: $su-base;
   box-sizing: border-box !important;
 }
 
 .Resume-experienceItem {
   position: relative;
   text-align: center;
-  padding: scaleGrid(15) $su-small scaleGrid(4) $su-small;
+  padding: scaleGrid(15) $su-base scaleGrid(4) $su-base;
 }
 
 .Resume-experienceYear,
 .Resume-experienceYearText,
 .Resume-experienceFocus {
-  font-family: $heading-font-family;
+  font-family: $cu-Heading;
   display: block;
 }
 
 .Resume-experienceYear {
-  font-size: scaleFont($fontSize, 15);
+  font-size: scaleFont($font-Size, 15);
   font-weight: light;
-  color: scaleColor($cu-primary, 8);
+  color: scaleColor($color-blue, 8);
   font-style: italic;
   position: absolute;
   top: scaleGrid(6);
@@ -111,7 +109,7 @@
   margin: auto;
 
   @include max-width('md') {
-    font-size: scaleFont($fontSize, 12);
+    font-size: scaleFont($font-Size, 12);
   }
 
   sup {
@@ -123,18 +121,18 @@
 
 .Resume-experienceYearText {
   position: relative;
-  color: $cu-primary;
-  font-size: scaleFont($fontSize, 2);
+  color: $color-blue;
+  font-size: scaleFont($font-Size, 2);
   z-index: 10;
 
 }
 
 .Resume-experienceFocus {
   position: relative;
-  border-top: 1px solid $cu-divider;
-  padding-top: $su-small;
-  margin-top: $su-small;
-  font-size: scaleFont($fontSize, 2);
+  border-top: 1px solid $cu-border;
+  padding-top: $su-base;
+  margin-top: $su-base;
+  font-size: scaleFont($font-Size, 2);
   z-index: 10;
 }
 
@@ -142,32 +140,32 @@
 .Resume-experienceFocus {
 
   @include max-width('md') {
-    font-size: $fontSize;
+    font-size: $font-Size;
   }
 
 }
 
 .Resume-skills {
   background: #fafafa;
-  padding: $su-medium;
+  padding: $su-lg1;
 
   .Grid-cell {
-    padding: 0 $su-medium;
+    padding: 0 $su-lg1;
   }
 
   h3 {
-    border-bottom: 1px solid $cu-primary;
+    border-bottom: 1px solid $color-blue;
   }
 
   ul {
-    padding: $su-medium 0 0 0;
+    padding: $su-lg1 0 0 0;
     list-style: none;
   }
 
 }
 
 .ExperienceItem {
-  padding-bottom: $su-xlarge;
+  padding-bottom: $su-lg3;
   max-width: 900px;
 }
 
@@ -179,7 +177,7 @@
   }
 
   @include max-width('sm') {
-    padding-bottom: $su-xlarge;
+    padding-bottom: $su-lg3;
   }
 
 
@@ -197,13 +195,13 @@
 .ExperienceItem-company,
 .ExperienceItem-duration,
 .ExperienceItem-location {
-  padding-bottom: $su-xsmall;
+  padding-bottom: $su-sm1;
   padding-top: 0;
 }
 
 .ExperienceItem-duration,
 .ExperienceItem-location {
-  color: $cu-info--light;
+  color: $cu-Paragraph;
 }
 
 .ExperienceItem-location {
@@ -221,19 +219,19 @@
 // TODO: when refactoring move this to a base component
 
 .Download-link {
-  border: 2px solid $cu-primary;
-  padding: $su-medium;
+  border: 2px solid $color-blue;
+  padding: $su-lg1;
   display: inline-block;
 
   .Icon {
-    padding-right: $su-medium;
+    padding-right: $su-lg1;
   }
 
   &:hover, &:active {
-    background: $cu-primary;
+    background: $color-blue;
     transition: all .25s ease-in-out;
     &, .Icon {
-      color: $cu-foreground;
+      color: $cu-Background-dark;
     }
   }
 

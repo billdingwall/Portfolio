@@ -18,8 +18,8 @@ $navHeight: scaleGrid(11);
 .SiteNav {
   height: $navHeight;
   width: 100%;
-  background-color: $cu-foreground;
-  border-bottom: 1px solid $cu-divider--light;
+  background-color: $cu-Background-dark;
+  border-bottom: 1px solid $cu-border;
 
   .Grid {
     align-items: center;
@@ -39,7 +39,7 @@ $navHeight: scaleGrid(11);
 
 .SiteNav-title,
 .SiteNav-link {
-  color: $cu-info;
+  color: $cu-Paragraph;
 }
 
 .SiteNav-title {
@@ -59,7 +59,7 @@ $navHeight: scaleGrid(11);
 }
 
 .SiteNav-links {
-  padding-right: $su-medium;
+  padding-right: $su-lg1;
 
   &:last-child {
     padding-right: 0;
@@ -79,8 +79,8 @@ $navHeight: scaleGrid(11);
 }
 
 .SiteNav-link {
-  font-size: scaleFont($fontSize, 2);
-  margin-left: $su-large;
+  font-size: scaleFont($font-Size, 2);
+  margin-left: $su-lg2;
   display: block;
 
   &:first-child {
@@ -88,7 +88,7 @@ $navHeight: scaleGrid(11);
   }
 
   a {
-    color: $cu-info;
+    color: $cu-Paragraph;
   }
 
   .Icon {
@@ -99,7 +99,7 @@ $navHeight: scaleGrid(11);
 
   .Icon--logo {
     font-size: 44px;
-    color: $cu-primary;
+    color: $color-blue;
   }
 
 }

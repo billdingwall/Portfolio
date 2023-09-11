@@ -161,15 +161,6 @@
 //    @include liner-gradient(startingColor, endingColor, defaultColor);
 //   }
 
-@mixin vertical-gradient($from, $to, $default) {
-  background: $default;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr = $from, endColorstr = $to, GradientType = 0 );
-  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
-  background: -webkit-linear-gradient(top, $from, $to);
-  background: -moz-linear-gradient(top, $from, $to);
-  background: -o-linear-gradient(top, $from, $to);
-  background: linear-gradient(to bottom, $from, $to);
-}
 
 @mixin horizontal-gradient($from, $to, $default) {
   background: $default;
@@ -207,7 +198,7 @@
   }
 
   .u-colorInfo {
-    color: $cu-info;
+    color: $cu-Paragraph;
   }
 
   blockquote {
@@ -225,11 +216,11 @@
   }
 
   .Reverse-text {
-    color: $cu-foreground;
+    color: $cu-Background-dark;
     background-color: $spotColor;
 
     h1, h2, h3, h4 {
-      color: $cu-foreground;
+      color: $cu-Background-dark;
     }
 
   }

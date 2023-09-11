@@ -24,108 +24,85 @@
 
 //------------------------------------------------------------//
 
-// * 1. Brand Colors
+// * 1. Brand Variables
 
-$wd-brown:                                 #9A4414 !default;
+$color-blue-l2: #F7F9FA;
+$color-blue:    #28B1CC;
+$color-blue-d1: #006A80;
+$color-blue-d2: #1B2426;
 
-$wd-black:                                 #000000 !default;
-$wd-grey:                                  #dddddd !default;
-$wd-white:                                 #ffffff !default;
+$color-black:   #000000;
+$color-white:   #ffffff;
+$color-grey:    #BCC9CC;
 
-$playFair-fontFamily: 'Playfair Display', Georgia, serif !default;
-$raleway-fontFamily: 'Raleway', Helvetica, sans-serif !default;
+$font-antonio:   'Antonio', Helvetica, sans-serif; // headings & labels
+$font-helvetica: 'Raleway', Helvetica, sans-serif; // paragraphs & sub-headings
 
-// * 1.a Color Utilities
+$baseUnit: 8px;
 
-$cu-foreground:                          $wd-white !default;
-$cu-foreground--light:                   $wd-white !default;
-$cu-foreground--dark:                    $wd-white !default;
+$font-Size:          20px;
+$font-LineHeight:    150%;
+$font-LetterSpace: -0.75%;
+$font-ScaleRate:    1.333;
 
-$cu-middleground:         scaleColor($wd-grey, 10) !default;
-$cu-middleground--light:  scaleColor($wd-grey, 10) !default;
-$cu-middleground--dark:   scaleColor($wd-grey, 10) !default;
+// * 2. Sizing Utilities
 
-$cu-background:           scaleColor($wd-black, 0) !default;
-$cu-background--light:    scaleColor($wd-black, 0) !default;
-$cu-background--dark:     scaleColor($wd-black, 0) !default;
+$su-sm3:            1px; // 1px
+$su-sm2: scaleGrid(.25); // 2px
+$su-sm1:  scaleGrid(.5); // 4px
+$su-base:  scaleGrid(0); // 8px
+$su-lg1:   scaleGrid(2); // 16px
+$su-lg2:   scaleGrid(3); // 24px
+$su-lg3:   scaleGrid(4); // 32px
+$su-lg4:   scaleGrid(8); // 64px
+$su-lg5:  scaleGrid(10); // 80px
 
-$cu-divider:               scaleColor($wd-grey, 0) !default;
-$cu-divider--light:        scaleColor($wd-grey, 2) !default;
-$cu-divider--dark:         scaleColor($wd-grey, -2) !default;
+$tuSize-sm2: scaleFont($font-Size, -2) !default;
+$tuSize-sm1: scaleFont($font-Size, -1) !default;
+$tuSize-base: scaleFont($font-Size, 0) !default;
+$tuSize-lg1:  scaleFont($font-Size, 1) !default;
+$tuSize-lg2:  scaleFont($font-Size, 2) !default;
+$tuSize-lg3:  scaleFont($font-Size, 3) !default;
+$tuSize-lg4:  scaleFont($font-Size, 4) !default;
+$tuSize-lg5:  scaleFont($font-Size, 5) !default;
 
-$cu-primary:                             $wd-brown !default;
-$cu-primary--light:     scaleColor($cu-primary, 1) !default;
-$cu-primary--dark:     scaleColor($cu-primary, -2) !default;
-$cu-primary--bg:       scaleColor($cu-primary, 10) !default;
+// * 3 Color Utilities
 
-$cu-info:                 scaleColor($wd-black, 1) !default;
-$cu-info--light:          scaleColor($wd-black, 4) !default;
-$cu-info--dark:           scaleColor($wd-black, 0) !default;
-$cu-info--bg:            scaleColor($wd-black, 10) !default;
+$cu-Background-dark: $color-white !default;
+$cu-Background-dark-dark:  $color-blue-d2 !default;
 
-// * 1.a Spot Colors (link, facebook, twitter, etc.)
+$cu-Paragraph:    $color-black !default;
+$cu-Heading:      $color-blue-d2 !default;
+$cu-SubHeading:   $color-blue-d1 !default;
 
-$color-facebook:                           #3B5998 !default;
+$cu-border:       $color-blue !default;
+$cu-border-dark: $color-blue-d1 !default;
 
 // * 2. Typography
 
-$fontSize:          17px !default;
-$lineHeight:         1.5 !default;
-$letterSpacing: -0.005em !default;
+$tu-ParagraphFont: $font-helvetica !default;
 
-// * 2.a Font Families
+$tu-ParagraphSize: $tuSize-base !default;
+$tu-ParagraphSize-lg: scaleFont($font-Size, 1) !default;
+$tu-ParagraphSize-sm: scaleFont($font-Size, -1) !default;
 
-$base-font-family:    $raleway-fontFamily !default;
-$heading-font-family: $playFair-fontFamily !default;
+$tu-ParagraphWeight: 300 !default;
+$tu-ParagraphWeight-smBold: 400 !default;
+$tu-ParagraphWeight-Bold: 700 !default;
+$tu-ParagraphLineHeight: $font-LineHeight !default; 
 
-// * 2.b Font Colors 
+$tu-HeadingFont:   $font-antonio !default;
 
-$base-font-color:         $cu-info !default;
-$heading-font-color:   $cu-primary !default;
-$light-font-color: $cu-info--light !default;
+$tu-HeadingSize-1: $tuSize-lg5  !default;
+$tu-HeadingSize-2: $tuSize-lg4  !default;
+$tu-HeadingSize-3: $tuSize-lg3  !default;
+$tu-HeadingSize-4: $tuSize-lg2  !default;
+$tu-HeadingSize-5: $tuSize-lg1  !default;
+$tu-HeadingSize-6: $tuSize-base !default;
+$tu-HeadingSize-7: $tuSize-sm1  !default;
 
-$link-color:                  $cu-primary--light !default;
-$link-color--hover: scaleColor($link-color, -2) !default;
-
-// * 2.c Font Weights
-
-$tu-base-fontWeight:      400 !default;
-$tu-semibold-fontWeight:  600 !default;
-$tu-bold-fontWeight:      700 !default;
-
-// * 2.d Font Sizes
-
-$tu-xsmall-fontSize:           scaleFont($fontSize, -2) !default;
-$tu-small-fontSize:            scaleFont($fontSize, -1) !default;
-$tu-base-fontSize:              scaleFont($fontSize, 0) !default;
-$tu-large-fontSize:             scaleFont($fontSize, 3) !default;
-$tu-xlarge-fontSize:            scaleFont($fontSize, 5) !default;
-$tu-xxlarge-fontSize:           scaleFont($fontSize, 8) !default;
-
-// * 2.e Font Letter Spacing
-
-$tu-xsmall-letterSpacing: scaleFont($letterSpacing, -2) !default;
-$tu-small-letterSpacing:  scaleFont($letterSpacing, -1) !default;
-$tu-base-letterSpacing:    scaleFont($letterSpacing, 0) !default;
-$tu-large-letterSpacing:   scaleFont($letterSpacing, 2) !default;
-$tu-xlarge-letterSpacing:  scaleFont($letterSpacing, 5) !default;
-$tu-xxlarge-letterSpacing: scaleFont($letterSpacing, 6) !default;
-
-// * 2.f Font Line Height
-
-$tu-small-lineHeight:        scaleFont($lineHeight, -2) !default;
-$tu-base-lineHeight:          scaleFont($lineHeight, 0) !default;
-$tu-large-lineHeight:         scaleFont($lineHeight, 2) !default;
-
-// * 3. Spacing
-
-$su-xxsmall:   scaleGrid(.25) !default; // 2px
-$su-xsmall:     scaleGrid(.5) !default; // 4px
-$su-small:       scaleGrid(1) !default; // 8px
-$su-medium:      scaleGrid(2) !default; // 16px
-$su-large:       scaleGrid(3) !default; // 24px
-$su-xlarge:      scaleGrid(4) !default; // 32px
-$su-xxlarge:     scaleGrid(5) !default; // 40px
+$tu-HeadingWeight: 400 !default;
+$tu-HeadingLineHeight: scaleFont($font-LineHeight, -1) !default;
 
 // * 4. Responsive
 
@@ -168,16 +145,36 @@ $border-width-small:   scaleGrid(-3) !default; // 1px
 $border-width-medium:  scaleGrid(-2) !default; // 2px
 $border-width-large:   scaleGrid(-1) !default; // 4px
 
-// * 6. Transitions
 
-$duration-short: 250ms;
 
-// * 7. Box Shadows
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//----------DEPRECIATE-----------//
+//-----------Styles--------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
+//-------------------------------//
 
-$box-shadow-small:  0 0 2px $cu-divider--light !default;
-$box-shadow-medium: 0 0 4px $cu-divider--light !default;
-$box-shadow-large:  0 0 6px $cu-divider--light !default;
+$border-radius-small:  scaleGrid(-2) !default; // 2px
+$border-radius-medium: scaleGrid(-1) !default; // 4px
+$border-radius-large:   scaleGrid(1) !default; // 8px
 
-$inset-box-shadow-small:  1px 1px 1px $cu-divider--light inset !default;
-$inset-box-shadow-medium: 1px 1px 2px $cu-divider--light inset !default;
-$inset-box-shadow-large:  1px 1px 3px $cu-divider--light inset !default;
+$border-width-small:   scaleGrid(-3) !default; // 1px
+$border-width-medium:  scaleGrid(-2) !default; // 2px
+$border-width-large:   scaleGrid(-1) !default; // 4px
+
+$box-shadow-small:  0 0 2px $cu-border !default;
+$box-shadow-medium: 0 0 4px $cu-border !default;
+$box-shadow-large:  0 0 6px $cu-border !default;
+
+$inset-box-shadow-small:  1px 1px 1px $cu-border inset !default;
+$inset-box-shadow-medium: 1px 1px 2px $cu-border inset !default;
+$inset-box-shadow-large:  1px 1px 3px $cu-border inset !default;

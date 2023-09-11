@@ -14,9 +14,9 @@
 // * 1. Contents Grouping One
 
 .Persona {
-  padding: $su-medium;
+  padding: $su-lg1;
   background-color: #fafafa;
-  margin-bottom: $su-medium;
+  margin-bottom: $su-lg1;
 }
 
 .Persona-name,
@@ -26,13 +26,13 @@
 
 .Persona-name {
   font-weight: bold;
-  font-size: $tu-base-fontSize;
-  padding-bottom: $su-small;
+  font-size: $tuSize-base;
+  padding-bottom: $su-base;
 }
 
 .Persona-name,
 .Persona-details {
-  padding-left: $su-medium;
+  padding-left: $su-lg1;
 }
 
 .Persona-details {
@@ -40,6 +40,6 @@
   padding-bottom: 0;
   li {
     padding: 8px 0;
-    font-size: $tu-small-fontSize;
+    font-size: $tuSize-sm1;
   }
 }

@@ -19,20 +19,20 @@
 // * 2. Content
 
 body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $tu-base-fontSize;
+  color: $cu-Paragraph;
+  font-family: $tu-ParagraphFont;
+  font-size: $tuSize-base;
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: $tu-base-lineHeight;
-  letter-spacing: $tu-base-letterSpacing;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 
 }
 
 p {
-  padding-bottom: $su-medium;
+  padding-bottom: $su-lg1;
 
   &:last-child {
     padding-bottom: 0;
@@ -46,20 +46,16 @@ strong {
 }
 
 small {
-  color: $cu-info--light;
-  font-size: $tu-small-fontSize;
-  line-height: $tu-small-lineHeight;
-  letter-spacing: $tu-small-letterSpacing;
+  color: $cu-Paragraph;
+  font-size: $tuSize-sm1;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 a {
-  color: $link-color;
   cursor: pointer;
   text-decoration: none;
   background: transparent;
-  &:hover {
-    color: $link-color--hover;
-  }
   &:active,
   &:hover {
     outline: 0;
@@ -69,11 +65,11 @@ a {
 // * 3. Headings
 
 h1, h2 {
-  font-family: $heading-font-family;
+  font-family: $cu-Heading;
 }
 
 h3, h4, h6 {
-  font-family: $base-font-family;
+  font-family: $tu-ParagraphFont;
 }
 
 h1, h2, h3, h4, h6 {
@@ -85,46 +81,46 @@ h5 {
 }
 
 h1 {
-  font-size: $tu-xxlarge-fontSize;
-  line-height: $tu-base-lineHeight;
-  letter-spacing: $tu-xxlarge-letterSpacing;
+  font-size: $tuSize-lg5;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 h2 {
-  font-size: $tu-xlarge-fontSize;
-  line-height: $tu-base-lineHeight;
-  letter-spacing: $tu-xlarge-letterSpacing;
+  font-size: $tuSize-lg5;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 h3 {
-  font-size: $tu-large-fontSize;
-  line-height: $tu-base-lineHeight;
-  letter-spacing: $tu-large-letterSpacing;
+  font-size: $tuSize-lg3;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 h4 {
-  font-size: $tu-base-fontSize;
-  line-height: $tu-small-lineHeight;
-  letter-spacing: $tu-base-letterSpacing;
+  font-size: $tuSize-base;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 h5 {
-  font-size: $tu-small-fontSize;
-  line-height: $tu-small-lineHeight;
-  letter-spacing: $tu-small-letterSpacing;
+  font-size: $tuSize-sm1;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 h6 {
-  font-size: $tu-small-fontSize;
-  font-weight: $tu-base-fontWeight;
-  line-height: $tu-small-lineHeight;
-  letter-spacing: $tu-xsmall-letterSpacing;
+  font-size: $tuSize-sm1;
+  font-weight: $tu-ParagraphWeight;
+  line-height: $font-LineHeight;
+  letter-spacing: $font-LetterSpace;
 }
 
 h1, h2, h3, h4 {
-  color: $cu-primary;
+  color: $color-blue;
 }
 
 h2, h3, h4 {
-  padding-bottom: $su-medium;
+  padding-bottom: $su-lg1;
 }

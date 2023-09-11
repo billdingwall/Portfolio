@@ -13,9 +13,9 @@
 
 // * 1. Input Settings
 
-$form-input-height: $su-xlarge !default;
-$form-input-line-height: $su-xlarge - 2 !default;
-$form-input-bg-color: $cu-foreground--dark !default;
+$form-input-height: $su-lg3 !default;
+$form-input-line-height: $su-lg3 - 2 !default;
+$form-input-bg-color: $cu-Background-dark !default;
 
 // * 2. Base Input
 
@@ -25,18 +25,18 @@ $form-input-bg-color: $cu-foreground--dark !default;
   width: 100%;
   height: $form-input-height;
   line-height: $form-input-line-height;
-  padding: 0 $su-small;
+  padding: 0 $su-base;
   box-sizing: border-box;
   box-shadow: $inset-box-shadow-medium;
   background-color: $form-input-bg-color;
-  border: $border-width-small solid $cu-divider;
+  border: $border-width-small solid $cu-border;
   border-radius: $border-radius-medium;
   font-family: inherit;
-  font-size: $tu-base-fontSize;
+  font-size: $tuSize-base;
 
   &:disabled {
-    background: $cu-middleground--dark;
-    color: $cu-divider;
+    background: $cu-Background-dark;
+    color: $cu-border;
     cursor: not-allowed;
   }
 

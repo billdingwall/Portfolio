@@ -14,7 +14,7 @@
 // * 1. Contents Grouping One
 
 ul, ol {
-  padding-bottom: $su-medium;
+  padding-bottom: $su-lg1;
 
   &:last-child {
     padding-bottom: 0;
@@ -23,11 +23,11 @@ ul, ol {
 }
 
 ul, ol {
-  padding-left: $su-medium;
+  padding-left: $su-lg1;
 }
 
 li {
-  padding: $su-small 0;
+  padding: $su-base 0;
 }
 
 
@@ -41,13 +41,13 @@ li {
 
   li {
     display: inline-block;
-    padding-right: $su-small;
+    padding-right: $su-base;
 
     &:before {
       content: '•';
       display: inline-block;
-      padding-right: $su-small;
-      color: $cu-info--light;
+      padding-right: $su-base;
+      color: $cu-Paragraph;
     }
 
     &:first-child:before {

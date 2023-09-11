@@ -10,39 +10,39 @@
 
 // * 1. Form Group Settings
 
-$FormGroup-font-size: $tu-base-fontSize;
+$FormGroup-font-size: $tuSize-base;
 
 // * 2. Form Group Base Styles
 
 .FormGroup {
-  margin-bottom: $su-medium;
+  margin-bottom: $su-lg1;
   position: relative;
 }
 
 .FormGroup-label {
   display: block;
-  padding-bottom: $su-xsmall;
+  padding-bottom: $su-sm1;
   font-size: $FormGroup-font-size;
-  font-weight: $tu-semibold-fontWeight;
+  font-weight: $tu-Parag$tu-ParagraphWeight-smBoldraphWeight;
 }
 
 .FormGroup-feedback {
-  color: $cu-primary;
+  color: $color-blue;
   font-size: $FormGroup-font-size;
-  padding-top: $su-xsmall;
+  padding-top: $su-sm1;
   margin-bottom: 0;
 }
 
 .FormGroup-message {
-  color: $cu-info--light;
+  color: $cu-Paragraph;
   font-size: $FormGroup-font-size;
-  padding-top: $su-xsmall;
+  padding-top: $su-sm1;
   margin-bottom: 0;
 }
 
 .FormGroup-validation {
   display: none;
-  color: $cu-primary;
+  color: $color-blue;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,7 +52,7 @@ $FormGroup-font-size: $tu-base-fontSize;
 
 .FormGroup.is-notValid {
   .Input, .Checkbox-label:before, .SelectBox-options {
-    border-color: $cu-primary;
+    border-color: $color-blue;
   }
 }
 
@@ -62,6 +62,6 @@ $FormGroup-font-size: $tu-base-fontSize;
   }
 
   .FormGroup-label {
-    padding-left: $su-medium;
+    padding-left: $su-lg1;
   }
 }

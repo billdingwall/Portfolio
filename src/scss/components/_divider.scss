@@ -12,22 +12,22 @@
 
 .Divider {
   border: none;
-  border-top: 1px solid $cu-divider;
+  border-top: 1px solid $cu-border;
   background: transparent;
   color: transparent;
-  margin: $su-small 0;
+  margin: $su-base 0;
 }
 
 // * 2. Idented Divider
 
 .Divider--indented {
-  border-bottom: 1px solid $cu-foreground;
+  border-bottom: 1px solid $cu-Background-dark;
 }
 
 // * 3. Thick Divider
 
 .Divider--thick {
-  border-top-width: $su-xsmall;
+  border-top-width: $su-sm1;
 }
 
 // * 4. Space Divider
@@ -35,5 +35,5 @@
 .Divider--space {
   border: none;
   margin: 0;
-  padding: $su-medium;
+  padding: $su-lg1;
 }
