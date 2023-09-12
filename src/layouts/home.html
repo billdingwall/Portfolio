@@ -1,40 +1,86 @@
 {{> headerHead}}
 <body id="home">
 
-<header class="Section Section--withBackground" id="Intro">
+<header class="Section Section--withBackground u-padTopNone" id="Intro">
 
   {{> headerNav}}
 
   <div class="Section-content">
-    <div class="Section-container">
       <h1 class="IntroTitle">
         <span class="IntroTitle-primary">Data Driven Product</span>
         <span class="IntroTitle-secondary">
-          Designer <i>&</i> Researcher
+          Designer + Researcher
         </span>
       </h1>
-    </div>
+      <nav>
+        <ul class="List List--dotSeperated">
+          <li>Portfolio</li>
+          <li>Experience</li>
+          <li>Referals</li>
+        </ul>
+      </nav>
   </div>
 
 </header>
 
-<section id="Portfolio" class="Section">
+<section id="Portfolio" class="Section Section--dark">
   <div class="Section-content">
-    <div class="Section-container">
 
-      <h2 class="Section-title">
-        <span class="Section-titleText">Portfolio</span>
-      </h2>
+    <h2 class="Section-title">
+      <span class="Section-titleText">Portfolio</span>
+    </h2>
 
-      <div id="Work" class="Portfolio Grid">
-        {{#each collections.portfolioWork}}
-          {{#if featured}}
-            {{> feature}}
-          {{/if}}
-        {{/each}}
-      </div>
-
+    <div id="Work" class="Portfolio">
+      {{#each collections.portfolioWork}}
+        {{#if featured}}
+          {{> portfolio}}
+        {{/if}}
+      {{/each}}
     </div>
+
+  </div>
+</section>
+
+<section id="Experience" class="Section Section--dark">
+  <div class="Section-content">
+
+    <ul class="Section-subSection Resume-experience Grid Grid--fit">
+      <li class="Resume-experienceItem Grid-cell">
+        <h6 class="Resume-experienceFocus">Dev Experience</h6>
+        <span class="Resume-experienceYear">6<sup>+</sup></span>
+        <span class="Resume-experienceYearText">Years</span>
+      </li>
+      <li class="Resume-experienceItem Grid-cell">
+        <h6 class="Resume-experienceFocus">Product Experience</h6>
+        <span class="Resume-experienceYear">8<sup>+</sup></span>
+        <span class="Resume-experienceYearText">Eight Years</span>
+      </li>
+      <li class="Resume-experienceItem Grid-cell">
+        <h6 class="Resume-experienceFocus">Design Experience</h6>
+        <span class="Resume-experienceYear">12<sup>+</sup></span>
+        <span class="Resume-experienceYearText">Twelve Years</span>
+      </li>
+    </ul>
+
+    <div class="Section-subSection">
+      <h4 class="Section-subTitle">Experience</h2>
+      {{#each collections.workExperience}}
+        {{> experience}}
+      {{/each}}
+    </div>
+
+  </div>
+</section>
+
+<section id="Recomendations" class="Section Section--dark">
+  <div class="Section-content">
+
+      <blockquote class="Blockquote Blockquote--thickBorder">
+        <p>Bill has a killer collection of skills that make him a powerful and versatile member of multiple teams. He’s a beautiful visual designer, a crack UX/UI expert, a whiz at front-end development and a thoughtful strategic thinker and information architect. It all adds up to a guy who can take any project from problem statement to a beautiful, standards-compliant finished product. His love for frameworks and components ensures that the rest of the team can leverage his work and multiply the power of his design vision.</p>
+        <p>Beyond his skills, Bill is also an awesome teammate, quick to mentor or jump in to help without being asked. He makes his teams better and has been a quiet superhero owning the user experience for an entire line of business plus multiple other initiatives. Honestly, we’re not sure how he does it all, but he does. Great designer, even better guy. 100% superhero.</p>
+        <footer>— Andrew Berkowitz, Founder & Cheif Creative Officer at TeamSnap</footer>
+      </blockquote>
+
   </div>
 </section>
 

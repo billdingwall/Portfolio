@@ -1,0 +1,39 @@
+//------------------------------------------------------------//
+
+// * Math
+
+// Notes:
+// * ...
+
+// TODO : ...
+
+//------------------------------------------------------------//
+
+
+
+// * 1. ....
+
+@function scaleGrid($step) {
+
+  // common rules of our spacing scale
+  $base-unit: $baseUnit;
+
+  // setting the base $spacing variable as the base unit
+  $spacing: $base-unit;
+
+  // Handles lower steps below base unit (2, 4)
+  @if ($step < .5) {
+    $spacing: round($spacing * 0.25);
+  }
+  @else if ($step >= .5) and ($step < 1) {
+    $spacing: round($spacing * 0.5);
+  }
+
+  // Handles steps equal to or about base unit
+  @else {
+    $spacing: round($spacing * $step);
+  }
+
+  @return $spacing;
+
+}

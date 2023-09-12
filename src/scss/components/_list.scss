@@ -38,20 +38,23 @@ li {
 
 .List--dotSeperated {
   list-style: none;
+  padding: 0;
 
   li {
     display: inline-block;
-    padding-right: $su-base;
+    padding-right: $su-lg1;
 
     &:before {
       content: '•';
       display: inline-block;
-      padding-right: $su-base;
       color: $cu-Paragraph;
+      font-size: $tuSize-sm1;
+      padding-right: $su-lg1;
     }
 
     &:first-child:before {
       content: '';
+      display: none;
     }
 
   }

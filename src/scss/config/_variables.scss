@@ -1,18 +1,13 @@
 //------------------------------------------------------------//
 
 // * Stencil Config Variables
-// * 1. Brand Colors
-// * 1.a Color Utilities
-// * 1.b Spot Colors (link, facebook, twitter, etc.)
-// * 2. Typography
-// * 2.a Font Families
-// * 2.b Font Weights
-// * 2.c Font Sizes
-// * 2.d Letter Spacing
-// * 2.e Line Heights
-// * 3. Spacing
-// * 4. Responsive
-// * 5. Transitions
+// * 1. Brand Variables
+// * 2. Sizing Utilities
+// * 3 Color Utilities
+// * 4. Typography
+// * 5. Responsive
+// * 6. Borders
+// * 7. Transitions
 
 // Notes:
 // * scaleColor(), scaleFont(), and scaleGrid() functions or
@@ -36,13 +31,13 @@ $color-white:   #ffffff;
 $color-grey:    #BCC9CC;
 
 $font-antonio:   'Antonio', Helvetica, sans-serif; // headings & labels
-$font-helvetica: 'Raleway', Helvetica, sans-serif; // paragraphs & sub-headings
+$font-helvetica: Helvetica, sans-serif; // paragraphs & sub-headings
 
 $baseUnit: 8px;
 
 $font-Size:          20px;
 $font-LineHeight:    150%;
-$font-LetterSpace: -0.75%;
+$font-LetterSpace: -0.0025em;
 $font-ScaleRate:    1.333;
 
 // * 2. Sizing Utilities
@@ -66,10 +61,11 @@ $tuSize-lg3:  scaleFont($font-Size, 3) !default;
 $tuSize-lg4:  scaleFont($font-Size, 4) !default;
 $tuSize-lg5:  scaleFont($font-Size, 5) !default;
 
-// * 3 Color Utilities
+// * 3. Color Utilities
 
-$cu-Background-dark: $color-white !default;
-$cu-Background-dark-dark:  $color-blue-d2 !default;
+$cu-Background-light: $color-white !default;
+$cu-Background-grey:  $color-blue-l2 !default;
+$cu-Background-dark:  $color-blue-d2 !default;
 
 $cu-Paragraph:    $color-black !default;
 $cu-Heading:      $color-blue-d2 !default;
@@ -78,7 +74,7 @@ $cu-SubHeading:   $color-blue-d1 !default;
 $cu-border:       $color-blue !default;
 $cu-border-dark: $color-blue-d1 !default;
 
-// * 2. Typography
+// * 4. Typography
 
 $tu-ParagraphFont: $font-helvetica !default;
 
@@ -104,7 +100,9 @@ $tu-HeadingSize-7: $tuSize-sm1  !default;
 $tu-HeadingWeight: 400 !default;
 $tu-HeadingLineHeight: scaleFont($font-LineHeight, -1) !default;
 
-// * 4. Responsive
+// * 5. Responsive
+
+
 
 $responsive: false !default;
 $breakpoint-xs: 480px;
@@ -131,50 +129,15 @@ $max-breakpoints: (
   'mdMax':  $breakpoint-md-max
 );
 
-// * 5. Transitions
+// * 6. Borders
+// * _ no border radius
+
+$buSize-base: $su-sm3 !default; // 1px
+$buSize-lg1:  $su-sm2 !default; // 2px
+$buSize-lg2:  $su-sm1 !default; // 4px
+$buSize-lg3:  $su-sm1 !default; // 4px
+
+// * 7. Transitions
 
 $duration-short: 250ms;
-
-// * 5. Borders
-
-$border-radius-small:  scaleGrid(-2) !default; // 2px
-$border-radius-medium: scaleGrid(-1) !default; // 4px
-$border-radius-large:   scaleGrid(1) !default; // 8px
-
-$border-width-small:   scaleGrid(-3) !default; // 1px
-$border-width-medium:  scaleGrid(-2) !default; // 2px
-$border-width-large:   scaleGrid(-1) !default; // 4px
-
-
-
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//----------DEPRECIATE-----------//
-//-----------Styles--------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-//-------------------------------//
-
-$border-radius-small:  scaleGrid(-2) !default; // 2px
-$border-radius-medium: scaleGrid(-1) !default; // 4px
-$border-radius-large:   scaleGrid(1) !default; // 8px
-
-$border-width-small:   scaleGrid(-3) !default; // 1px
-$border-width-medium:  scaleGrid(-2) !default; // 2px
-$border-width-large:   scaleGrid(-1) !default; // 4px
-
-$box-shadow-small:  0 0 2px $cu-border !default;
-$box-shadow-medium: 0 0 4px $cu-border !default;
-$box-shadow-large:  0 0 6px $cu-border !default;
-
-$inset-box-shadow-small:  1px 1px 1px $cu-border inset !default;
-$inset-box-shadow-medium: 1px 1px 2px $cu-border inset !default;
-$inset-box-shadow-large:  1px 1px 3px $cu-border inset !default;
+$duration-long: 750ms;

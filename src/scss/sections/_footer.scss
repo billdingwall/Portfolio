@@ -1,0 +1,68 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+#footer {
+  position: relative;
+  @include siteContainer;
+  background-color: $cu-Background-dark;
+  max-width: 100%;
+
+  a {
+    color: #fff;
+  }
+
+  .Grid {
+    @include siteContainer;
+  }
+
+  @include max-width('sm') {
+    padding: scaleGrid(2) 0;
+  }
+
+  @include min-width('sm') {
+    padding: scaleGrid(4) 0;
+  }
+
+  .List--dotSeperated {
+    li {
+      @include max-width('sm') {
+        display: block;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .List--dotSeperated + .List--dotSeperated {
+    @include max-width('sm') {
+      border-top: 1px solid $cu-border;
+      padding-top: $su-base;
+    }
+  }  
+
+}
+
+.footer-image {
+  width: 100%;
+  float: left;
+}
+
+.copyright {
+  display: block;
+  padding: $su-lg1;
+  padding-bottom: $su-lg4;
+  text-align: center;
+}

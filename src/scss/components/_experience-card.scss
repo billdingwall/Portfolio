@@ -1,0 +1,70 @@
+//------------------------------------------------------------//
+
+// * Home Page Introduction
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : Make Resume-title a modifier of section title
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+
+.Resume-experience {
+  list-style: none;
+  gap: $su-lg2;
+}
+
+.Resume-experienceItem {
+  position: relative;
+  padding: $su-lg2;
+  border: $buSize-base solid $cu-border;
+}
+
+.Resume-experienceYear,
+.Resume-experienceYearText,
+.Resume-experienceFocus {
+  font-family: $cu-Heading;
+  display: block;
+}
+
+.Resume-experienceFocus {
+  position: relative;
+  font-size: $tuSize-lg1;
+  z-index: 10;
+}
+
+.Resume-experienceYear {
+  font-size: $tuSize-lg1;
+
+  @include max-width('md') {
+    font-size: $tuSize-lg2;
+  }
+
+  sup {
+    font-size: 30%;
+    vertical-align: super;
+  }
+
+}
+
+.Resume-experienceYearText {
+  position: relative;
+  color: $color-blue;
+  font-size: $tuSize-lg2;
+  z-index: 10;
+
+}
+
+.Resume-experienceYearText,
+.Resume-experienceFocus {
+
+  @include max-width('md') {
+    font-size: $font-Size;
+  }
+
+}

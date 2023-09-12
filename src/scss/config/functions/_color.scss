@@ -1,0 +1,60 @@
+//------------------------------------------------------------//
+
+// * HSB
+
+// Notes:
+// * .....
+
+// TODO : ....
+
+//------------------------------------------------------------//
+
+// * 1. HSB color input 
+
+@function hsb($h-hsb, $s-hsb, $b-hsb, $a: 1) {
+  @if $b-hsb == 0 {
+    @return hsla(0, 0, 0, $a)
+  } @else {
+    $l-hsl: ($b-hsb/2) * (2 - ($s-hsb/100));
+    $s-hsl: ($b-hsb * $s-hsb) / if($l-hsl < 50, $l-hsl * 2, 200 - $l-hsl * 2);
+    @return hsla($h-hsb, $s-hsl, $l-hsl, $a);
+  }
+}
+
+// * 2. HSB color input 
+
+@function scaleColor($color, $step) {
+
+  // common rules of our color scale
+  $tintMax:  10;
+  $shadeMax: -4;
+  $ratio:   10%;
+
+  // setting the base $color variable as hue
+  $color: $color;
+
+  // adds an extra 5% tint after 90% (or six steps)
+  @if ($step >= $tintMax) {
+    $color: mix(white, $color, 95%);
+  }
+
+  // mixes the base color in increments of white by 15%
+  @else if ($step >= 0 ) and ($step < $tintMax) {
+    $color: mix(white, $color, ($step * $ratio));
+  }
+
+  // mixes the base color in increments of black by 15%
+  @else if ($step < 0 ) and ($step >= $shadeMax) {
+    $step: convertNegative($step);
+    $color: mix(black, $color, ($step * $ratio));
+  }
+
+  // caps shading to a 2 step limit
+  @else if ($step < $shadeMax) {
+    $step: convertNegative($shadeMax);
+    $color: mix(black, $color, ($ratio * $step));
+  }
+
+  @return $color
+
+}
