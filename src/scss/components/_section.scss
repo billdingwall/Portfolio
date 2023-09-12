@@ -14,35 +14,38 @@
 // * 1. Contents Grouping One
 
 .Section {
-  background-color: $cu-Background-dark;
+
+  border-top: $buSize-lg1 solid $cu-border;
+  padding: $su-lg4 $su-lg1;
+
+  @include max-width('sm') {
+    padding: $su-lg3 $su-lg1;
+  }
+  
+  &.Section--grey {
+    background-color: $cu-Background-grey;
+  }
+
+  &.Section--dark {
+    background-color: $cu-Background-dark;
+    color: $color-white;
+
+    h1, h2, h3, h4, h6, p {
+      color: $color-white;
+    }
+
+  }
+
 }
 
 .Section-content {
-  padding: scaleGrid(6) $su-lg1;
-
-  @include max-width('sm') {
-    padding: scaleGrid(4) $su-lg1;
-  }
-
-}
-
-.Section-title {
-  position: relative;
-  padding-bottom: $su-base;
-  margin-bottom: $su-lg3;
-
-  &:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: scaleGrid(7);
-    background-color: $cu-border;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-.Section-container {
   @include siteContainer;
+}
+
+.Section-subSection {
+ padding: $su-lg3 0;
+}
+
+.Section-subTitle {
+  
 }

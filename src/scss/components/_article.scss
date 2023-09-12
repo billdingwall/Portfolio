@@ -17,9 +17,6 @@ $spot-color: $color-blue !default;
 
 .Article {
   @include siteContainer;
-  background-color: $cu-Background-dark;
-  border: 1px solid $cu-border;
-  margin-top: scaleGrid(8);
 
   h3 {
     padding: $su-lg1 0;
@@ -97,8 +94,6 @@ $spot-color: $color-blue !default;
 }
 
 .Article-feature {
-  background-color: $cu-Background-dark;
-  border: 1px solid $cu-border;
   padding: $su-lg1;
   margin-bottom: $su-lg4;
 }

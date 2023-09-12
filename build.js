@@ -39,8 +39,9 @@ Metalsmith(__dirname)
       default: 'article.html',
       pattern: ["*/*/*html","*/*html","*html"],
       partials: {
-        experience: 'partials/experience',
-        feature: 'partials/feature',
+        experience: 'partials/experience-item',
+        portfolio: 'partials/portfolio-item',
+        gallery: 'partials/gallery-item',
         footer: 'partials/footer',
         header: 'partials/header',
         headerHead: 'partials/header-head',

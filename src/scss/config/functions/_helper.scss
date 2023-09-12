@@ -1,0 +1,39 @@
+//------------------------------------------------------------//
+
+// * Math
+
+// Notes:
+// * ...
+
+// TODO : ...
+
+//------------------------------------------------------------//
+
+
+
+// * 1. ....
+
+@function quarter($number) {
+  $number: round($number / 4);
+  @return $number
+}
+
+@function halve($number) {
+  $number: round($number / 2);
+  @return $number
+}
+
+@function double($number) {
+  $number: round($number * 2);
+  @return $number
+}
+
+@function quadruple($number) {
+  $number: round($number * 4);
+  @return $number
+}
+
+@function convertNegative($number) {
+  $number: $number * -1;
+  @return $number
+}

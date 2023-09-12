@@ -1,0 +1,104 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+.SiteNav {
+  height: $su-lg5;
+  width: 100%;
+
+  @include siteContainer;
+
+  .Grid {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Grid {
+    height: 100%;
+  }
+
+}
+
+.SiteNav-title,
+.SiteNav-links {
+  padding: 0;
+}
+
+.SiteNav-title,
+.SiteNav-link {
+  color: $cu-Paragraph;
+}
+
+.SiteNav-title {
+  font-size: 26px;
+
+  &Image {
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    line-height: normal;
+  }
+
+  &Text {
+    display: none;
+  }
+
+}
+
+.SiteNav-links {
+  padding-right: $su-lg1;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  &.u-textRight {
+    @include max-width('sm') {
+      display: none;
+    }
+  }
+
+}
+
+.SiteNav-link {
+  font-family: $tu-HeadingFont;
+  font-size: $tu-HeadingSize-6;
+  margin-left: $su-lg2;
+  display: block;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  a {
+    color: $cu-Paragraph;
+  }
+
+  .Icon {
+    font-size: 1.15em;
+    width: 1.15em;
+    height: 1.15em;
+  } 
+
+  .Icon--logo {
+    font-size: 44px;
+    color: $color-blue;
+  }
+
+}

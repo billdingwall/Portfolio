@@ -14,40 +14,23 @@
 // * 1. Contents Grouping One
 
 .PortfolioItem {
-  padding-bottom: $su-lg1 * 2;
+  margin-bottom: $su-lg3;
+  height: $su-lg5 * 5;
+  border: 1px solid $cu-border;
 
-  @include min-width('sm') {
-
-    &:nth-child(3n + 1) {
-      padding-right: $su-lg1;
-    }
-
-    &:nth-child(3n + 2) {
-      padding-left: $su-base;
-      padding-right: $su-base;
-    }
-
-    &:nth-child(3n + 3) {
-      padding-left: $su-lg1;
-    }
-
-  }
-
-  @include max-width('sm') {
-    padding-bottom: $su-lg2;
+  &:hover {
+    transition: box-shadow $duration-short ease-in-out;
   }
 
 }
 
-.PortfolioItem-container {
-  border: 1px solid $cu-border;
-  box-shadow: $box-shadow-small;
-  display: block;
+.PortfolioItem-contentContainer {
+  flex: 0 0 400px !important;
+}
 
-  &:hover {
-    box-shadow: $box-shadow-medium;
-    transition: box-shadow $duration-short ease-in-out;
-  }
+.PortfolioItem-imageContainer {
+  height: 100%;
+  overflow: hidden;
 }
 
 .PortfolioItem-image {

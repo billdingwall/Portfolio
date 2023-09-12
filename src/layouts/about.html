@@ -2,34 +2,55 @@
 <body id="{{id}}">
 {{> header}}
 
-<article class="Article">
-
-  <header class="Article-container">
-    <h1 class="Article-title">{{title}}</h1>
-    <div class="Grid">
-      <div class="Grid-cell u-sm-size1of2">
-        <img src="../img/About-image2.jpg" />
-      </div>
-      <div class="Grid-cell u-sm-size1of2 u-padLeftXl">
-
-        <p>
-          At home, I mostly like getting outside and doing something active with my wife and dogs. Preferably something going up or down a mountain, but a golf course and beach are fun too. I’m a bit of a foodie, movie buff and sports fan. And I’d say I’m a generally easy going person, like playing around and having some fun.
-        </p>
-        <p>
-          At work, I love designing systems and crave collaboration. Doesn’t really matter the background of the co-collaborator either, I think we’re all problem solvers and everyone has a unique and valuable point of view. The best ideas are inspired by others, it’s just a matter of listening. With systems design, I think they provide a great framework for discussion and I’ve always been interested in the underlying structure of things.
-        </p>
-      </div>
-    </div>  
+  <header class="Section">
+    <div class="Section-content">
+      <h1 class="Article-title">{{title}}</h1>
+      <div class="Grid">
+        <div class="Grid-cell u-sm-size1of2 u-padLeftXl">
+          <p>
+            product designer, user researcher, mentor, artist and outdoorsman.
+            My background is in graphic design & art, but I have a passion for solving human problems in digital spaces, so quickly made the move to product. I approach design with empathy, collaboration, systematic solutions, research driven decisions and an artistic touch. 
+          </p>
+        </div>
+        <div class="Grid-cell u-sm-size1of2">
+          <img src="../img/profile-pics/Dingwall-profile-1.jpg" />
+        </div>
+      </div>  
     </div>
   </header>
 
-  <img class="footer-image" src="../img/footer-bg.jpg" />
+  <section id="Gallery" class="Section Section--dark">
+    <div class="Section-content">
+  
+      <h2 class="Section-title">
+        <span class="Section-titleText">Gallery</span>
+      </h2>
+  
+      <div id="Gallery" class="Gallery Grid">
+        {{#each collections.galleryImage}}
+          {{#if featured}}
+            {{> gallery}}
+          {{/if}}
+        {{/each}}
+      </div>
+  
+    </div>
+  </section>
 
-  <figure class="About-image">
-    <img src="../img/about-image.jpg"/>
-  </figure>
-
-</article>
+  <section class="Section">
+    <div class="Section-content">
+      <h2 class="Section-title">
+        <span class="Section-titleText">Get In Touch</span>
+      </h2>
+      <p>I’m always happy to Connect</p>
+      <ul>
+        <li>linkedin.com/in/williamdingwall/</li>
+        <li>dribbble/williamdingwall</li>
+        <li>github/williamdingwall</li>
+        <li>adplist/williamdingwall</li>
+      </ul>
+    </div>
+  </section>
 
 {{> footer}}
 

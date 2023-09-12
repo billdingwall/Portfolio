@@ -14,20 +14,11 @@
 $introPadding: scaleGrid(8);
 
 #Intro {
-  background-color: $cu-Background-dark;
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../img/trees_bg.jpg');
-  padding-top: $navHeight;
-
-  .SiteNav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba($cu-Background-dark, .85);
-  }
+  //background-image: url('../img/trees_bg.jpg');
 
   .Section-content {
     position: relative;
@@ -51,23 +42,22 @@ $introPadding: scaleGrid(8);
 // * 1. Intro Text
 
 .IntroTitle {
-  font-size: scaleFont($font-Size, 10);
-  font-weight: 400;
-  line-height: scaleFont($font-LineHeight, -3);
+  font-size: $tuSize-lg4;
   padding-bottom: $su-lg1;
   margin-bottom: $su-lg1;
   position: relative;
 
   @include max-width('sm') {
-    font-size: scaleFont($font-Size, 9);
+    font-size: $tuSize-lg5;
     font-style: normal;
   }
 
   @include max-width('xs') {
-    font-size: scaleFont($font-Size, 8);
+    font-size: $tuSize-lg5;
   }
 
   &:after {
+    //creating the bottom border
     content: '';
     background: $color-blue;
     display: block;
@@ -76,55 +66,10 @@ $introPadding: scaleGrid(8);
     position: absolute;
     bottom: 0 - $su-sm2;
     left: 0;  
-
   }
 
-}
-
-.IntroTitle-primary,
-.IntroTitle-secondary,
-.IntroText {
-  color: $color-white;
-}
-
-.IntroTitle-secondary i {
-  color: $color-blue;
-  font-style: italic;
-  font-size: 0.8em;
 }
 
 .IntroTitle-primary {
   display: block;
-}
-
-
-// * 2. Services Offered
-
-.FeatureCollections {
-  padding: $su-lg1 $su-lg2;
-  font-family: $cu-Heading;
-  font-size: scaleFont($font-Size, 3);
-  list-style: none;
-  background-color: rgba($color-black, 0.35);
-  box-shadow: 0 0 $su-lg1 $color-black inset;
-  border: {
-      color: rgba($color-blue, 0.7);
-      width: $su-lg1;
-      style: solid;
-      position: outside;
-  }
-
-  @include max-width('lg') {
-    font-size: scaleFont($font-Size, 2);
-  }
-
-}
-
-.FeatureCollections-item {
-  padding: 0 0 $su-sm2 0;
-}
-
-.FeatureCollections,
-.FeatureCollections-link {
-  color: $color-white;
 }

@@ -1,0 +1,41 @@
+//------------------------------------------------------------//
+
+// * Font Scaling
+// * 1. ....
+
+// Notes:
+// * ....
+
+// TODO : ...
+
+//------------------------------------------------------------//
+
+// * 2. Font Scaling Function
+
+@function scaleFont($property, $step) {
+
+  $ratio: $font-ScaleRate;
+
+  // handles nagative steps for font scale
+  @if ($step < 0) {
+    $step: convertNegative($step);
+    @for $i from 1 through $step {
+      $property: $property / $ratio;
+    }
+  }
+
+  // handles base & positive steps for font scale
+  @else if ($step > 0) {
+    @for $i from 1 through $step {
+      $property: $property * $ratio;
+    }
+  }
+
+  // round pixel values to nearest whole number
+  @if (unit($property) == 'px') {
+    $property: round($property);
+  }
+
+  @return $property;
+
+}

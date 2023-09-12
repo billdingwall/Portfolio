@@ -1,0 +1,86 @@
+//------------------------------------------------------------//
+
+// * Home Page Introduction
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : Make Resume-title a modifier of section title
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+.ExperienceItem {
+  padding-bottom: $su-lg3;
+}
+
+.ExperienceItem-title {
+
+  @include min-width('sm') {
+    flex-basis: auto;
+    width: scaleGrid(41);
+  }
+
+  @include max-width('sm') {
+    padding-bottom: $su-lg3;
+  }
+
+
+}
+
+.ExperienceItem-description {
+  @include min-width('sm') {
+    flex: 1 1 0%;
+    flex-basis: 0%;
+    flex-basis: 0%;
+  }
+}
+
+.ExperienceItem-role,
+.ExperienceItem-company,
+.ExperienceItem-duration,
+.ExperienceItem-location {
+  padding-bottom: $su-sm1;
+  padding-top: 0;
+}
+
+.ExperienceItem-duration,
+.ExperienceItem-location {
+  color: $cu-Paragraph;
+}
+
+.ExperienceItem-location {
+  font-style: italic;
+}
+
+.Recomendations {
+  background-color: #fafafa;
+  max-width: 100%;
+  padding-top: scaleGrid(10);
+  padding-bottom: scaleGrid(10);
+  margin: scaleGrid(10) 5%;
+}
+
+// TODO: when refactoring move this to a base component
+
+.Download-link {
+  border: 2px solid $color-blue;
+  padding: $su-lg1;
+  display: inline-block;
+
+  .Icon {
+    padding-right: $su-lg1;
+  }
+
+  &:hover, &:active {
+    background: $color-blue;
+    transition: all .25s ease-in-out;
+    &, .Icon {
+      color: $cu-Background-dark;
+    }
+  }
+
+}
