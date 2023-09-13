@@ -58,12 +58,13 @@ small {
 
 a {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   background: transparent;
   &:active,
   &:hover {
     outline: 0;
     color: $color-blue;
+    text-decoration: underline;
   }
 }
 

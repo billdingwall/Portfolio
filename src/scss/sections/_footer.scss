@@ -17,6 +17,7 @@
   position: relative;
   @include siteContainer;
   background-color: $cu-Background-dark;
+  border-top: 1px solid $cu-border;
   max-width: 100%;
 
   a {

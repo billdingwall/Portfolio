@@ -8,6 +8,12 @@ project_link: true
 featured: false
 layout: article.html
 id: Green-Elephant
+type_productStrategy: true
+type_productDesign: true
+type_designSystem: false
+type_research: true
+type_leadership: false
+type_dev: false
 date: 2000-06-01
 ---
 

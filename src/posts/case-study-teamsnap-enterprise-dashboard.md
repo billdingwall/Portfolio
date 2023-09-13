@@ -8,6 +8,12 @@ project_link: true
 featured: true
 layout: article.html
 id: TS-Dashboard
+type_productStrategy: false
+type_productDesign: true
+type_designSystem: true
+type_research: true
+type_leadership: true
+type_dev: false
 date: 2000-05-01
 ---
 
