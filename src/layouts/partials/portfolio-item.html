@@ -1,9 +1,24 @@
 <a class="PortfolioItem Grid Grid--fit" href="/{{path}}">
   <div class="PortfolioItem-contentContainer Grid-cell u-size1of3">
     <p class="PortfolioItem-title">{{intro}}</p>
-    <span class="PortfolioItem-link" href="/{{path}}">View Project</span>
+    <ul class="List--dotSeperated u-colorWhite u-borderTop">
+      {{#if type_productStrategy}}<li>product strategy</li>{{/if}}
+      {{#if type_productDesign}}<li>product design</li>{{/if}}
+      {{#if type_designSystem}}<li>design systems</li>{{/if}}
+      {{#if type_research}}<li>research & analysis</li>{{/if}}
+      {{#if type_leadership}}<li>leadership</li>{{/if}}
+      {{#if type_dev}}<li>development</li>{{/if}}
+    </ul>
   </div>
   <div class="PortfolioItem-imageContainer Grid-cell u-size2of3">
     <img class="PortfolioItem-image" src="{{this.thumb}}" />
   </div>
 </a>
+
+<div id="Work" class="Portfolio">
+  {{#each collections.portfolioWork}}
+    {{#if featured}}
+      {{> portfolio}}
+    {{/if}}
+  {{/each}}
+</div>

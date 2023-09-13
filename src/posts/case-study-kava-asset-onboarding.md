@@ -3,11 +3,16 @@ title: "Kava Onboarding"
 intro: Streamlining user value for a decentralized finance platform at Kava.
 thumb: img/kava-earn-cover.jpg
 collection: portfolioWork
-collection_label: Product Design
 project_link: true
 featured: true
 layout: article.html
 id: Kava-Labs
+type_productStrategy: true
+type_productDesign: true
+type_designSystem: false
+type_research: true
+type_leadership: true
+type_dev: false
 date: 2000-01-01
 ---
 

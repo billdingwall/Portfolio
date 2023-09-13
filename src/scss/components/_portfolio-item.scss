@@ -15,8 +15,8 @@
 
 .PortfolioItem {
   margin-bottom: $su-lg3;
-  height: $su-lg5 * 5;
-  border: 1px solid $cu-border;
+  height: $su-lg5 * 4;
+  border: 1px solid $color-blue-d1;
 
   &:hover {
     transition: box-shadow $duration-short ease-in-out;
@@ -26,6 +26,24 @@
 
 .PortfolioItem-contentContainer {
   flex: 0 0 400px !important;
+  padding: $su-lg3;
+  background: $color-black;
+
+  .List--dotSeperated {
+    padding-top: $su-lg3;
+    li {
+      font-size: $tuSize-sm1;
+    }
+    li:before {
+      font-size: $tuSize-sm2;
+    }
+    li, li:before {
+      color: #fff;
+      padding-right: 8px;
+      float: left;
+    }
+  }
+
 }
 
 .PortfolioItem-imageContainer {
@@ -49,6 +67,9 @@
 .PortfolioItem-title {
   font-weight: bolder;
   color: $cu-Paragraph;
+  font-family: $tu-HeadingFont;
+  font-size: $tuSize-lg1;
+  padding-bottom: $su-lg3;
 }
 
 .PortfolioItem-link {

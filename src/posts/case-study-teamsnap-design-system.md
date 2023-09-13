@@ -8,6 +8,12 @@ project_link: true
 featured: false
 layout: article.html
 id: TS-UI
+type_productStrategy: false
+type_productDesign: true
+type_designSystem: false
+type_research: true
+type_leadership: true
+type_dev: true
 date: 2000-04-01
 ---
 

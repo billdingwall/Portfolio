@@ -13,6 +13,13 @@
 
 $introPadding: scaleGrid(8);
 
+#Portfolio, #Experience, #Recomendations {
+  .Section-content {
+    padding-left: scaleGrid(25);
+    border-left: 2px solid $cu-border;
+  }
+}
+
 #Intro {
   background-repeat: no-repeat;
   background-position: left top;

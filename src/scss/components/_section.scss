@@ -16,7 +16,7 @@
 .Section {
 
   border-top: $buSize-lg1 solid $cu-border;
-  padding: $su-lg4 $su-lg1;
+  padding: 0 $su-lg1;
 
   @include max-width('sm') {
     padding: $su-lg3 $su-lg1;
@@ -30,7 +30,7 @@
     background-color: $cu-Background-dark;
     color: $color-white;
 
-    h1, h2, h3, h4, h6, p {
+    h1, h2, h3, h4, h6, p, li {
       color: $color-white;
     }
 
@@ -40,6 +40,7 @@
 
 .Section-content {
   @include siteContainer;
+  padding: $su-lg4 0;
 }
 
 .Section-subSection {
@@ -47,5 +48,9 @@
 }
 
 .Section-subTitle {
-  
+  font-family: $tu-ParagraphFont;
+  font-size: $tuSize-base;
+  text-transform: uppercase;
+  color: $color-blue;
+  padding-bottom: $su-lg3;
 }
