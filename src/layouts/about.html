@@ -2,22 +2,36 @@
 <body id="{{id}}">
 {{> header}}
 
-  <header class="Section">
-    <div class="Section-content">
-      <h1 class="Article-title">{{title}}</h1>
-      <div class="Grid">
-        <div class="Grid-cell u-sm-size1of2 u-padLeftXl">
-          <p>
-            product designer, user researcher, mentor, artist and outdoorsman.
-            My background is in graphic design & art, but I have a passion for solving human problems in digital spaces, so quickly made the move to product. I approach design with empathy, collaboration, systematic solutions, research driven decisions and an artistic touch. 
-          </p>
-        </div>
-        <div class="Grid-cell u-sm-size1of2">
-          <img src="../img/profile-pics/Dingwall-profile-1.jpg" />
-        </div>
-      </div>  
-    </div>
-  </header>
+  <section class="Section u-borderNone">
+    <div class="Grid Section-content">
+      <div class="About-introText Grid-cell u-sm-size1of2 u-padLeftXl u-padRightXl">
+        <h1 class="Article-title">{{title}}</h1>
+        <p class="u-textSize-Lg1">
+          Hi, I'm Bill, product designer, user researcher, mentor, artist and outdoorsman. 
+        </p>
+        <p class="u-textSize-Lg1">
+          My background is in graphic design & art, but I have a passion for solving human problems in digital spaces, so quickly made the move to product. I approach design with empathy, collaboration, systematic solutions, research driven decisions and an artistic touch.
+        </p>
+      </div>
+      <div class="About-introPhoto Grid-cell u-sm-size1of2">    
+        <section class="About-introPhotoSlider splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {{#each collections.ProfilePic}}
+              {{#if featured}}
+                {{> profilepic}}
+              {{/if}}
+            {{/each}}
+            </ul>
+          </div>
+          <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>  
+  </section>
 
   <section id="Gallery" class="Section Section--dark">
     <div class="Section-content">

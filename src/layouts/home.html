@@ -26,7 +26,7 @@
 <section id="Portfolio" class="Section Section--dark">
   <div class="Section-content">
 
-    <h2 class="Section-subTitle u-colorPrimary">Feature Work</h2>
+    <h2 class="Section-subTitle u-colorPrimary">Case Studies</h2>
 
     <div id="Work" class="Portfolio">
       {{#each collections.portfolioWork}}
@@ -42,30 +42,35 @@
 <section id="Experience" class="Section Section--dark">
   <div class="Section-content">
 
+    <h2 class="Section-subTitle u-colorPrimary">Work Experience</h2>
+
     <ul class="Section-subSection Resume-experience Grid Grid--fit">
       <li class="Resume-experienceItem Grid-cell">
-        <h6 class="Resume-experienceFocus">Dev Experience</h6>
-        <span class="Resume-experienceYear">6<sup>+</sup></span>
-        <span class="Resume-experienceYearText">Years</span>
+        <h6 class="u-textFont-Heading u-textSize-Lg1 u-padBottomSm">Dev Experience</h6>
+        <div>
+          <span class="u-textFont-Heading u-textSize-Lg3">6<sup>+</sup></span>
+          <span class="u-textFont-Body u-textSize-base">Years</span>
+        </div>
       </li>
       <li class="Resume-experienceItem Grid-cell">
-        <h6 class="Resume-experienceFocus">Product Experience</h6>
-        <span class="Resume-experienceYear">8<sup>+</sup></span>
-        <span class="Resume-experienceYearText">Eight Years</span>
+        <h6 class="u-textFont-Heading u-textSize-Lg1 u-padBottomSm">Product Experience</h6>
+        <div>
+          <span class="u-textFont-Heading u-textSize-Lg3">8<sup>+</sup></span>
+          <span class="u-textFont-Body u-textSize-base">Years</span>
+        </div>
       </li>
       <li class="Resume-experienceItem Grid-cell">
-        <h6 class="Resume-experienceFocus">Design Experience</h6>
-        <span class="Resume-experienceYear">12<sup>+</sup></span>
-        <span class="Resume-experienceYearText">Twelve Years</span>
+        <h6 class="u-textFont-Heading u-textSize-Lg1 u-padBottomSm">Design Experience</h6>
+        <div>
+          <span class="u-textFont-Heading u-textSize-Lg3">12<sup>+</sup></span>
+          <span class="u-textFont-Body u-textSize-base">Years</span>
+        </div>
       </li>
     </ul>
 
-    <div class="Section-subSection">
-      <h4 class="Section-subTitle">Experience</h2>
-      {{#each collections.workExperience}}
-        {{> experience}}
-      {{/each}}
-    </div>
+    {{#each collections.workExperience}}
+      {{> experience}}
+    {{/each}}
 
   </div>
 </section>
@@ -73,11 +78,31 @@
 <section id="Recomendations" class="Section Section--dark">
   <div class="Section-content">
 
-      <blockquote class="Blockquote Blockquote--thickBorder">
-        <p>Bill has a killer collection of skills that make him a powerful and versatile member of multiple teams. He’s a beautiful visual designer, a crack UX/UI expert, a whiz at front-end development and a thoughtful strategic thinker and information architect. It all adds up to a guy who can take any project from problem statement to a beautiful, standards-compliant finished product. His love for frameworks and components ensures that the rest of the team can leverage his work and multiply the power of his design vision.</p>
-        <p>Beyond his skills, Bill is also an awesome teammate, quick to mentor or jump in to help without being asked. He makes his teams better and has been a quiet superhero owning the user experience for an entire line of business plus multiple other initiatives. Honestly, we’re not sure how he does it all, but he does. Great designer, even better guy. 100% superhero.</p>
-        <footer>— Andrew Berkowitz, Founder & Cheif Creative Officer at TeamSnap</footer>
-      </blockquote>
+    <h2 class="Section-subTitle u-colorPrimary">What People Say</h2>
+
+    <section class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          {{#each collections.referral}}
+          {{#if featured}}
+            {{> referral}}
+          {{/if}}
+        {{/each}}
+        </ul>
+      </div>
+      <div class="splide__progress">
+        <div class="splide__progress__bar">
+        </div>
+      </div>
+      <button class="splide__toggle" type="button">
+        <span class="splide__toggle__play">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg>
+        </span>
+        <span class="splide__toggle__pause">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 22h-4v-20h4v20zm6-20h-4v20h4v-20z"/></svg>
+        </span>
+      </button>
+    </section>
 
   </div>
 </section>

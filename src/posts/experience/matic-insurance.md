@@ -15,4 +15,6 @@ frontenddevelopment: 5
 date: 2000-02-01
 ---
 
-Lead product designer for growth. Contributed quantitative and qualitative research, visual design, illustration, content strategy, design patterns, user flows, wireframes and ran ideation sessions to support our A/B testing process along with help shape company wide design. Led multiple experiments to improve existing funnel conversions by 20-25% and developed new conversion strategies.
+Product design lead and pm for the growth team. Provided quantitative & qualitative research, visual design, illustration, content strategy, design patterns, user flows, wireframes and wrote dev tickets to refine the servicing funnel. 
+
+Iterated over multiple A/B tests to improve the serving funnel conversion rates by over 20%.

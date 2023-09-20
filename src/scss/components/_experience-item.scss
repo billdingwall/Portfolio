@@ -14,54 +14,39 @@
 // * 1. Contents Grouping One
 
 .ExperienceItem {
-  padding-bottom: $su-lg3;
+  padding-bottom: $su-lg4;
 }
 
-.ExperienceItem-title {
+.ExperienceItem-content {
 
-  @include min-width('sm') {
-    flex-basis: auto;
-    width: scaleGrid(41);
-  }
-
-  @include max-width('sm') {
-    padding-bottom: $su-lg3;
-  }
-
+  padding-right: $su-lg2/2;
 
 }
 
 .ExperienceItem-description {
-  @include min-width('sm') {
-    flex: 1 1 0%;
-    flex-basis: 0%;
-    flex-basis: 0%;
-  }
+  padding-left: $su-lg2/2;
 }
 
-.ExperienceItem-role,
-.ExperienceItem-company,
-.ExperienceItem-duration,
-.ExperienceItem-location {
-  padding-bottom: $su-sm1;
-  padding-top: 0;
+.ExperienceItem-role {
+
+  font-size: $tuSize-lg1;
+  padding-bottom: $su-lg1;
+
 }
 
-.ExperienceItem-duration,
-.ExperienceItem-location {
-  color: $cu-Paragraph;
+.ExperienceItem-details {
+  color: $color-white;
+  font-size: $tuSize-sm1;
+  padding-bottom: $su-lg3;
 }
 
-.ExperienceItem-location {
-  font-style: italic;
+.ExperienceItem-detailsDivider {
+  padding: 0 $su-sm1;
+  color: $color-blue;
 }
 
-.Recomendations {
-  background-color: #fafafa;
-  max-width: 100%;
-  padding-top: scaleGrid(10);
-  padding-bottom: scaleGrid(10);
-  margin: scaleGrid(10) 5%;
+.ExperienceItem-detailsDuration {
+  color: $color-blue;
 }
 
 // TODO: when refactoring move this to a base component

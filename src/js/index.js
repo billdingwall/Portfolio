@@ -21,6 +21,8 @@ window.onload = function(){
   
   if(splideCheck > 0) {
 
+    console.log('TEST')
+
     var splide = new Splide( '.splide', {
       type    : 'loop',
       autoplay: 'play',

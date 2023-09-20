@@ -1,0 +1,54 @@
+//------------------------------------------------------------//
+
+// * File Title
+// * 1. Contents Grouping One
+// * 2. Contents Grouping Two
+//
+// Notes:
+// * none yet
+
+// TODO : oganize file
+
+//------------------------------------------------------------//
+
+// * 1. Contents Grouping One
+
+.Progress {
+    background-color: rgba($color-black, 0.2);
+    display: block;
+    height: $su-lg2;
+    margin-bottom: $su-base;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.Progress-label {
+    color: $color-grey-d1;
+    position: relative;
+}
+
+.Progress-bar {
+    background-color: $color-blue-d1;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+
+    &::before {
+        content: attr(data-label);
+        color: $color-white;
+        white-space: nowrap;
+    }
+
+}
+
+.Progress-label,
+.Progress-bar:before{
+    font-size: 11px;
+    position: absolute;
+    height: $su-lg2;
+    line-height: $su-lg2;
+    padding-left: $su-base;
+}

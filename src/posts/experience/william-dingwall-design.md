@@ -2,7 +2,7 @@
 company: William Dingwall Design
 location: Fort Collins, CO (onsite + remote)
 role: Designer + Developer
-duration: Jan '12 ~ Jan '15
+duration: 4 years
 specifics: UX Design, UI Design, UI development, Visual Design, Graphic Design, A/B Testing, Analytics, Usability Testing, Customer Interviews, Mentoring, React, Ruby, Git, Remote work
 collection: workExperience
 layout: blank.html
