@@ -40,7 +40,9 @@ Metalsmith(__dirname)
       partials: {
         experience: 'partials/experience-item',
         portfolio: 'partials/portfolio-item',
+        referral: 'partials/referral-item',
         gallery: 'partials/gallery-item',
+        profilepic: 'partials/profile-pic',
         footer: 'partials/footer',
         header: 'partials/header',
         headerHead: 'partials/header-head',

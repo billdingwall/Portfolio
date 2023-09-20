@@ -45,8 +45,15 @@ ul.splide__pagination {
 }
 
 div.splide__progress__bar {
-    height: $su-sm2;
+    height: $su-base;
     background: $color-blue;
+}
+
+div.splide__progress {
+    margin-top: -8px;
+    z-index: 100;
+    position: relative;
+    background: rgba($cu-border, 0.24);
 }
 
 .splide__toggle {

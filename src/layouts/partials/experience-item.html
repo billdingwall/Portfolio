@@ -1,35 +1,36 @@
 <div class="ExperienceItem Grid">
-  <div class="Grid-cell ExperienceItem-title">
+  <div class="ExperienceItem-content Grid-cell u-size1of3">
     <h3 class="ExperienceItem-role u-padTopNone u-padBottomSm">{{this.role}}</h3>
-    <h4 class="ExperienceItem-company u-colorInfo">{{this.company}}</h4>
-    <p class="ExperienceItem-duration">{{this.duration}}</p>
-    <small class="ExperienceItem-location">{{this.location}}</small>
-    <div class="Progress-bar">
-      <label for="{{this.role}}-pd">product design</label>
-      <progress id="{{this.role}}-pd" value="{{this.productdesign}}" max="100"></progress>
+    <h5 class="ExperienceItem-details">
+      <span class="ExperienceItem-detailsCompany">{{this.company}}</span>
+      <span class="ExperienceItem-detailsDivider">|</span>
+      <span class="ExperienceItem-detailsDuration">{{this.duration}}</span></h5>
+    <div class="Progress">
+      <label class="Progress-label">product design</label>
+      <div class="Progress-bar"  style="width:{{this.productdesign}}%;" data-label="product design"></div>
     </div>
-    <div class="Progress-bar">
-      <label for="{{this.role}}-pd">design systems</label>
-      <progress id="{{this.role}}-pd" value="{{this.designsystems}}" max="100"></progress>
+    <div class="Progress">
+      <label class="Progress-label">design systems</label>
+      <div class="Progress-bar" style="width:{{this.designsystems}}%;" data-label="design systems"></div>
     </div>
-    <div class="Progress-bar">
-      <label for="{{this.role}}-pd">research & analysis</label>
-      <progress id="{{this.role}}-pd" value="{{this.researchandanalysis}}" max="100"></progress>
+    <div class="Progress">
+      <label class="Progress-label">research & analysis</label>
+      <div class="Progress-bar" style="width:{{this.researchandanalysis}}%;" data-label="research & analysis"></div>
     </div>
-    <div class="Progress-bar">
-      <label for="{{this.role}}-pd">leadership & mentorship</label>
-      <progress id="{{this.role}}-pd" value="{{this.leadershipandmentorship}}" max="100"></progress>
+    <div class="Progress">
+      <label class="Progress-label">leadership & mentorship</label>
+      <div class="Progress-bar" style="width:{{this.leadershipandmentorship}}%;" data-label="leadership & mentorship"></div>
     </div>
-    <div class="Progress-bar">
-      <label for="{{this.role}}-pd">product strategy</label>
-      <progress id="{{this.role}}-pd" value="{{this.productandstrategy}}" max="100"></progress>
+    <div class="Progress">
+      <label class="Progress-label">product strategy</label>
+      <div class="Progress-bar" style="width:{{this.productandstrategy}}%;" data-label="product strategy"></div>
     </div>
-    <div class="Progress-bar">
-      <label for="{{this.role}}-pd">front end development</label>
-      <progress id="{{this.role}}-pd" value="{{this.frontenddevelopment}}" max="100"></progress>
+    <div class="Progress">
+      <label class="Progress-label">front end development</label>
+      <div class="Progress-bar" style="width:{{this.frontenddevelopment}}%;" data-label="front end development"></div>
     </div>
   </div>
-  <div class="Grid-cell ExperienceItem-description">
+  <div class="ExperienceItem-description Grid-cell u-size2of3">
     {{{contents}}}
   </div>
 </div>

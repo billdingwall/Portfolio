@@ -15,16 +15,45 @@
 
 @import "../config/index.scss";
 
-.u-textSmall {
+.u-textFont-Heading {
+  font-family: $tu-HeadingFont;
+}
+
+.u-textFont-Body {
+  font-family: $tu-ParagraphFont
+}
+
+
+.u-textSize-Sm2 {
+  font-size: $tuSize-sm2;
+}
+
+.u-textSize-Sm1 {
   font-size: $tuSize-sm1;
 }
 
-.u-textMedium {
+.u-textSize-base {
   font-size: $tuSize-base;
 }
 
-.u-textLarge {
+.u-textSize-Lg1 {
+  font-size: $tuSize-lg1;
+}
+
+.u-textSize-Lg2 {
+  font-size: $tuSize-lg2;
+}
+
+.u-textSize-Lg3 {
   font-size: $tuSize-lg3;
+}
+
+.u-textSize-Lg4 {
+  font-size: $tuSize-lg4;
+}
+
+.u-textSize-Lg5 {
+  font-size: $tuSize-lg5;
 }
 
 /**

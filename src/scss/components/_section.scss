@@ -17,6 +17,7 @@
 
   border-top: $buSize-lg1 solid $cu-border;
   padding: 0 $su-lg1;
+  position: relative;
 
   @include max-width('sm') {
     padding: $su-lg3 $su-lg1;
@@ -44,7 +45,7 @@
 }
 
 .Section-subSection {
- padding: $su-lg3 0;
+ padding-bottom: $su-lg4;
 }
 
 .Section-subTitle {

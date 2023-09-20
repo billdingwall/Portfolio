@@ -29,6 +29,7 @@ $color-blue-d2: #1B2426;
 $color-black:   #000000;
 $color-white:   #ffffff;
 $color-grey:    #BCC9CC;
+$color-grey-d1: #6C7C80;
 
 $font-antonio:   'Antonio', Helvetica, sans-serif; // headings & labels
 $font-helvetica: Helvetica, sans-serif; // paragraphs & sub-headings
@@ -45,7 +46,7 @@ $font-ScaleRate:    1.333;
 $su-sm3:            1px; // 1px
 $su-sm2: scaleGrid(.25); // 2px
 $su-sm1:  scaleGrid(.5); // 4px
-$su-base:  scaleGrid(0); // 8px
+$su-base:  scaleGrid(1); // 8px
 $su-lg1:   scaleGrid(2); // 16px
 $su-lg2:   scaleGrid(3); // 24px
 $su-lg3:   scaleGrid(4); // 32px

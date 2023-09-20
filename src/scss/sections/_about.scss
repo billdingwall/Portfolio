@@ -13,13 +13,41 @@
 
 // * 1. Contents Grouping One
 
-#About {
-  background-color: #fafafa;
+.About.About-introText {
 
-  p {
-    max-width: 700px;
+}
+
+.About-introPhoto {
+  max-width: 440px;
+  &:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: -82px;
+    left: 50%;
+    background: $cu-Background-dark;
+    z-index: -1;
   }
+  &:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: calc(100% + 82px);
+    top: -82px;
+    left: 50%;
+    position: absolute;
+    background: $cu-border;
+  }
+  .splide__pagination {
+    display: none;
+  }
+}
 
+.About-introPhotoSlider.splide {
+  padding-bottom: 0;
+  margin-left: -16px;
 }
 
 .SocialMedia {

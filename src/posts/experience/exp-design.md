@@ -1,10 +1,8 @@
 ---
-company: Kava Labs
-location: Fort Collins, CO (remote)
-role: Lead UX Designer
-duration: 2 years
+type: Dev Experience
+years: 2
 specifics: User Research, Persona Development, Object Oriented UX, UX + UI, Visual Design
-collection: workExperience
+collection: experienceOverview
 layout: blank.html
 productdesign: 40
 designsystems: 15
