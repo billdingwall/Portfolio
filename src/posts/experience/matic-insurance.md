@@ -2,7 +2,7 @@
 company: Matic
 location: Columbus, OH (remote)
 role: Senior Product Designer
-duration: Oct '20 - Oct '21
+duration: 1 year
 specifics: User Research, Persona Development, Object Oriented UX, UX + UI, Visual Design
 collection: workExperience
 layout: blank.html

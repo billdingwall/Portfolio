@@ -28,6 +28,7 @@
     top: -82px;
     left: 50%;
     background: $cu-Background-dark;
+    border-bottom: 1px solid $cu-border;
     z-index: -1;
   }
   &:before {
@@ -45,38 +46,13 @@
   }
 }
 
+.ProfilePic-image {
+  border: 1px solid $cu-border;
+}
+
 .About-introPhotoSlider.splide {
   padding-bottom: 0;
   margin-left: -16px;
-}
-
-.SocialMedia {
-  padding: $su-sm1 0 0 0;
-  margin: 0;
-}
-
-.SocialMedia-item {
-  list-style: none;
-  display: inline-block;
-  padding: $su-base;
-
-  &:first-child {
-    padding-left: 0;
-  }
-
-  .Icon {
-    font-size: 1.25em;
-    width: 1.25em;
-    height: 1.25em;
-
-    @include max-width('sm') {
-      font-size: 1.5em;
-      width: 1.5em;
-      height: 1.5em;
-    }
-
-  }
-
 }
 
 .About-image {
@@ -89,5 +65,28 @@
     content: '';
     display: block;
     clear: both;
+  }
+}
+
+.ContactList li {
+  padding-bottom: 16px;
+}
+
+.ContactList-link {
+  color: $color-blue-d1;
+
+  .Icon {
+    font-size: $su-lg3;
+    color: $color-blue;
+    width: $su-lg3;
+    height: $su-lg3;
+    margin-right: 8px;
+
+    @include max-width('sm') {
+      font-size: 1.5em;
+      width: 1.5em;
+      height: 1.5em;
+    }
+
   }
 }

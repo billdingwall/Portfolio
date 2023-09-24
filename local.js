@@ -47,12 +47,6 @@ Metalsmith(__dirname)
         header: 'partials/header',
         headerHead: 'partials/header-head',
         headerNav: 'partials/header-navigation',
-        iconBehance: 'partials/icon-behance',
-        iconDownload: 'partials/icon-download',
-        iconGithub: 'partials/icon-github',
-        iconLinkedin: 'partials/icon-linkedin',
-        iconPinterest: 'partials/icon-pinterest',
-        iconMedium: 'partials/icon-medium',
         logo: 'partials/logo',
         photoswipe: 'partials/photoswipe'
       }
