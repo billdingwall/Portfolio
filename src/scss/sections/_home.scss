@@ -7,25 +7,24 @@
 // Notes:
 // * none yet
 
-// TODO : oganize file
+// TODO : organize file
 
 //------------------------------------------------------------//
 
 $introPadding: scaleGrid(8);
 
-#Portfolio, #Experience, #Recomendations {
-  .Section-content {
-    padding-left: scaleGrid(25);
-    border-left: 2px solid $cu-border;
-  }
-}
+//#Portfolio, #Experience, #Recomendations {
+  //.Section-content {
+    //padding-left: scaleGrid(25);
+    //border-left: 2px solid $cu-border;
+  //}
+//}
 
 #Intro {
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left bottom;
   background-size: cover;
-  background-attachment: fixed;
-  //background-image: url('../img/trees_bg.jpg');
+  background-image: url('../img/hero.svg');
 
   .Section-content {
     position: relative;
@@ -46,6 +45,11 @@ $introPadding: scaleGrid(8);
 
 }
 
+#Portfolio {
+  border: none;
+  border-top: 2px solid $cu-border;
+}
+
 // * 1. Intro Text
 
 .IntroTitle {
@@ -63,20 +67,25 @@ $introPadding: scaleGrid(8);
     font-size: $tuSize-lg5;
   }
 
-  &:after {
-    //creating the bottom border
-    content: '';
-    background: $color-blue;
-    display: block;
-    height: $su-sm2;
-    width: 100%;
-    position: absolute;
-    bottom: 0 - $su-sm2;
-    left: 0;  
-  }
-
 }
 
 .IntroTitle-primary {
   display: block;
+}
+
+.ReferralItem {
+  padding-bottom: 40px;
+}
+
+.Gallery {
+  padding-top: 16px;
+}
+
+.GalleryItem {
+ padding: 8px;
+
+ img {
+  float: left;
+ }
+
 }

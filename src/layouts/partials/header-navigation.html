@@ -15,7 +15,13 @@
         </h1>
       </li>
       <li class="SiteNav-link">
-        <a href="/#Portfolio">Experience</a>
+        <a href="/#Portfolio">Case Studies</a>
+      </li>
+      <li class="SiteNav-link">
+        <a href="/#Experience">Experience</a>
+      </li>
+      <li class="SiteNav-link">
+        <a href="/#Recomendations">Referals</a>
       </li>
       <li class="SiteNav-link">
         <a href="/about">About</a>
@@ -23,27 +29,16 @@
     </ul>
 
     <ul class="SiteNav-links Grid-cell u-textRight">
-      <li class="SiteNav-link">
-        <a href="https://www.linkedin.com/in/williamdingwall">
-          {{> iconLinkedin}}
-        </a>
-      </li>
-      <li class="SiteNav-link">
-        <a  href="https://www.behance.net/williamdingwall">
-          {{> iconBehance}}
-        </a>
-      </li>
-      <li class="SiteNav-link">
-        <a  href="https://medium.com/@williamdingwall">
-          {{> iconMedium}}
-        </a>
-      </li>
-      <li class="SiteNav-link">
-        <a href="https://github.com/williamdingwall">
-          {{> iconGithub}}
-        </a>
-      </li>
+      {{#each collections.socialMedia}}
+        <li class="SiteNav-link SiteNav-link--social">
+          <a href="{{this.link}}">
+            {{{contents}}}
+          </a>
+        </li>
+      {{/each}}
     </ul>
+
+
 
   </div>
 </nav>

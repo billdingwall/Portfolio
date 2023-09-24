@@ -41,15 +41,8 @@
 }
 
 .SiteNav-title {
-  font-size: 26px;
-
-  &Image {
-    font-size: 1em;
-    width: 1em;
-    height: 1em;
-    line-height: normal;
-  }
-
+  font-size: $tuSize-lg2;
+  
   &Text {
     display: none;
   }
@@ -76,7 +69,7 @@
 
 }
 
-.SiteNav-link {
+.SiteNav-link, {
   font-family: $tu-HeadingFont;
   font-size: $tu-HeadingSize-6;
   margin-left: $su-lg2;
@@ -91,14 +84,20 @@
   }
 
   .Icon {
-    font-size: 1.15em;
-    width: 1.15em;
-    height: 1.15em;
+    font-size: $su-lg3;
+    color: $color-blue;
+    width: $su-lg3;
+    height: $su-lg3;
   } 
 
   .Icon--logo {
-    font-size: 44px;
-    color: $color-blue;
+    font-size: $su-lg4;
+    width: $su-lg4;
+    height: $su-lg4;
   }
 
+}
+
+.SiteNav-link--social {
+  margin-left: $su-lg1;
 }

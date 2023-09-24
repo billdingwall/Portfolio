@@ -15,7 +15,7 @@
 
 .Section {
 
-  border-top: $buSize-lg1 solid $cu-border;
+  border-top: $buSize-base solid $cu-border-dark;
   padding: 0 $su-lg1;
   position: relative;
 
@@ -37,11 +37,19 @@
 
   }
 
+  &.Section--illustrated {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    background-image: url('../img/hero.svg');
+    padding-bottom: scaleGrid(25);
+  }
+
 }
 
 .Section-content {
   @include siteContainer;
-  padding: $su-lg4 0;
+  padding: $su-lg5 0;
 }
 
 .Section-subSection {

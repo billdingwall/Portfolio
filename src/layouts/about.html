@@ -5,13 +5,11 @@
   <section class="Section u-borderNone">
     <div class="Grid Section-content">
       <div class="About-introText Grid-cell u-sm-size1of2 u-padLeftXl u-padRightXl">
-        <h1 class="Article-title">{{title}}</h1>
-        <p class="u-textSize-Lg1">
-          Hi, I'm Bill, product designer, user researcher, mentor, artist and outdoorsman. 
-        </p>
-        <p class="u-textSize-Lg1">
-          My background is in graphic design & art, but I have a passion for solving human problems in digital spaces, so quickly made the move to product. I approach design with empathy, collaboration, systematic solutions, research driven decisions and an artistic touch.
-        </p>
+        <h2>Hi, I'm Bill,</h1>
+        <blockquote class="u-textSize-Lg1">
+            <p>product designer, user researcher, mentor, artist and outdoorsman.</p>
+            <p>My background is in graphic design & art, but I have a passion for solving human problems in digital spaces, so quickly made the move to product. I approach design with empathy, collaboration, systematic solutions, research driven decisions and an artistic touch.</p>
+        </blockquote>
       </div>
       <div class="About-introPhoto Grid-cell u-sm-size1of2">    
         <section class="About-introPhotoSlider splide">
@@ -51,19 +49,24 @@
     </div>
   </section>
 
-  <section class="Section">
+  <section id="Contact" class="Section Section--illustrated">
     <div class="Section-content">
       <h2 class="Section-title">
         <span class="Section-titleText">Get In Touch</span>
       </h2>
       <p>I’m always happy to Connect</p>
-      <ul>
-        <li>linkedin.com/in/williamdingwall/</li>
-        <li>dribbble/williamdingwall</li>
-        <li>github/williamdingwall</li>
-        <li>adplist/williamdingwall</li>
+      <ul class="ContactList nostyle">
+        {{#each collections.socialMedia}}
+          <li>
+            <a href="{{this.link}}" class="ContactList-link">
+              {{{contents}}} {{{title}}}
+            </a>
+          </li>
+        {{/each}}
       </ul>
     </div>
+
+    
   </section>
 
 {{> footer}}
