@@ -18,18 +18,11 @@ $spot-color: $color-blue !default;
 .Article {
   @include siteContainer;
 
-  h3 {
-    padding: $su-lg1 0;
+  // TEMP
+  h4 {
+    padding: 16px 0;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
-}
-
-.Article-container {
-  padding: scaleGrid(6) 5% 0 5%;
 }
 
 .Article-header,
@@ -41,38 +34,31 @@ $spot-color: $color-blue !default;
 }
 
 .Article-header {
-  padding-top: scaleGrid(7);
-  padding-bottom: 0;
+  
 }
 
-.Article-footer {
-  padding-bottom: scaleGrid(7);
-  padding-top: scaleGrid(7);
-  margin-top: scaleGrid(4);
-  border-top: 1px solid $spot-color;
-  max-width: 100%;
+.Article-sectionTitle {
+  padding-bottom: $su-lg2;
 }
 
-.Article-section--fullWidth {
-  max-width: 100%;
-}
-
-.Article-title {
-  position: relative;
+.Article-sectionSubTitle {
   padding-bottom: $su-base;
-  margin-bottom: $su-lg4;
-
-  &:after {
-    content: '';
-    display: block;
-    height: 2px;
-    width: scaleGrid(7);
-    background-color: $cu-border;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+  padding-top: $su-lg1;
 }
+
+.Article-sectionSubText {
+  font-family: $tu-ParagraphFont;
+  font-size: $tuSize-sm1;
+  text-transform: uppercase;
+  color: $cu-border-dark;
+  font-weight: 400;
+
+// TEMP
+  padding-bottom: $su-lg2 !important;
+  padding-top: 0 !important;
+
+}
+
 
 .Article-image {
   padding-bottom: $su-lg2;
@@ -105,4 +91,17 @@ $spot-color: $color-blue !default;
     margin: 0 auto;
     max-width: scaleGrid(30);
   }
+}
+
+
+.Article-footer {
+  padding-bottom: scaleGrid(7);
+  padding-top: scaleGrid(7);
+  margin-top: scaleGrid(4);
+  border-top: 1px solid $spot-color;
+  max-width: 100%;
+}
+
+.Article-section--fullWidth {
+  max-width: 100%;
 }

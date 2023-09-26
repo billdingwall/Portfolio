@@ -32,10 +32,6 @@ p, li, dl, blockquote {
   padding-bottom: $su-lg1;
   line-height: $font-LineHeight;
 
-  &:last-child {
-    padding-bottom: 0;
-  }
-
   b,
   strong {
     font-weight: $tu-ParagraphWeight-Bold;
@@ -74,4 +70,40 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $tu-HeadingFont;
   font-weight: $tu-HeadingWeight;
   line-height: $font-LineHeight;
+}
+
+h1 {
+  font-size: $tuSize-lg4;
+}
+
+h2 {
+  font-size: $tuSize-lg3;
+}
+
+h3 {
+  font-size: $tuSize-lg2;
+}
+
+h4 {
+  font-size: $tuSize-lg1;
+}
+
+h5 {
+  font-size: $tuSize-base;
+}
+
+h6 {
+  font-size: $tuSize-sm1;
+}
+
+// * 4. Headings & Sub Headings
+
+blockquote,
+.Blockquote {
+  font-size: $tu-ParagraphSize-lg;
+  border-left: $su-base solid $color-blue;
+  padding: $su-lg1;
+  margin-bottom: $su-lg1;
+  max-width: 900px;
+  transform: translate((0-$su-lg2, 0));
 }

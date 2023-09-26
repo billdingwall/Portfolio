@@ -90,3 +90,17 @@
 
   }
 }
+
+#Gallery::before {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background-color: $cu-border;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.GalleryItem {
+  z-index: 10;
+}

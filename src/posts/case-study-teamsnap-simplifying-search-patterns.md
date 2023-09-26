@@ -6,7 +6,7 @@ collection: portfolioWork
 collection_label: UX, UI, Research, Design Systems
 project_link: true
 featured: true
-layout: article.html
+layout: case-study.html
 id: TS-Search
 type_productStrategy: false
 type_productDesign: true
@@ -19,7 +19,7 @@ date: 2000-03-01
 
 <section class="Article-section">
 
-<h2 class="Section-title">Introduction</h2>
+<h2 class="Article-sectionTitle">Introduction</h2>
 
 TeamSnap’s Sports Org product is a an all in one platform for sports businesses of all sizes and sport to manage their business. Smaller organizations might have less than a hundred members across a handful of teams, while larger ones may have up to <b>10,000 members</b> and over a hundred teams. Features range from scheduling games, running tournaments, league standings, managing locations, organizing teams, messaging members, invoicing, registration, data exports and so on.
 
@@ -27,13 +27,8 @@ Now, the current product only handles one season at a time but our upcoming plan
 
 Our general product strategy moving forward is geared around bringing reporting in app too. A lot of our competitors also relied on data exports as the way to satisfy reporting needs and as a whole their products were very disjointed. We viewed easy access to data that helps them run their business as a big differentiator. **Search is a backbone for surfacing that data.**
 
-</section>
-
-<section class="Article-section">
-
-### My Role
-
-##### Product Designer, Researcher
+<h3 class="Article-sectionSubTitle">My Role</h3>
+<h4 class="Article-sectionSubText">Product Designer, Researcher</h4>
 
 * Led design of both implementations as well as the patterns.
 * Led Research for the qualitative, quantitative and competitor analysis to define requirements.
@@ -43,17 +38,13 @@ Our general product strategy moving forward is geared around bringing reporting 
 * Provided CSS guidance to front end developers on how to build the UI for the new searches patterns.
 
 </section>
-
 <section class="Article-section">
 
-<h2 class="Section-title">
-  The Challenge
-  <small class="u-block u-padTopSm u-padBottomSm">A lot of complexity for users with only a little time</small>
-</h2>
+<h2 class="Article-sectionTitle">The Challenge</h2>
 
 Our search experiences weren't great to say the least and we were getting a lot of negative feedback from our customers. We had other searches in places like invoicing, messaging and reporting, some better than others, but all of them inconsistent and hard to use. With Rostering, we made some search updates in the past but never really set a great foundation, so over time search inputs piled up as new requirements came in and different teams added on. Every solution was a one off and it showed.
 
-<blockquote class="Blockquote Blockquote--largeText">
+<blockquote class="Blockquote">
 
 “It’s not always clear who is showing up in results and why”
 
@@ -64,20 +55,20 @@ Our search experiences weren't great to say the least and we were getting a lot 
 </blockquote>
 
 <figure class="Article-image">
-  <figcaption>Member Tab Search</figcaption>
   <img  class="u-border" src="/../../img/search-patterns/Old_UI_article.jpg" />
+  <figcaption>Member Tab Search</figcaption>
 </figure>
 
 <figure class="Article-image">
-  <figcaption>Rostering Tab Search</figcaption>
   <img  class="u-border" src="/../../img/search-patterns/Old_UI_two_article.jpg" />
+  <figcaption>Rostering Tab Search</figcaption>
 </figure>
 
 Digging into FullStory and running some un-moderated user tests, there were a handful of things that stood out pretty quickly. When one of those issues caused an invalid search, all the other issues were magnified as the user tried to evaluate the UI and self correct. Frustration and abandonment was the usual result.
 
-<figure class="Article-image u-spaceTopMd">
-  <figcaption>Specific Issues with Our Search UI</figcaption>
+<figure class="Article-image">
   <img src="/../../img/search-patterns/Qualitative_findings_article.jpg" />
+  <figcaption>Specific Issues with Our Search UI</figcaption>
 </figure>
 
 #### Points of Search Contention:
@@ -89,41 +80,21 @@ Digging into FullStory and running some un-moderated user tests, there were a ha
 5. The amount of options presented at once made it hard to find a starting point. On top of taking up so much space and pushing the actions below the fold, a lot of users in testing mentioned how scary, intimidating or overwhelming the search was to get started with. This matched internal and customer feedback.
 6. It’s so much smoother when they don’t need to deal with the search. More just a note for the future, but if we can surface data as they need it, without forcing them to search, that would be the most ideal solution.
 
-#### This was not acceptable for our user base
-
-<div class="Grid Persona">
-  <figure class="Grid-cell u-xs-size6of12 u-sm-size5of12">
-    <img  class="u-border" src="/../../img/search-patterns/admin-anthony.jpg" />
-  </figure>
-  <div class="Grid-cell u-xs-size6of12 u-sm-size7of12">
-    <h4 class="Persona-name u-padTopMd u-xs-padTopNone">Admin Anthony</h4>
-    <ul class="Persona-details">
-      <li>• He’s a volunteer and parent to one of the kids in the league, sports management is not his day job and he’s really only in it for his kids. He doesn’t have time to learn a complex search UI.</li>
-      <li>• Being a volunteer, he's also only planning on doing this for one season and doesn’t have motivation to learn a complex search UI.</li>
-      <li>• Being a father to a kid in a travel organization he’s familiar with a lot of travel accommodation sites like Expedia, AirBnB, South West Airlines.</li>
-      <li>• After the season, he'll be giving his recommendation for process changes in the upcoming year.</li>
-    </ul>
-  </div>
-</div>
-
-<blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd">
+<blockquote class="Blockquote">
 Our search experiences needed to be simple, consistent and relatable. The needed to be easy for anyone to use without any context or knowledge of the system.
 </blockquote>
 
 </section>
-
 <section class="Article-section">
 
-<h2 class="Section-title">
-  The Approach
-  <small class="u-block u-padTopSm u-padBottomSm">A systematic solution for searching</small>
-</h2>
+<h2 class="Article-sectionTitle">The Approach</h2>
 
-### Strategy
+<h3 class="Article-sectionSubTitle">Strategy</h3>
+<h4 class="Article-sectionSubText">A systematic solution for searching</h4>
 
 After watching different teams work on the same search experiences across the app and seeing them approach each problem quick fix to solve 1 issue at a time, I felt like there was better approach. I decided to approached these search updates as a system, a path forward, rather then a quick fix. I wanted to build a search experience that scaled across the app. 
 
-<figure class="Article-image u-padBottomNone">
+<figure class="Article-image">
   <img src="/../../img/search-patterns/search-scope.jpg" />
 </figure>
 
@@ -134,8 +105,8 @@ The goal was to see if I could determine any intent. Based on some conversations
 That assumption proved out to be true, but we also got some really good info for setting scope and selecting what criteria was needed on which feature. 
 
 <figure class="Article-image">
-  <figcaption>Members Tab Search History</figcaption>
   <img src="/../../img/search-patterns/Quanitative_members-tab.jpg" />
+  <figcaption>Members Tab Search History</figcaption>
 </figure>
 
 #### Members Tab Takeaways:
@@ -145,8 +116,8 @@ That assumption proved out to be true, but we also got some really good info for
 3. Almost always just a single criteria used 
 
 <figure class="Article-image">
-  <figcaption>Rostering Tab Search History</figcaption>
   <img src="/../../img/search-patterns/Quanitativ_rostering_tab.jpg" />
+  <figcaption>Rostering Tab Search History</figcaption>
 </figure>
 
 #### Rostering Tab Takeaways:
@@ -157,7 +128,7 @@ That assumption proved out to be true, but we also got some really good info for
 4. Name searching was getting some usage for individual actions
 5. Generally speaking there were multiple pieces of criteria used
 
-<blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceTopMd">
+<blockquote class="Blockquote">
 It seemed like there were 2 primary use cases to solve for. Finding a specific person to take an action on and finding groups of similar people bulk actions on.
 </blockquote>
 
@@ -171,9 +142,9 @@ With those 2 use cases in mind, I started looking around different search experi
 
 Since our users we're primarily parents of children on travel sports teams, I initially started looking at travel sites and popular social media sites, then expanded out to other interesting search UX. Spokeo had an interesting <a href="https://uxdesign.cc/death-to-complexity-how-we-simplified-advanced-search-a9ab2940acf0" target="_blank">case study</a> about how they simplified a complex search UI. 
 
-<figure class="Article-image u-spaceTopMd">
-  <figcaption class="u-spaceBottomSm">Differing Search Experiences</figcaption>
+<figure class="Article-image">
   <img src="/../../img/search-patterns/Searches.jpg" />
+  <figcaption class="u-spaceBottomSm">Differing Search Experiences</figcaption>
 </figure>
 
 #### Search research Takeaways:
@@ -215,10 +186,7 @@ This can be expanded upon for complex segment builders by giving them categories
 
 <section class="Article-section">
 
-<h2 class="Section-title">
-  Project Details
-  <small class="u-block u-padTopSm u-padBottomSm">2 teams, 2 projects, 1 system</small>
-</h2>
+<h2 class="Section-title">Project Details</h2>
 
 <div class="Article-feature">
 
@@ -236,7 +204,7 @@ However, the scope of the Type Ahead component was just too much, because that m
   <img src="/../../img/search-patterns/members-tab-breakdown.jpg" />
 </figure>
 
-<blockquote class="Blockquote Blockquote--largeText Blockquote--centered u-spaceTopMd">
+<blockquote class="Blockquote Blockquote--centered u-spaceTopMd">
 We felt like the quicker iteration was still a big improvement and really wanted to learn how it effected the time to search and action metrics as well as drop off between search and action, to see if type typeahead was needed.
 </blockquote>
 
@@ -253,18 +221,18 @@ We felt like the quicker iteration was still a big improvement and really wanted
 With the rostering team, they initially wanted to go with the old version of member tab style search, the query builder pattern, since their was already code in place. They wanted to see how what kind of feedback users would have with that type of search experience instead of the large up front set inputs that was on the search tab.
 
 <figure class="Article-image">
-  <figcaption>Searching for groups of people with one of the older search interfaces</figcaption>
   <img src="/../../img/search-patterns/compound_interction-comp.jpg" />
+  <figcaption>Searching for groups of people with one of the older search interfaces</figcaption>
 </figure>
 
 Taking the use case of searching for groups of people on various teams and divisions and comparing the old members search interface to the new pattern driven approach though, it was easy to see that the new approach was clearly the more streamlined approach. I also found that it was also easier to understand the criteria that had been entered, since it repeated the inputs back to users in a more human readable way.
 
 <figure class="Article-image">
-  <figcaption>Searching for groups of people with the new search patterns</figcaption>
   <img src="/../../img/search-patterns/compound_interction-comp_two.jpg" />
+  <figcaption>Searching for groups of people with the new search patterns</figcaption>
 </figure>
 
-<blockquote class="Blockquote Blockquote--largeText Blockquote--centered u-spaceTopMd">
+<blockquote class="Blockquote Blockquote--centered u-spaceTopMd">
 After walking through and breaking down the interactions of the new design with the team, comparing them to our goals, we decided to invest in the new categorized search pattern.
 </blockquote>
 
@@ -306,7 +274,7 @@ Them I gave guidance as to how they could fit in with other parts of the Club & 
   <img src="/../../img/search-patterns/future_usage_compound.jpg" />
 </figure>
 
-<blockquote class="u-spaceBottomLg u-spaceTopLg Blockquote--largeText Blockquote--centered">
+<blockquote class="u-spaceBottomLg u-spaceTopLg Blockquote--centered">
 Providing patterns, principles and tasks to tie our efforts back to worked well in leading discussions. It provided a focused and objective platform to speak on.
 </blockquote>
 

@@ -6,7 +6,7 @@ collection: portfolioWork
 collection_label: UI Design + Development, Visual Design
 project_link: true
 featured: false
-layout: article.html
+layout: case-study.html
 id: TS-UI
 type_productStrategy: false
 type_productDesign: true
@@ -22,6 +22,7 @@ date: 2000-04-01
 <header>
 
 <h2 class="Section-title">Background</h2>
+<h2 class="Article-sectionTitle">Introduction</h2>
 
 </header>
 

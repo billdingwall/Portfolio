@@ -55,7 +55,6 @@ $introPadding: scaleGrid(8);
 .IntroTitle {
   font-size: $tuSize-lg4;
   padding-bottom: $su-lg1;
-  margin-bottom: $su-lg1;
   position: relative;
 
   @include max-width('sm') {
