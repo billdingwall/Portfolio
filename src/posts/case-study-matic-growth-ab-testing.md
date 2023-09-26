@@ -6,7 +6,7 @@ collection: portfolioWork
 collection_label: Product Design, Product Management, Research, AB Testing
 project_link: true
 featured: false
-layout: article.html
+layout: case-study.html
 id: Matic
 type_productStrategy: true
 type_productDesign: true

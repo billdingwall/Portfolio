@@ -6,7 +6,7 @@ collection: portfolioWork
 collection_label: Product Design
 project_link: true
 featured: false
-layout: article.html
+layout: case-study.html
 id: Green-Elephant
 type_productStrategy: true
 type_productDesign: true

@@ -4,7 +4,7 @@ intro: Founder & CEO
 collection: referral
 featured: true
 layout: article.html
-date: 2000-06-01
+date: 2000-01-01
 ---
 
 Bill has a killer collection of skills that make him a powerful and versatile member of multiple teams. He’s a beautiful visual designer, a crack UX/UI expert, a whiz at front-end development and a thoughtful strategic thinker and information architect. It all adds up to a guy who can take any project from problem statement to a beautiful, standards-compliant finished product. His love for frameworks and components ensures that the rest of the team can leverage his work and multiply the power of his design vision.
