@@ -72,6 +72,10 @@
         display: none !important;
       }
 
+      .u-#{$name}-grid {
+        display: flex !important; // 1
+      }
+
       .u-#{$name}-hiddenVisually {
         border: 0 !important;
         clip: rect(1px, 1px, 1px, 1px) !important;

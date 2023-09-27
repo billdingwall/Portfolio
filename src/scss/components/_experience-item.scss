@@ -15,6 +15,9 @@
 
 .ExperienceItem {
   padding-bottom: $su-lg4;
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .ExperienceItem-content {
@@ -25,6 +28,9 @@
 
 .ExperienceItem-description {
   padding-left: $su-lg2/2;
+  @include max-width('sm') {
+    padding-left: 0;
+  }
 }
 
 .ExperienceItem-role {
@@ -38,6 +44,9 @@
   color: $color-white;
   font-size: $tuSize-base;
   padding-bottom: $su-lg3;
+  @include max-width('sm') {
+    padding-bottom: $su-lg1;
+  }
 }
 
 .ExperienceItem-detailsDivider {

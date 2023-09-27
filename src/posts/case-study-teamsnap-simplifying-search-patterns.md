@@ -98,7 +98,7 @@ After watching different teams work on the same search experiences across the ap
   <img src="/../../img/search-patterns/search-scope.jpg" />
 </figure>
 
-### Research
+#### Research
 
 The goal was to see if I could determine any intent. Based on some conversations with customers, our assumption was that members would be more specific, focused on finding individuals vs rostering which is more about building segments of users. 
 
@@ -153,7 +153,7 @@ Since our users we're primarily parents of children on travel sports teams, I in
 2. Facebook did a nice job at condensing everything down into a single input. Google does too.
 3. Spokeo was a nice middle ground between the two. I liked how they had a single search input, except what that searched was broken up into categorize.
 
-### Defining Patterns & Principles
+#### Defining Patterns & Principles
 
 Based on my findings from Fullstory, UserTesting, Search Data and comparative research I started defining a few basic patterns and principles to help drive consistency throughout various search projects. As I was defining those patterns, I made sure to apply them to potential search sceneries to see how they fit.
 
@@ -190,7 +190,7 @@ This can be expanded upon for complex segment builders by giving them categories
 
 <div class="Article-feature">
 
-### Members Tab
+#### Members Tab
 
 The primary use case here was to help admins easily find a specific person. So initially after reviewing some of the search research with the team we wanted to dive into that notion of a condensed search input, using tool called Type Ahead. The team felt that was the most streamlined way for users to find someone.
 
@@ -216,7 +216,7 @@ We felt like the quicker iteration was still a big improvement and really wanted
 
 <div class="Article-feature">
 
-### Rostering Tab
+#### Rostering Tab
 
 With the rostering team, they initially wanted to go with the old version of member tab style search, the query builder pattern, since their was already code in place. They wanted to see how what kind of feedback users would have with that type of search experience instead of the large up front set inputs that was on the search tab.
 
@@ -244,7 +244,7 @@ After walking through and breaking down the interactions of the new design with 
 
 <div class="Article-feature">
 
-### Search UI Kit
+#### Search UI Kit
 
 As I was working with the two teams and the two different search projects, I also started taking those patterns and building them out into a full fledge UI kit to include with <a href="/posts/teamsnap-design-system/" target="_blank">our design system</a>.
 
@@ -289,7 +289,7 @@ Providing patterns, principles and tasks to tie our efforts back to worked well 
   <small class="u-block u-padTopSm u-padBottomSm">Refining Funnels & Measuring Impact</small>
 </h2>
 
-### Refine our Search Funnel
+#### Refine our Search Funnel
 
 We didn’t have a lot of resources dedicated to setting up analytics so getting some of these numbers were difficult to do at scale, but measuring a small sample size through FullStory the number of bad searches had dropped to nearly nothing since we weren’t allowing it in the UI, which in term sped up time to results and ultimately time to action significantly. We didn't have a well defined funnel, but we did seem to be having a very positive impact on search abandonment rates and time to results. I think search abandonment and time to search could be measured more closely though.
 
@@ -297,7 +297,7 @@ We didn’t have a lot of resources dedicated to setting up analytics so getting
   <img src="/../../img/search-patterns/goals_metrics_funnels.jpg" />
 </figure>
 
-### Measure the Impact of Search
+#### Measure the Impact of Search
 
 Then I'd like to directly correlate search funnel metrics back to larger product and business goals to try and put a dollar amount on our efforts as a team. The goal is to get it down to a formula of as x decreases, y increases by z.
 

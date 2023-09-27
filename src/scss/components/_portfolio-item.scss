@@ -17,9 +17,14 @@
   margin-bottom: $su-lg3;
   height: $su-lg5 * 4;
   border: 1px solid $color-blue-d1;
+  position: relative;
 
   &:hover {
     transition: box-shadow $duration-short ease-in-out;
+  }
+
+  @include max-width('sm') {
+    height: auto;
   }
 
 }
@@ -44,6 +49,12 @@
       padding-right: 8px;
       float: left;
     }
+  }
+
+  @include max-width('sm') {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
 }
@@ -72,6 +83,9 @@
   font-family: $tu-HeadingFont;
   font-size: $tuSize-lg1;
   padding-bottom: $su-lg3;
+  @include max-width('sm') {
+    padding-bottom: 0;
+  }
 }
 
 .PortfolioItem-link {

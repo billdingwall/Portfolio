@@ -145,7 +145,7 @@ How many people visit the app and feature. Serves as a measure of how interestin
 ##### Total users
 The total number of users that supplied assets to the Kava platform. One of the top level metrics to determine health of the app. This metric could also be dimensioned by asset, feature and page to determine which parts of the app were the most valuable.
 
- ##### Conversion rate (users/visitors)
+##### Conversion rate (users/visitors)
 Of those visitors, what percentage of them actually supplied. This is the primary metric to look at for determining how much our updates were streamlining the experience.
 
 ##### Total value locked 
@@ -162,7 +162,7 @@ Gave use insight as to the size of our users based on wallet size. While not a p
 
 <div class="Article-feature">
 
-### Iteration 1: The surge pages
+#### Iteration 1: The surge pages
 
 <blockquote class="Blockquote">
 While adding new assets to Lend we noticed an interesting use case where users would earn 200%+ for limited time, simply by supplying while liquidity was low. It seemed like a great value prop to test while launching assets, and a great opportunity to test the asset focused approach.
@@ -215,7 +215,7 @@ The asset focused landing page did a great job of converting users, but the valu
 
 <div class="Article-feature">
 
-### Iteration 2: The BUSD Earn Strategy
+#### Iteration 2: The BUSD Earn Strategy
 
 <blockquote class="Blockquote ">
 Seeing success with conversion rates on the surge pages, we felt that was enough to expand on the idea and apply that asset and use case focused logic to more complex DeFi strategies that provided more sustainable value to users. 
@@ -285,7 +285,7 @@ The asset & use case focused landing still performed well with conversion rate a
 
 <div class="Article-feature">
 
-### Iteration 3: The Kava Earn Feature
+#### Iteration 3: The Kava Earn Feature
 
 <blockquote class="Blockquote">
 There was enough success with BUSD Earn to expand on the idea and setup Earn pages for new assets. During the next major release we launched 3 more strategies and built them into a more dedicated feature. KAVA, USDC and USDT were the new asset pages.
@@ -341,11 +341,11 @@ This has been a lesson learned across multiple projects and numerous research in
 
 <h2 class="Article-sectionTitle">Next Steps</h2>
 
-#### 1. Build a Dedicated Funnel Around for Tracking the Kava Earn Feature  
+1. Build a Dedicated Funnel Around for Tracking the Kava Earn Feature  
 
-#### 2. Look at strategies for bringing in larger users
+2. Look at strategies for bringing in larger users
 
-#### 3. Keep adding more strategies 
+3. Keep adding more strategies 
 
 </section>
 

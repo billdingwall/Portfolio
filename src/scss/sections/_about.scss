@@ -13,37 +13,45 @@
 
 // * 1. Contents Grouping One
 
-.About.About-introText {
-
+.About-introText h1 {
+  margin-left: 0-$su-lg3;
 }
 
 .About-introPhoto {
-  max-width: 440px;
-  &:after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: -82px;
-    left: 50%;
-    background: $cu-Background-dark;
-    border-bottom: 1px solid $cu-border;
-    z-index: -1;
+
+  @include min-width('md') {
+    max-width: 440px;
+    &:after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: -82px;
+      left: 50%;
+      background: $cu-Background-dark;
+      border-bottom: 1px solid $cu-border;
+      z-index: -1;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 2px;
+      height: calc(100% + 82px);
+      top: -82px;
+      left: 50%;
+      position: absolute;
+      background: $cu-border;
+    }
+    .splide__pagination {
+      display: none;
+    }
   }
-  &:before {
-    content: '';
-    display: block;
-    width: 2px;
-    height: calc(100% + 82px);
-    top: -82px;
-    left: 50%;
-    position: absolute;
-    background: $cu-border;
-  }
-  .splide__pagination {
+
+  @include max-width('md') {
     display: none;
   }
+
 }
 
 .ProfilePic-image {
@@ -53,6 +61,7 @@
 .About-introPhotoSlider.splide {
   padding-bottom: 0;
   margin-left: -16px;
+  z-index: 10;
 }
 
 .About-image {
@@ -99,6 +108,11 @@
   position: absolute;
   top: 0;
   left: 50%;
+
+  @include max-width('md') {
+    display: none;
+  }
+
 }
 
 .GalleryItem {
