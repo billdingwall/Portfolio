@@ -1,36 +1,36 @@
 <div class="ExperienceItem Grid">
-  <div class="ExperienceItem-content Grid-cell u-size1of3">
+  <div class="ExperienceItem-content Grid-cell u-sizeFull u-sm-size1of3">
     <h3 class="ExperienceItem-role u-padTopNone u-padBottomSm">{{this.role}}</h3>
     <h5 class="ExperienceItem-details">
       <span class="ExperienceItem-detailsCompany">{{this.company}}</span>
       <span class="ExperienceItem-detailsDivider">|</span>
       <span class="ExperienceItem-detailsDuration">{{this.duration}}</span></h5>
-    <div class="Progress">
+    <div class="Progress u-hidden u-sm-block">
       <label class="Progress-label">product design</label>
       <div class="Progress-bar"  style="width:{{this.productdesign}}%;" data-label="product design"></div>
     </div>
-    <div class="Progress">
+    <div class="Progress u-hidden u-sm-block">
       <label class="Progress-label">design systems</label>
       <div class="Progress-bar" style="width:{{this.designsystems}}%;" data-label="design systems"></div>
     </div>
-    <div class="Progress">
+    <div class="Progress u-hidden u-sm-block">
       <label class="Progress-label">research & analysis</label>
       <div class="Progress-bar" style="width:{{this.researchandanalysis}}%;" data-label="research & analysis"></div>
     </div>
-    <div class="Progress">
+    <div class="Progress u-hidden u-sm-block">
       <label class="Progress-label">leadership & mentorship</label>
       <div class="Progress-bar" style="width:{{this.leadershipandmentorship}}%;" data-label="leadership & mentorship"></div>
     </div>
-    <div class="Progress">
+    <div class="Progress u-hidden u-sm-block">
       <label class="Progress-label">product strategy</label>
       <div class="Progress-bar" style="width:{{this.productandstrategy}}%;" data-label="product strategy"></div>
     </div>
-    <div class="Progress">
+    <div class="Progress u-hidden u-sm-block">
       <label class="Progress-label">front end development</label>
       <div class="Progress-bar" style="width:{{this.frontenddevelopment}}%;" data-label="front end development"></div>
     </div>
   </div>
-  <div class="ExperienceItem-description Grid-cell u-size2of3">
+  <div class="ExperienceItem-description Grid-cell u-sizeFull u-sm-size2of3">
     {{{contents}}}
   </div>
 </div>

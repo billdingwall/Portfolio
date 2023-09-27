@@ -20,7 +20,7 @@
   position: relative;
 
   @include max-width('sm') {
-    padding: $su-lg3 $su-lg1;
+    padding: 0 $su-lg1;
   }
   
   &.Section--grey {
@@ -50,6 +50,12 @@
 .Section-content {
   @include siteContainer;
   padding: $su-lg5 0;
+
+  @include max-width('sm') {
+    padding: $su-lg3 0;
+  }
+
+
 }
 
 .Section-subSection {

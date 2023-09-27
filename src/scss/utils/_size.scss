@@ -20,9 +20,6 @@
 // *
 // * Responsive sizing included contingent on truth of $responsive
 
-$cols: (2, 3, 4, 6, 8, 12, 24);
-$responsive: true;
-
 // Generate base utility size classes
 @each $col in $cols {
   @for $i from 1 through ($col - 1) {

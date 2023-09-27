@@ -1,7 +1,7 @@
 <a class="PortfolioItem Grid Grid--fit" href="/{{path}}">
-  <div class="PortfolioItem-contentContainer Grid-cell u-size1of3">
+  <div class="PortfolioItem-contentContainer Grid-cell u-sizeFull u-sm-size2of4 u-md-size1of3">
     <p class="PortfolioItem-title">{{intro}}</p>
-    <ul class="List--dotSeperated u-colorWhite u-borderTop">
+    <ul class="List--dotSeperated u-colorWhite u-borderTop u-hidden u-sm-block">
       {{#if type_productStrategy}}<li>product strategy</li>{{/if}}
       {{#if type_productDesign}}<li>product design</li>{{/if}}
       {{#if type_designSystem}}<li>design systems</li>{{/if}}
@@ -10,7 +10,7 @@
       {{#if type_dev}}<li>development</li>{{/if}}
     </ul>
   </div>
-  <div class="PortfolioItem-imageContainer Grid-cell u-size2of3">
+  <div class="PortfolioItem-imageContainer Grid-cell u-sizeFull u-sm-size2of4 u-md-size2of3">
     <img class="PortfolioItem-image" src="{{this.thumb}}" />
   </div>
 </a>
