@@ -12,6 +12,8 @@
 
 // * 2. Font Scaling Function
 
+$font-ScaleRate:    1.333; 
+
 @function scaleFont($property, $step) {
 
   $ratio: $font-ScaleRate;
