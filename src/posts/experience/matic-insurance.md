@@ -6,11 +6,11 @@ duration: 1 year
 specifics: User Research, Persona Development, Object Oriented UX, UX + UI, Visual Design
 collection: workExperience
 layout: blank.html
-productdesign: 40
-designsystems: 15
-researchandanalysis: 80
-leadershipandmentorship: 90
-productandstrategy: 95
+productdesign: 95
+designsystems: 70
+researchandanalysis: 90
+leadershipandmentorship: 40
+productandstrategy: 80
 frontenddevelopment: 5
 date: 2000-02-01
 ---
