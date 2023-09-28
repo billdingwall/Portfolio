@@ -6,12 +6,12 @@ duration: 5 years
 specifics: Front End Development . Web Design . Wordpress Development . Brand Identity Design . Print . .Net . Git . In House & Remote work
 collection: workExperience
 layout: blank.html
-productdesign: 40
-designsystems: 15
-researchandanalysis: 80
-leadershipandmentorship: 90
-productandstrategy: 95
-frontenddevelopment: 5
+productdesign: 95
+designsystems: 93
+researchandanalysis: 45
+leadershipandmentorship: 40
+productandstrategy: 30
+frontenddevelopment: 85
 date: 2000-04-01
 ---
 
