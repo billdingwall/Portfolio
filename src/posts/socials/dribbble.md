@@ -2,7 +2,7 @@
 title: dribbble.com/billdingwall
 intro: visual design and project posts
 link: https://dribbble.com/billdingwall
-collection: socialMedia
+collection: socialMedia-HIDE
 display: true
 layout: 404.html
 date: 2000-03-01
