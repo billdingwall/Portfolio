@@ -24,16 +24,13 @@
     color: #fff;
   }
 
-  .Grid {
-    @include siteContainer;
-  }
-
   @include max-width('sm') {
-    padding: scaleGrid(2) 0;
-  }
+    padding: $su-lg1 $su-lg2;
 
-  @include min-width('sm') {
-    padding: scaleGrid(4) 0;
+    ul {
+      padding-left: 0;
+    }
+
   }
 
   .List--dotSeperated {
