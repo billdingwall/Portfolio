@@ -1,7 +1,7 @@
 ---
-title: github.com/williamdingwall
+title: github.com/billdingwall
 intro: Self portrait from college
-link: https://github.com/williamdingwall
+link: https://github.com/billdingwall
 collection: socialMedia
 display: true
 layout: 404.html

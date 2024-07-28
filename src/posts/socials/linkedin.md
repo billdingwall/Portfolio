@@ -1,7 +1,7 @@
 ---
-title: linkedin.com/in/williamdingwall
+title: linkedin.com/in/billdingwall
 intro: Self portrait from college
-link: https://www.linkedin.com/in/williamdingwall/
+link: https://www.linkedin.com/in/billdingwall/
 collection: socialMedia
 display: true
 layout: 404.html
