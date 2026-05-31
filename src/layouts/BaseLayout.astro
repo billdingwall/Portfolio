@@ -1,0 +1,100 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogUrl?: string;
+  bodyId?: string;
+}
+
+const {
+  title = "William Dingwall | Product designer | Identity Design",
+  description = "I build stuff",
+  ogImage,
+  ogUrl,
+  bodyId = ""
+} = Astro.props;
+
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { PhotoSwipe } from '../components/PhotoSwipe';
+import '../scss/main.scss';
+
+// We fetch social media here globally to pass into Header
+const socialMedia = Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }))
+  .map((s: any) => ({ ...s.frontmatter, contents: s.compiledContent() }));
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {ogImage && <meta property="og:image" content={`https://williamdingwall.com/${ogImage}`} />}
+  {description && <meta property="og:description" content={description} />}
+  {ogUrl && <meta property="og:url" content={`https://williamdingwall.com/${ogUrl}`} />}
+  {title && <meta property="og:title" content={title} />}
+
+  <title>{title}</title>
+  <link rel="icon" type="image/ico" href="/img/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/photoswipe.css">
+  <link rel="stylesheet" href="/css/default-skin.css">
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH99855ZFW"></script>
+
+  <script is:inline src="/js/index.js"></script>
+  <script is:inline src="/js/umbrella/umbrella.min.js"></script>
+  <script is:inline src="/js/photoswipe/photoswipe.min.js"></script>
+  <script is:inline src="/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <script is:inline src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</head>
+<body id={bodyId}>
+  <Header socialMedia={socialMedia} />
+
+  <slot />
+
+  <Footer />
+  <PhotoSwipe />
+
+  <script is:inline>
+    // selecting the gallery markup
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    var slides = [];
+
+    // fills the slides array
+    function setupSlides() {
+      if (typeof u === 'undefined') return; // Umbrella JS dependency
+      slides = [];
+      u('.Article-image img').each(function(img, i){
+        u(img).attr('slideIndex', i);
+        var object =  {
+          src: u(img).attr('src'),
+          w: img.naturalWidth,
+          h: img.naturalHeight
+        };
+        slides.push(object);
+      });
+    }
+
+    if (typeof u !== 'undefined') {
+      u('.Article-image img').on('click', function(e) {
+        setupSlides();
+        var start = { index: parseInt(u(this).attr('slideIndex')) };
+        if (typeof PhotoSwipe !== 'undefined' && typeof PhotoSwipeUI_Default !== 'undefined') {
+          var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, slides, start);
+          gallery.init();
+        }
+      });
+    }
+  </script>
+</body>
+</html>

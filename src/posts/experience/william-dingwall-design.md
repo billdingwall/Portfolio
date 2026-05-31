@@ -5,7 +5,6 @@ role: Designer + Developer
 duration: 4 years
 specifics: UX Design, UI Design, UI development, Visual Design, Graphic Design, A/B Testing, Analytics, Usability Testing, Customer Interviews, Mentoring, React, Ruby, Git, Remote work
 collection: NONE
-layout: blank.html
 productdesign: 40
 designsystems: 15
 researchandanalysis: 80

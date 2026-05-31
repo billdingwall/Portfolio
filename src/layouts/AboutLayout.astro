@@ -1,0 +1,81 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { ProfilePic } from '../components/ProfilePic';
+import { GalleryItem } from '../components/GalleryItem';
+
+export interface Props {
+  title?: string;
+  id?: string;
+  profilePics?: any[];
+  galleryImages?: any[];
+  socialMedia?: any[];
+}
+
+const {
+  title = "About Me",
+  id = "about",
+  profilePics = [],
+  galleryImages = [],
+  socialMedia = []
+} = Astro.props;
+---
+
+<BaseLayout title={title} bodyId={id}>
+  <section class="Section u-borderNone">
+    <div class="Grid Section-content">
+      <div class="About-introText Grid-cell u-md-size1of2 u-padLeftXl u-md-padRightXl">
+        <h1>About Me.</h1>
+        <blockquote class="u-textSize-base u-md-textSize-Lg1">
+            <p>I started in graphic design & art, but have always enjoyed designing for human interaction, studying behavior and solving real world problems, so quickly moved to product and haven't looked back.</p>
+            <p>Outside of work I mostly like getting outside and doing something active. I still draw and paint a little here and there too.</p>
+        </blockquote>
+      </div>
+      <div class="About-introPhoto Grid-cell u-sm-size1of2">
+        <section class="About-introPhotoSlider splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {profilePics.filter(item => item.featured).map(item => (
+                <ProfilePic {...item} />
+              ))}
+            </ul>
+          </div>
+          <div class="splide__progress">
+            <div class="splide__progress__bar"></div>
+          </div>
+        </section>
+      </div>
+      <img src="../img/profile-pic/profile-3grid.png" class="u-md-hidden u-padTopLg" />
+    </div>
+  </section>
+
+  <section id="Gallery" class="Section Section--dark">
+    <div class="Section-content">
+      <h2 class="Section-title">
+        <span class="Section-titleText">Gallery</span>
+      </h2>
+      <div id="Gallery" class="Gallery Grid">
+        {galleryImages.filter(item => item.featured).map(item => (
+          <GalleryItem {...item} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact" class="Section Section--illustrated">
+    <div class="Section-content">
+      <h2 class="Section-title">
+        <span class="Section-titleText">Get In Touch</span>
+      </h2>
+      <p>I’m always happy to Connect</p>
+      <ul class="ContactList nostyle">
+        {socialMedia.map(item => (
+          <li>
+            <a href={item.link} class="ContactList-link">
+              <span set:html={item.contents} /> {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

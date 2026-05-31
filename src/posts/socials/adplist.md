@@ -4,7 +4,6 @@ intro: Self portrait from college
 link: https://adplist.org/mentors/william-dingwall
 collection: socialMedia
 display: true
-layout: 404.html
 date: 2000-02-01
 ---
 

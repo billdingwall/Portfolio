@@ -1,0 +1,31 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+export interface Props {
+  title: string;
+  collection_label?: string;
+  thumb?: string;
+  intro?: string;
+  path?: string;
+  id?: string;
+}
+
+const { title, collection_label, thumb, intro, path, id } = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={intro}
+  ogImage={thumb}
+  ogUrl={path}
+  bodyId={id}
+>
+  <article class="Article">
+    <header class="Article-header">
+      <h1>{title}</h1>
+      <p>{collection_label}</p>
+      {thumb && <img src={`/${thumb}`} alt={title} />}
+    </header>
+    <slot />
+  </article>
+</BaseLayout>

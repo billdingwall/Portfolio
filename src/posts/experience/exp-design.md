@@ -3,7 +3,6 @@ type: Dev Experience
 years: 2
 specifics: User Research, Persona Development, Object Oriented UX, UX + UI, Visual Design
 collection: experienceOverview
-layout: blank.html
 productdesign: 40
 designsystems: 15
 researchandanalysis: 80

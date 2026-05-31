@@ -5,7 +5,6 @@ role: Senior Product Designer
 duration: 1 year
 specifics: User Research, Persona Development, Object Oriented UX, UX + UI, Visual Design
 collection: workExperience
-layout: blank.html
 productdesign: 95
 designsystems: 70
 researchandanalysis: 90

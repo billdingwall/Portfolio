@@ -5,7 +5,6 @@ role: Senior UX/UI Designer
 duration: 5 years
 specifics: Front End Development . Web Design . Wordpress Development . Brand Identity Design . Print . .Net . Git . In House & Remote work
 collection: workExperience
-layout: blank.html
 productdesign: 95
 designsystems: 93
 researchandanalysis: 45

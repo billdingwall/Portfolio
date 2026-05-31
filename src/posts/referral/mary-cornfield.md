@@ -3,7 +3,6 @@ title: Mary Cornfield
 intro: Designer & Cofounder, Capitan
 collection: referral
 featured: true
-layout: article.html
 date: 2000-03-01
 ---
 

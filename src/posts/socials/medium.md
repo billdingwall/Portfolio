@@ -4,7 +4,6 @@ intro: Self portrait from college
 link: https://medium.com/@billdingwall
 collection: socialMedia-HIDE
 display: true
-layout: 404.html
 date: 2000-04-01
 ---
 

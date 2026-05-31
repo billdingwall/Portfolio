@@ -6,7 +6,6 @@ collection: portfolioWork
 collection_label: UX + UI Design, Visual Design
 project_link: true
 featured: true
-layout: case-study.html
 id: TS-Dashboard
 type_productStrategy: false
 type_productDesign: true
