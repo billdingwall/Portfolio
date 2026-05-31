@@ -6,7 +6,6 @@ collection: portfolioWork
 collection_label: UX, UI, Research, Design Systems
 project_link: true
 featured: true
-layout: case-study.html
 id: Kava-Labs
 type_productStrategy: true
 type_productDesign: true

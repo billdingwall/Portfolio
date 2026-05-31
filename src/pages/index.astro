@@ -1,0 +1,28 @@
+---
+import HomeLayout from '../layouts/HomeLayout.astro';
+
+// We need to fetch the collections that were previously in Metalsmith
+const portfolioWork = Object.values(import.meta.glob('../posts/case-study-*.md', { eager: true }));
+const workExperience = Object.values(import.meta.glob('../posts/experience/*.md', { eager: true }));
+const referral = Object.values(import.meta.glob('../posts/referral/*.md', { eager: true }));
+
+// Map frontmatter to the shape expected by the layout/components
+const mappedPortfolioWork = portfolioWork.map((p: any) => ({
+  ...p.frontmatter,
+  path: p.url || p.file.split('/').pop().replace('.md', ''),
+}));
+
+const mappedWorkExperience = workExperience
+  .map((w: any) => ({ ...w.frontmatter, contents: w.compiledContent() }))
+  // You might need to sort workExperience if it was previously sorted by date
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+const mappedReferral = referral.map((r: any) => ({ ...r.frontmatter, contents: r.compiledContent() }));
+---
+
+<HomeLayout
+  title="William Dingwall | Designer + Developer"
+  portfolioWork={mappedPortfolioWork}
+  workExperience={mappedWorkExperience}
+  referral={mappedReferral}
+/>

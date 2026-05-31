@@ -3,7 +3,6 @@ title: Mike Michaud
 intro: Software Architect
 collection: referral
 featured: true
-layout: article.html
 date: 2000-04-01
 ---
 

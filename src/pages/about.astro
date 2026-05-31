@@ -1,0 +1,15 @@
+---
+import AboutLayout from '../layouts/AboutLayout.astro';
+
+const profilePics = Object.values(import.meta.glob('../posts/profile-pic/*.md', { eager: true }));
+const galleryImages = Object.values(import.meta.glob('../posts/gallery/*.md', { eager: true }));
+
+const mappedProfilePics = profilePics.map((p: any) => ({ ...p.frontmatter, contents: p.compiledContent() }));
+const mappedGalleryImages = galleryImages.map((g: any) => ({ ...g.frontmatter, contents: g.compiledContent() }));
+---
+
+<AboutLayout
+  title="About Me"
+  profilePics={mappedProfilePics}
+  galleryImages={mappedGalleryImages}
+/>

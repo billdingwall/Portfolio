@@ -3,7 +3,6 @@ title: Brad Cypert
 intro: Staff Software Engineer
 collection: referral
 featured: true
-layout: article.html
 date: 2000-02-01
 ---
 

@@ -3,7 +3,6 @@ title: Andrew Berkowitz
 intro: Founder & CEO
 collection: referral
 featured: true
-layout: article.html
 date: 2000-01-01
 ---
 

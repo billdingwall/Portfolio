@@ -5,7 +5,6 @@ role: Lead UX Designer
 duration: 2 years
 specifics: User Research, Persona Development, Object Oriented UX, UX + UI, Visual Design
 collection: workExperience
-layout: blank.html
 productdesign: 45
 designsystems: 20
 researchandanalysis: 80
