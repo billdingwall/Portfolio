@@ -1,3 +1,7 @@
+@use "../config/sizing";
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * Home Page Introduction
@@ -11,7 +15,7 @@
 
 //------------------------------------------------------------//
 
-$introPadding: scaleGrid(8);
+$introPadding: sizing.scaleGrid(8);
 
 //#Portfolio, #Experience, #Recomendations {
   //.Section-content {
@@ -31,9 +35,9 @@ $introPadding: scaleGrid(8);
     padding-top: $introPadding;
     padding-bottom: $introPadding;
 
-    @include max-width('sm') {
-      padding-top: $su-lg3;
-      padding-bottom: $su-lg3;
+    @include spacing.max-width('sm') {
+      padding-top: variables.$su-lg3;
+      padding-bottom: variables.$su-lg3;
     }
 
   }
@@ -47,23 +51,23 @@ $introPadding: scaleGrid(8);
 
 #Portfolio {
   border: none;
-  border-top: 2px solid $cu-border;
+  border-top: 2px solid variables.$cu-border;
 }
 
 // * 1. Intro Text
 
 .IntroTitle {
-  font-size: $tuSize-lg4;
-  padding-bottom: $su-lg1;
+  font-size: variables.$tuSize-lg4;
+  padding-bottom: variables.$su-lg1;
   position: relative;
 
-  @include max-width('sm') {
-    font-size: $tuSize-lg5;
+  @include spacing.max-width('sm') {
+    font-size: variables.$tuSize-lg5;
     font-style: normal;
   }
 
-  @include max-width('xs') {
-    font-size: $tuSize-lg5;
+  @include spacing.max-width('xs') {
+    font-size: variables.$tuSize-lg5;
   }
 
 }

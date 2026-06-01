@@ -7,14 +7,14 @@
 
 //------------------------------------------------------------//
 
-@import 'article';
-@import 'divider';
-@import 'grid';
-@import 'icon';
-@import 'list';
-@import 'section';
-@import 'slider';
-@import 'progress';
-@import 'portfolio-item';
-@import 'experience-item';
-@import 'experience-card';
+@use 'article';
+@use 'divider';
+@use 'grid';
+@use 'icon';
+@use 'list';
+@use 'section';
+@use 'slider';
+@use 'progress';
+@use 'portfolio-item';
+@use 'experience-item';
+@use 'experience-card';

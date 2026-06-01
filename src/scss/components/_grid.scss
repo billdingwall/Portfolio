@@ -1,3 +1,5 @@
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * File Title
@@ -16,7 +18,7 @@
 // * @define Grid
 // * Borrowed from SUITCSS: https://github.com/suitcss/components-grid
 
-$Grid-gutter: $su-lg1;
+$Grid-gutter: variables.$su-lg1;
 
 // * Grid container
 // *

@@ -13,7 +13,8 @@
 
 // * 1. Contents Grouping One
 
-@import "../config/index.scss";
+@use "../config/index.scss";
+@use "../config/variables";
 
 .u-flex {
   display: flex !important;
@@ -57,8 +58,8 @@
   max-width: 100%; // 1
 }
 
-@if $responsive == true {
-  @each $name, $value in $breakpoints {
+@if variables.$responsive == true {
+  @each $name, $value in variables.$breakpoints {
     @media (min-width: $value) {
       .u-#{$name}-flex {
         display: flex !important;

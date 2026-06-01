@@ -7,10 +7,10 @@
 
 //------------------------------------------------------------//
 
-@import "border";
-@import "color";
-@import "display";
-@import "flex";
-@import "size";
-@import "space";
-@import "text";
+@use "border";
+@use "../config/color";
+@use "display";
+@use "flex";
+@use "size";
+@use "space";
+@use "text";

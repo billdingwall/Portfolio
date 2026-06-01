@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //------------------------------------------------------------//
 
 // * Math
@@ -13,25 +15,24 @@
 
 // * 1. ....
 
-@function scaleGrid($step) {
+$base-unit: 8px !default;
 
-  // common rules of our spacing scale
-  $base-unit: $baseUnit;
+@function scaleGrid($step) {
 
   // setting the base $spacing variable as the base unit
   $spacing: $base-unit;
 
   // Handles lower steps below base unit (2, 4)
   @if ($step < .5) {
-    $spacing: round($spacing * 0.25);
+    $spacing: math.round($spacing * 0.25);
   }
   @else if ($step >= .5) and ($step < 1) {
-    $spacing: round($spacing * 0.5);
+    $spacing: math.round($spacing * 0.5);
   }
 
   // Handles steps equal to or about base unit
   @else {
-    $spacing: round($spacing * $step);
+    $spacing: math.round($spacing * $step);
   }
 
   @return $spacing;
