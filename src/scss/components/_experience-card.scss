@@ -1,3 +1,6 @@
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * Home Page Introduction
@@ -16,26 +19,26 @@
 
 .Resume-experience {
   list-style: none;
-  gap: $su-lg2;
+  gap: variables.$su-lg2;
 }
 
 .Resume-experienceItem {
   position: relative;
-  padding: $su-lg2;
-  border: $buSize-base solid $cu-border-dark;
+  padding: variables.$su-lg2;
+  border: variables.$buSize-base solid variables.$cu-border-dark;
 }
 
 .Resume-experienceFocus {
   position: relative;
-  font-size: $tuSize-lg1;
+  font-size: variables.$tuSize-lg1;
   z-index: 10;
 }
 
 .Resume-experienceYear {
-  font-size: $tuSize-lg1;
+  font-size: variables.$tuSize-lg1;
 
-  @include max-width('md') {
-    font-size: $tuSize-lg2;
+  @include spacing.max-width('md') {
+    font-size: variables.$tuSize-lg2;
   }
 
   sup {
@@ -47,8 +50,8 @@
 
 .Resume-experienceYearText {
   position: relative;
-  color: $color-blue;
-  font-size: $tuSize-lg2;
+  color: variables.$color-blue;
+  font-size: variables.$tuSize-lg2;
   z-index: 10;
 
 }
@@ -56,8 +59,8 @@
 .Resume-experienceYearText,
 .Resume-experienceFocus {
 
-  @include max-width('md') {
-    font-size: $font-Size;
+  @include spacing.max-width('md') {
+    font-size: variables.$font-Size;
   }
 
 }

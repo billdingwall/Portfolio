@@ -1,3 +1,7 @@
+@use "../config/sizing";
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * File Title
@@ -13,10 +17,10 @@
 
 // * 1. Contents Grouping One
 
-$spot-color: $color-blue !default;
+$spot-color: variables.$color-blue !default;
 
 .Article {
-  @include siteContainer;
+  @include spacing.siteContainer;
 
   // TEMP
   h4 {
@@ -28,7 +32,7 @@ $spot-color: $color-blue !default;
 .Article-header,
 .Article-section,
 .Article-footer {
-  padding: scaleGrid(6) 5% 0 5%;
+  padding: sizing.scaleGrid(6) 5% 0 5%;
   max-width: 900px;
   margin: 0 auto;;
 }
@@ -38,38 +42,38 @@ $spot-color: $color-blue !default;
 }
 
 .Article-sectionTitle {
-  padding-bottom: $su-lg2;
+  padding-bottom: variables.$su-lg2;
 }
 
 .Article-sectionSubTitle {
-  padding-bottom: $su-base;
-  padding-top: $su-lg1;
+  padding-bottom: variables.$su-base;
+  padding-top: variables.$su-lg1;
 }
 
 .Article-sectionSubText {
-  font-family: $tu-ParagraphFont;
-  font-size: $tuSize-sm1;
+  font-family: variables.$tu-ParagraphFont;
+  font-size: variables.$tuSize-sm1;
   text-transform: uppercase;
-  color: $cu-border-dark;
+  color: variables.$cu-border-dark;
   font-weight: 400;
 
 // TEMP
-  padding-bottom: $su-lg2 !important;
+  padding-bottom: variables.$su-lg2 !important;
   padding-top: 0 !important;
 
 }
 
 
 .Article-image {
-  padding-bottom: $su-lg2;
+  padding-bottom: variables.$su-lg2;
 
   img {
     cursor: pointer;
   }
 
   figcaption {
-    color: $cu-Paragraph;
-    font-size: $tuSize-sm1;
+    color: variables.$cu-Paragraph;
+    font-size: variables.$tuSize-sm1;
   }
 
 } 
@@ -80,8 +84,8 @@ $spot-color: $color-blue !default;
 }
 
 .Article-feature {
-  padding: $su-lg1;
-  margin-bottom: $su-lg4;
+  padding: variables.$su-lg1;
+  margin-bottom: variables.$su-lg4;
 }
 
 .figma_badge {
@@ -89,15 +93,15 @@ $spot-color: $color-blue !default;
   display: block;
   img {
     margin: 0 auto;
-    max-width: scaleGrid(30);
+    max-width: sizing.scaleGrid(30);
   }
 }
 
 
 .Article-footer {
-  padding-bottom: scaleGrid(7);
-  padding-top: scaleGrid(7);
-  margin-top: scaleGrid(4);
+  padding-bottom: sizing.scaleGrid(7);
+  padding-top: sizing.scaleGrid(7);
+  margin-top: sizing.scaleGrid(4);
   border-top: 1px solid $spot-color;
   max-width: 100%;
 }

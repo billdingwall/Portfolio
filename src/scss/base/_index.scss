@@ -7,5 +7,5 @@
 
 //------------------------------------------------------------//
 
-@import 'reset';
-@import 'typography';
+@use 'reset';
+@use '../config/typography';
