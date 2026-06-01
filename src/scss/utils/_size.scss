@@ -12,10 +12,8 @@
 //------------------------------------------------------------//
 
 // * 1. Contents Grouping One
-@use "sass:math";
 
-@use "../config/index.scss";
-@use "../config/variables";
+@import "../config/index.scss";
 
 // * Percentage-based size classes for a 24 column grid,
 // * with reduced fractions for divisors of 24
@@ -23,11 +21,11 @@
 // * Responsive sizing included contingent on truth of $responsive
 
 // Generate base utility size classes
-@each $col in variables.$cols {
+@each $col in $cols {
   @for $i from 1 through ($col - 1) {
     .u-size#{$i}of#{$col} {
       flex-basis: auto !important;
-      width: math.div($i, $col) * 100% !important;
+      width: $i / $col * 100% !important;
     }
   }
 }
@@ -58,14 +56,14 @@
 }
 
 // * Generate responsive utility size classes for each 'breakpoint'
-@if variables.$responsive == true {
-  @each $name, $value in variables.$breakpoints {
+@if $responsive == true {
+  @each $name, $value in $breakpoints {
     @media (min-width: $value) {
-      @each $col in variables.$cols {
+      @each $col in $cols {
         @for $i from 1 through ($col - 1) {
           .u-#{$name}-size#{$i}of#{$col} {
             flex-basis: auto !important;
-            width: math.div($i, $col) * 100% !important;
+            width: $i / $col * 100% !important;
           }
         }
       }

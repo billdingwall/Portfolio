@@ -1,5 +1,3 @@
-@use "../config/variables";
-
 //------------------------------------------------------------//
 
 // * Dividers
@@ -14,22 +12,22 @@
 
 .Divider {
   border: none;
-  border-top: 1px solid variables.$cu-border;
+  border-top: 1px solid $cu-border;
   background: transparent;
   color: transparent;
-  margin: variables.$su-base 0;
+  margin: $su-base 0;
 }
 
 // * 2. Idented Divider
 
 .Divider--indented {
-  border-bottom: 1px solid variables.$cu-Background-dark;
+  border-bottom: 1px solid $cu-Background-dark;
 }
 
 // * 3. Thick Divider
 
 .Divider--thick {
-  border-top-width: variables.$su-sm1;
+  border-top-width: $su-sm1;
 }
 
 // * 4. Space Divider
@@ -37,5 +35,5 @@
 .Divider--space {
   border: none;
   margin: 0;
-  padding: variables.$su-lg1;
+  padding: $su-lg1;
 }

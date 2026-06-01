@@ -7,7 +7,7 @@
 
 //------------------------------------------------------------//
 
-@use 'header';
-@use 'footer';
-@use 'about';
-@use 'home';
+@import 'header';
+@import 'footer';
+@import 'about';
+@import 'home';

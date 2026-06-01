@@ -1,5 +1,3 @@
-@use "../config/variables";
-
 //------------------------------------------------------------//
 
 // * File Title
@@ -16,13 +14,13 @@
 // * 1. Contents Grouping One
 
 .u-colorPrimary {
-  color: variables.$color-blue !important;
+  color: $color-blue !important;
 }
 
 .u-colorInfo {
-  color: variables.$cu-Paragraph !important;
+  color: $cu-Paragraph !important;
 }
 
 .u-colorWhite {
-  color: variables.$color-white !important;
+  color: $color-white !important;
 }

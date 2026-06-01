@@ -1,5 +1,5 @@
-@use 'config/index';
-@use 'base/index' as index2;
-@use 'components/index' as index3;
-@use 'sections/index' as index4;
-@use 'utils/index' as index5;
+@import 'config/index';
+@import 'base/index';
+@import 'components/index';
+@import 'sections/index';
+@import 'utils/index';

@@ -13,83 +13,82 @@
 
 // * 1. Contents Grouping One
 
-@use "../config/index.scss";
-@use "../config/variables";
+@import "../config/index.scss";
 
 .u-textFont-Heading {
-  font-family: variables.$tu-HeadingFont;
+  font-family: $tu-HeadingFont;
 }
 
 .u-textFont-Body {
-  font-family: variables.$tu-ParagraphFont
+  font-family: $tu-ParagraphFont
 }
 
 .u-textSize-Sm2 {
-  font-size: variables.$tuSize-sm2;
+  font-size: $tuSize-sm2;
 }
 
 .u-textSize-Sm1 {
-  font-size: variables.$tuSize-sm1;
+  font-size: $tuSize-sm1;
 }
 
 .u-textSize-base {
-  font-size: variables.$tuSize-base;
+  font-size: $tuSize-base;
 }
 
 .u-textSize-Lg1 {
-  font-size: variables.$tuSize-lg1;
+  font-size: $tuSize-lg1;
 }
 
 .u-textSize-Lg2 {
-  font-size: variables.$tuSize-lg2;
+  font-size: $tuSize-lg2;
 }
 
 .u-textSize-Lg3 {
-  font-size: variables.$tuSize-lg3;
+  font-size: $tuSize-lg3;
 }
 
 .u-textSize-Lg4 {
-  font-size: variables.$tuSize-lg4;
+  font-size: $tuSize-lg4;
 }
 
 .u-textSize-Lg5 {
-  font-size: variables.$tuSize-lg5;
+  font-size: $tuSize-lg5;
 }
 
-@if variables.$responsive == true {
-  @each $name, $value in variables.$breakpoints {
+@if $responsive == true {
+  @each $name, $value in $breakpoints {
     @media (min-width: $value) {
 
       .u-#{$name}-textSize-Sm2 {
-        font-size: variables.$tuSize-sm2;
+        font-size: $tuSize-sm2;
       }
       
       .u-#{$name}-textSize-Sm1 {
-        font-size: variables.$tuSize-sm1;
+        font-size: $tuSize-sm1;
       }
       
       .u-#{$name}-textSize-base {
-        font-size: variables.$tuSize-base;
+        font-size: $tuSize-base;
       }
       
       .u-#{$name}-textSize-Lg1 {
-        font-size: variables.$tuSize-lg1;
+        font-size: $tuSize-lg1;
       }
       
       .u-#{$name}-textSize-Lg2 {
-        font-size: variables.$tuSize-lg2;
+        font-size: $tuSize-lg2;
       }
       
       .u-#{$name}-textSize-Lg3 {
-        font-size: variables.$tuSize-lg3;
+        font-size: $tuSize-lg3;
       }
       
       .u-#{$name}-textSize-Lg4 {
-        font-size: variables.$tuSize-lg4;
+        font-size: $tuSize-lg4;
       }
       
       .u-#{$name}-textSize-Lg5 {
-        font-size: variables.$tuSize-lg5;
+        font-size: $tuSize-lg5;
       }
 
     }
@@ -120,8 +119,8 @@
   white-space: nowrap !important;
 }
 
-@if variables.$responsive == true {
-  @each $name, $value in variables.$breakpoints {
+@if $responsive == true {
+  @each $name, $value in $breakpoints {
     @media (min-width: $value) {
       .u-#{$name}-textCenter {
         text-align: center !important;
