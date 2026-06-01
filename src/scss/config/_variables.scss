@@ -1,6 +1,3 @@
-@use "sizing";
-@use "typography";
-
 //------------------------------------------------------------//
 
 // * Stencil Config Variables
@@ -42,27 +39,28 @@ $baseUnit: 8px;
 $font-Size:          20px;
 $font-LineHeight:    150%;
 $font-LetterSpace: -0.0025em;
+$font-ScaleRate:    1.333;
 
 // * 2. Sizing Utilities
 
 $su-sm3:            1px; // 1px
-$su-sm2: sizing.scaleGrid(.25); // 2px
-$su-sm1:  sizing.scaleGrid(.5); // 4px
-$su-base:  sizing.scaleGrid(1); // 8px
-$su-lg1:   sizing.scaleGrid(2); // 16px
-$su-lg2:   sizing.scaleGrid(3); // 24px
-$su-lg3:   sizing.scaleGrid(4); // 32px
-$su-lg4:   sizing.scaleGrid(8); // 64px
-$su-lg5:  sizing.scaleGrid(10); // 80px
+$su-sm2: scaleGrid(.25); // 2px
+$su-sm1:  scaleGrid(.5); // 4px
+$su-base:  scaleGrid(1); // 8px
+$su-lg1:   scaleGrid(2); // 16px
+$su-lg2:   scaleGrid(3); // 24px
+$su-lg3:   scaleGrid(4); // 32px
+$su-lg4:   scaleGrid(8); // 64px
+$su-lg5:  scaleGrid(10); // 80px
 
-$tuSize-sm2: typography.scaleFont($font-Size, -2) !default;
-$tuSize-sm1: typography.scaleFont($font-Size, -1) !default;
-$tuSize-base: typography.scaleFont($font-Size, 0) !default;
-$tuSize-lg1:  typography.scaleFont($font-Size, 1) !default;
-$tuSize-lg2:  typography.scaleFont($font-Size, 2) !default;
-$tuSize-lg3:  typography.scaleFont($font-Size, 3) !default;
-$tuSize-lg4:  typography.scaleFont($font-Size, 4) !default;
-$tuSize-lg5:  typography.scaleFont($font-Size, 5) !default;
+$tuSize-sm2: scaleFont($font-Size, -2) !default;
+$tuSize-sm1: scaleFont($font-Size, -1) !default;
+$tuSize-base: scaleFont($font-Size, 0) !default;
+$tuSize-lg1:  scaleFont($font-Size, 1) !default;
+$tuSize-lg2:  scaleFont($font-Size, 2) !default;
+$tuSize-lg3:  scaleFont($font-Size, 3) !default;
+$tuSize-lg4:  scaleFont($font-Size, 4) !default;
+$tuSize-lg5:  scaleFont($font-Size, 5) !default;
 
 // * 3. Color Utilities
 
@@ -82,8 +80,8 @@ $cu-border-dark: $color-blue-d1 !default;
 $tu-ParagraphFont: $font-helvetica !default;
 
 $tu-ParagraphSize: $tuSize-base !default;
-$tu-ParagraphSize-lg: typography.scaleFont($font-Size, 1) !default;
-$tu-ParagraphSize-sm: typography.scaleFont($font-Size, -1) !default;
+$tu-ParagraphSize-lg: scaleFont($font-Size, 1) !default;
+$tu-ParagraphSize-sm: scaleFont($font-Size, -1) !default;
 
 $tu-ParagraphWeight: 300 !default;
 $tu-ParagraphWeight-smBold: 400 !default;
@@ -101,7 +99,7 @@ $tu-HeadingSize-6: $tuSize-base !default;
 $tu-HeadingSize-7: $tuSize-sm1  !default;
 
 $tu-HeadingWeight: 300 !default;
-$tu-HeadingLineHeight: typography.scaleFont($font-LineHeight, -1) !default;
+$tu-HeadingLineHeight: scaleFont($font-LineHeight, -1) !default;
 
 // * 5. Responsive
 

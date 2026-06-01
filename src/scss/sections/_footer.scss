@@ -1,6 +1,3 @@
-@use "../config/spacing";
-@use "../config/variables";
-
 //------------------------------------------------------------//
 
 // * File Title
@@ -18,17 +15,17 @@
 
 #footer {
   position: relative;
-  @include spacing.siteContainer;
-  background-color: variables.$color-black;
-  border-top: 2px solid variables.$cu-border;
+  @include siteContainer;
+  background-color: $color-black;
+  border-top: 2px solid $cu-border;
   max-width: 100%;
 
   a {
     color: #fff;
   }
 
-  @include spacing.max-width('sm') {
-    padding: variables.$su-lg1 variables.$su-lg2;
+  @include max-width('sm') {
+    padding: $su-lg1 $su-lg2;
 
     ul {
       padding-left: 0;
@@ -38,7 +35,7 @@
 
   .List--dotSeperated {
     li {
-      @include spacing.max-width('sm') {
+      @include max-width('sm') {
         display: block;
         &:before {
           display: none;
@@ -48,9 +45,9 @@
   }
 
   .List--dotSeperated + .List--dotSeperated {
-    @include spacing.max-width('sm') {
-      border-top: 1px solid variables.$cu-border;
-      padding-top: variables.$su-base;
+    @include max-width('sm') {
+      border-top: 1px solid $cu-border;
+      padding-top: $su-base;
     }
   }  
 
@@ -63,7 +60,7 @@
 
 .copyright {
   display: block;
-  padding: variables.$su-lg1;
-  padding-bottom: variables.$su-lg4;
+  padding: $su-lg1;
+  padding-bottom: $su-lg4;
   text-align: center;
 }

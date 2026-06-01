@@ -1,5 +1,3 @@
-@use "../config/variables";
-
 //------------------------------------------------------------//
 
 // * File Title
@@ -16,10 +14,10 @@
 // * 1. Contents Grouping One
 
 .Progress {
-    background-color: rgba(variables.$color-black, 0.2);
+    background-color: rgba($color-black, 0.2);
     display: block;
-    height: variables.$su-lg2;
-    margin-bottom: variables.$su-base;
+    height: $su-lg2;
+    margin-bottom: $su-base;
     position: relative;
 
     &:last-child {
@@ -28,19 +26,19 @@
 }
 
 .Progress-label {
-    color: variables.$color-grey-d1;
+    color: $color-grey-d1;
     position: relative;
 }
 
 .Progress-bar {
-    background-color: variables.$color-blue-d1;
+    background-color: $color-blue-d1;
     position: absolute;
     height: 100%;
     overflow: hidden;
 
     &::before {
         content: attr(data-label);
-        color: variables.$color-white;
+        color: $color-white;
         white-space: nowrap;
     }
 
@@ -50,7 +48,7 @@
 .Progress-bar:before{
     font-size: 11px;
     position: absolute;
-    height: variables.$su-lg2;
-    line-height: variables.$su-lg2;
-    padding-left: variables.$su-base;
+    height: $su-lg2;
+    line-height: $su-lg2;
+    padding-left: $su-base;
 }

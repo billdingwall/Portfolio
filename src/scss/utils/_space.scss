@@ -13,8 +13,7 @@
 
 // * 1. Contents Grouping One
 
-@use "../config/index.scss";
-@use "../config/variables";
+@import "../config/index.scss";
 
 //  **
 //  Spacing utilities
@@ -38,12 +37,12 @@
 
 $spaces: (
   'None': 0,
-  'Xs': variables.$su-sm1,
-  'Sm': variables.$su-base,
-  'Md': variables.$su-lg1,
-  'Lg': variables.$su-lg2,
-  'Xl': variables.$su-lg3,
-  'Xxl': variables.$su-lg4
+  'Xs': $su-sm1,
+  'Sm': $su-base,
+  'Md': $su-lg1,
+  'Lg': $su-lg2,
+  'Xl': $su-lg3,
+  'Xxl': $su-lg4
 );
 
 @each $name, $value in $spaces {
@@ -89,8 +88,8 @@ $spaces: (
   }
 }
 
-@if variables.$responsive == true {
-  @each $bp-name, $bp-value in variables.$breakpoints {
+@if $responsive == true {
+  @each $bp-name, $bp-value in $breakpoints {
     @media (min-width: $bp-value) {
       @each $name, $value in $spaces {
         .u-#{$bp-name}-space#{$name},

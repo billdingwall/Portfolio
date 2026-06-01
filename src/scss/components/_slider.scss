@@ -1,6 +1,3 @@
-@use "../config/sizing";
-@use "../config/variables";
-
 //------------------------------------------------------------//
 
 // * File Title
@@ -21,20 +18,20 @@
 }
 
 button.splide__pagination__page {
-    background: variables.$color-blue;
-    height: variables.$su-base;
-    width: variables.$su-base;
+    background: $color-blue;
+    height: $su-base;
+    width: $su-base;
     opacity: 0.5;
 
     &.is-active {
-        background: variables.$color-blue;
+        background: $color-blue;
         opacity: 1;
         transform: scale(1.25);
     }
 }
 
 ul.splide__pagination {
-    bottom: variables.$su-base;
+    bottom: $su-base;
 }
 
 .Slider--slide,
@@ -43,20 +40,20 @@ ul.splide__pagination {
 }
 
 .splide {
-   padding-bottom: variables.$su-lg2;
-   padding-bottom: variables.$su-lg4;
+   padding-bottom: $su-lg2;
+   padding-bottom: $su-lg4;
 }
 
 div.splide__progress__bar {
-    height: variables.$su-base;
-    background: variables.$color-blue;
+    height: $su-base;
+    background: $color-blue;
 }
 
 div.splide__progress {
     margin-top: -8px;
     z-index: 100;
     position: relative;
-    background: rgba(variables.$cu-border, 0.24);
+    background: rgba($cu-border, 0.24);
 }
 
 .splide__toggle {
@@ -66,22 +63,22 @@ div.splide__progress {
     right: 0;
     bottom: 0;
     margin: auto;
-    height: sizing.scaleGrid(10);
-    width: sizing.scaleGrid(10);
+    height: scaleGrid(10);
+    width: scaleGrid(10);
 }
 
 .splide__toggle {
     background: transparent;
     border: none;
-    color: variables.$color-blue;
+    color: $color-blue;
     z-index: -100;
     opacity: 0;
     transition: all .5s ease;
     display: none; // temp cut
     
     &, svg {
-        height: sizing.scaleGrid(10);
-        width: sizing.scaleGrid(10);
+        height: scaleGrid(10);
+        width: scaleGrid(10);
         fill: currentColor;
     }
 
