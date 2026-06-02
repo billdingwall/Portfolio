@@ -6,12 +6,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/williamdingwall/portfolio-metalsmith.git"
+    "url": "git+ssh://git@github.com/billdingwall/Portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/williamdingwall/portfolio-metalsmith/issues"
+    "url": "https://github.com/billdingwall/Portfolio/issues"
   },
-  "homepage": "https://github.com/williamdingwall/portfolio-metalsmith#readme",
+  "homepage": "https://github.com/billdingwall/Portfolio#readme",
   "dependencies": {
     "@astrojs/react": "^5.0.6",
     "@splidejs/splide": "^4.1.4",

@@ -69,13 +69,13 @@ export const Footer: React.FC = () => {
             </ul>
             <ul className="Grid-cell u-sm-size1of3">
               <li><a href="/about">About</a></li>
-              <li><a href="https://www.linkedin.com/in/williamdingwall/">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/billdingwall/">LinkedIn</a></li>
               <li><a href="https://adplist.org/mentors/william-dingwall">ADP List Mentor</a></li>
             </ul>
             <ul className="Grid-cell u-sm-size1of3">
               <li><a href="https://dribbble.com/billdingwall">Dribble</a></li>
               <li><a href="https://medium.com/@billdingwall">Medium</a></li>
-              <li><a href="https://github.com/williamdingwall">Github</a></li>
+              <li><a href="https://github.com/billdingwall">Github</a></li>
             </ul>
           </div>
         </div>

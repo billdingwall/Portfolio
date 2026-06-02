@@ -1,2 +1,2 @@
-# portfolio-metalsmith
+# Portfolio
 My metalsmith portfolio

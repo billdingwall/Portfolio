@@ -36,9 +36,9 @@ const socialMedia = await Promise.all(
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {ogImage && <meta property="og:image" content={`https://williamdingwall.com/${ogImage}`} />}
+  {ogImage && <meta property="og:image" content={`https://billdingwall.com/${ogImage}`} />}
   {description && <meta property="og:description" content={description} />}
-  {ogUrl && <meta property="og:url" content={`https://williamdingwall.com/${ogUrl}`} />}
+  {ogUrl && <meta property="og:url" content={`https://billdingwall.com/${ogUrl}`} />}
   {title && <meta property="og:title" content={title} />}
 
   <title>{title}</title>
@@ -66,7 +66,7 @@ const socialMedia = await Promise.all(
     import Splide from '@splidejs/splide';
 
     // Conditionally load GA based on host
-    if (window.location.hostname === 'williamdingwall.com') {
+    if (window.location.hostname === 'billdingwall.com') {
       window.dataLayer = window.dataLayer || [];
       function gtag(...args: any[]) { window.dataLayer.push(args); }
       gtag('js', new Date());
