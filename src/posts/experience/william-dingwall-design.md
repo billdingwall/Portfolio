@@ -1,5 +1,5 @@
 ---
-company: William Dingwall Design
+company: Bill Dingwall Design
 location: Fort Collins, CO (onsite + remote)
 role: Designer + Developer
 duration: 4 years

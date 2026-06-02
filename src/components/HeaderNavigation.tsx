@@ -23,7 +23,7 @@ export const HeaderNavigation: React.FC<HeaderNavigationProps> = ({ title = '', 
                   <Logo />
                 </span>
                 <span className="SiteNav-titleText">
-                  William Dingwall | Product Design & Identity Design
+                  Bill Dingwall | Product Design & Identity Design
                 </span>
               </a>
             </h1>
