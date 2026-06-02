@@ -1,8 +1,7 @@
 ---
-import BaseLayout from './BaseLayout.astro';
-import { PhotoSwipe } from '../components/PhotoSwipe';
-import '../scss/photoswipe/photoswipe.scss';
-import '../scss/photoswipe/default-skin.scss';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PhotoSwipeShell from '@components/PhotoSwipeShell.astro';
+import { Image } from 'astro:assets';
 
 export interface Props {
   title: string;
@@ -14,6 +13,11 @@ export interface Props {
 }
 
 const { title, collection_label, thumb, intro, path, id } = Astro.props;
+
+// Dynamically resolve cover image from src/assets
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/img/**/*.{jpg,jpeg,png,gif,webp,svg}');
+const coverPath = thumb ? `/src/assets${thumb}` : null;
+const coverImage = coverPath && images[coverPath] ? (await images[coverPath]()).default : null;
 ---
 
 <BaseLayout
@@ -27,48 +31,54 @@ const { title, collection_label, thumb, intro, path, id } = Astro.props;
     <header class="Article-header">
       <h1>{title}</h1>
       <p>{collection_label}</p>
-      {thumb && <img src={thumb} alt={title} />}
+      {coverImage
+        ? <Image src={coverImage} alt={title} width={1200} />
+        : thumb && <img src={thumb} alt={title} />
+      }
     </header>
     <slot />
   </article>
 
-  <PhotoSwipe />
+  <PhotoSwipeShell />
 
-  <script is:inline src="/js/photoswipe/photoswipe.min.js"></script>
-  <script is:inline src="/js/photoswipe/photoswipe-ui-default.min.js"></script>
+  <!-- Vite-processed script: bundled, minified, tree-shaken -->
+  <script>
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+    import 'photoswipe/style.css';
 
-  <script is:inline>
-    (function() {
-      var pswpElement = document.querySelectorAll('.pswp')[0];
-      var slides = [];
+    let lightbox: PhotoSwipeLightbox | null = null;
 
-      function setupSlides() {
-        slides = [];
-        var images = document.querySelectorAll('.Article-image img');
-        images.forEach(function(img, i) {
-          img.setAttribute('slideIndex', i);
-          slides.push({
-            src: img.getAttribute('src') || '',
-            w: img.naturalWidth || 1200,
-            h: img.naturalHeight || 800
-          });
-        });
-      }
+    function initPhotoSwipe() {
+      // Teardown any previous instance first
+      destroyPhotoSwipe();
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var images = document.querySelectorAll('.Article-image img');
-        images.forEach(function(img) {
-          img.addEventListener('click', function() {
-            setupSlides();
-            var indexAttr = this.getAttribute('slideIndex');
-            var start = { index: indexAttr ? parseInt(indexAttr, 10) : 0 };
-            if (typeof PhotoSwipe !== 'undefined' && typeof PhotoSwipeUI_Default !== 'undefined') {
-              var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, slides, start);
-              gallery.init();
-            }
-          });
-        });
+      const articleImages = document.querySelectorAll<HTMLImageElement>('.Article-image img');
+      if (!articleImages.length) return;
+
+      // PhotoSwipe v5: use Lightbox for declarative gallery binding
+      lightbox = new PhotoSwipeLightbox({
+        gallery: '.Article',
+        children: '.Article-image img',
+        pswpModule: () => import('photoswipe'),
       });
-    })();
+
+      lightbox.init();
+    }
+
+    function destroyPhotoSwipe() {
+      if (lightbox) {
+        lightbox.destroy();
+        lightbox = null;
+      }
+    }
+
+    // Initialize on first load
+    initPhotoSwipe();
+
+    // Re-initialize on client-side page transitions (View Transitions)
+    document.addEventListener('astro:page-load', initPhotoSwipe);
+
+    // Teardown before page swap to prevent memory leaks
+    document.addEventListener('astro:before-swap', destroyPhotoSwipe);
   </script>
 </BaseLayout>

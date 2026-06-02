@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "string",
+      "const": "referral"
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "intro",
+    "collection",
+    "date"
+  ]
+}

@@ -1,5 +1,5 @@
 ---
-import AboutLayout from '../layouts/AboutLayout.astro';
+import AboutLayout from '@layouts/AboutLayout.astro';
 
 const profilePics = Object.values(import.meta.glob('../posts/profile-pic/*.md', { eager: true }));
 const galleryImages = Object.values(import.meta.glob('../posts/gallery/*.md', { eager: true }));

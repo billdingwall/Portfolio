@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "string"
+    },
+    "thumb": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "string",
+      "const": "portfolioWork"
+    },
+    "collection_label": {
+      "type": "string"
+    },
+    "project_link": {
+      "type": "boolean"
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "id": {
+      "type": "string"
+    },
+    "type_productStrategy": {
+      "default": false,
+      "type": "boolean"
+    },
+    "type_productDesign": {
+      "default": false,
+      "type": "boolean"
+    },
+    "type_designSystem": {
+      "default": false,
+      "type": "boolean"
+    },
+    "type_research": {
+      "default": false,
+      "type": "boolean"
+    },
+    "type_leadership": {
+      "default": false,
+      "type": "boolean"
+    },
+    "type_dev": {
+      "default": false,
+      "type": "boolean"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "intro",
+    "thumb",
+    "collection",
+    "collection_label",
+    "id",
+    "date"
+  ]
+}

@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  path: string;
+  title: string;
+  intro: string;
+  thumb: string;
+  type_productStrategy?: boolean;
+  type_productDesign?: boolean;
+  type_designSystem?: boolean;
+  type_research?: boolean;
+  type_leadership?: boolean;
+  type_dev?: boolean;
+}
+
+const props = Astro.props;
+
+// Dynamically resolve the image from src/assets
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/img/**/*.{jpg,jpeg,png,gif,webp,svg}');
+const imagePath = `/src/assets${props.thumb}`;
+const resolvedImage = images[imagePath] ? (await images[imagePath]()).default : null;
+---
+
+<a class="PortfolioItem Grid Grid--fit" href={`/posts/${props.path}`}>
+  <div class="PortfolioItem-contentContainer Grid-cell u-sizeFull u-sm-size2of4 u-md-size1of3">
+    <p class="PortfolioItem-title">{props.title}</p>
+    <p class="PortfolioItem-desc">{props.intro}</p>
+    <span class="PortfolioItem-link">Read Case Study</span>
+    <ul class="List--dotSeperated u-colorWhite u-borderTop u-hidden u-sm-block">
+      {props.type_productStrategy && <li>product strategy</li>}
+      {props.type_productDesign && <li>product design</li>}
+      {props.type_designSystem && <li>design systems</li>}
+      {props.type_research && <li>research & analysis</li>}
+      {props.type_leadership && <li>leadership</li>}
+      {props.type_dev && <li>development</li>}
+    </ul>
+  </div>
+  <div class="PortfolioItem-imageContainer Grid-cell u-sizeFull u-sm-size2of4 u-md-size2of3">
+    {resolvedImage
+      ? <Image src={resolvedImage} alt={props.title} class="PortfolioItem-image" width={800} />
+      : <img class="PortfolioItem-image" src={props.thumb} alt={props.title} />
+    }
+  </div>
+</a>

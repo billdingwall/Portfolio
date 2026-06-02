@@ -1,5 +1,5 @@
 ---
-import HomeLayout from '../layouts/HomeLayout.astro';
+import HomeLayout from '@layouts/HomeLayout.astro';
 
 // We need to fetch the collections that were previously in Metalsmith
 const portfolioWork = Object.values(import.meta.glob('../posts/case-study-*.md', { eager: true }));

@@ -17,9 +17,10 @@ const {
   showHeader = true
 } = Astro.props;
 
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
-import '../scss/main.scss';
+import { Header } from '@components/Header';
+import { Footer } from '@components/Footer';
+import '@scss/main.scss';
+import '@splidejs/splide/css';
 
 // We fetch social media here globally to pass into Header
 const socialMedia = await Promise.all(
@@ -47,13 +48,11 @@ const socialMedia = await Promise.all(
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH99855ZFW"></script>
 
-  <script is:inline src="/js/index.js"></script>
-  <script is:inline src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <!-- Named slot: child layouts inject page-specific head content here -->
+  <slot name="head" />
 </head>
 <body id={bodyId}>
   {showHeader && <Header socialMedia={socialMedia} />}
@@ -61,5 +60,36 @@ const socialMedia = await Promise.all(
   <slot />
 
   <Footer />
+
+  <!-- Vite-bundled: GA init + Splide init (replaces public/js/index.js + CDN scripts) -->
+  <script>
+    import Splide from '@splidejs/splide';
+
+    // Conditionally load GA based on host
+    if (window.location.hostname === 'williamdingwall.com') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(...args: any[]) { window.dataLayer.push(args); }
+      gtag('js', new Date());
+      gtag('config', 'G-KH99855ZFW');
+    }
+
+    // Initialize Splide carousels
+    function initSplide() {
+      const splides = document.querySelectorAll('.splide');
+      splides.forEach((el) => {
+        new Splide(el as HTMLElement, {
+          type: 'loop',
+          autoplay: true,
+          interval: 10000,
+        }).mount();
+      });
+    }
+
+    // Run on initial load
+    initSplide();
+
+    // Re-run on client-side navigations (View Transitions)
+    document.addEventListener('astro:page-load', initSplide);
+  </script>
 </body>
 </html>
