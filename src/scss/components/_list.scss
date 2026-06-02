@@ -1,3 +1,5 @@
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * File Title
@@ -14,7 +16,7 @@
 // * 1. Contents Grouping One
 
 ul, ol {
-  padding-bottom: $su-lg1;
+  padding-bottom: variables.$su-lg1;
 
   &:last-child {
     padding-bottom: 0;
@@ -23,11 +25,11 @@ ul, ol {
 }
 
 ul, ol {
-  padding-left: $su-lg1;
+  padding-left: variables.$su-lg1;
 }
 
 li {
-  padding: $su-base 0;
+  padding: variables.$su-base 0;
 }
 
 
@@ -42,14 +44,14 @@ li {
 
   li {
     display: inline-block;
-    padding-right: $su-lg1;
+    padding-right: variables.$su-lg1;
 
     &:before {
       content: '•';
       display: inline-block;
-      color: $cu-Paragraph;
-      font-size: $tuSize-sm1;
-      padding-right: $su-lg1;
+      color: variables.$cu-Paragraph;
+      font-size: variables.$tuSize-sm1;
+      padding-right: variables.$su-lg1;
     }
 
     &:first-child:before {

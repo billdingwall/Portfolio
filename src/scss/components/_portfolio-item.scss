@@ -1,3 +1,6 @@
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * File Title
@@ -14,16 +17,16 @@
 // * 1. Contents Grouping One
 
 .PortfolioItem {
-  margin-bottom: $su-lg3;
-  height: $su-lg5 * 4;
-  border: 1px solid $color-blue-d1;
+  margin-bottom: variables.$su-lg3;
+  height: variables.$su-lg5 * 4;
+  border: 1px solid variables.$color-blue-d1;
   position: relative;
 
   &:hover {
-    transition: box-shadow $duration-short ease-in-out;
+    transition: box-shadow variables.$duration-short ease-in-out;
   }
 
-  @include max-width('sm') {
+  @include spacing.max-width('sm') {
     height: auto;
   }
 
@@ -31,18 +34,18 @@
 
 .PortfolioItem-contentContainer {
   flex: 0 0 400px !important;
-  padding: $su-lg3;
-  background: $color-black;
+  padding: variables.$su-lg3;
+  background: variables.$color-black;
 
   .List--dotSeperated {
-    padding-top: $su-lg3;
+    padding-top: variables.$su-lg3;
     li {
-      font-size: $tuSize-sm1;
-      padding-top: $su-sm2;
-      padding-bottom: $su-sm2;
+      font-size: variables.$tuSize-sm1;
+      padding-top: variables.$su-sm2;
+      padding-bottom: variables.$su-sm2;
     }
     li:before {
-      font-size: $tuSize-sm2;
+      font-size: variables.$tuSize-sm2;
     }
     li, li:before {
       color: #fff;
@@ -51,7 +54,7 @@
     }
   }
 
-  @include max-width('sm') {
+  @include spacing.max-width('sm') {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -65,11 +68,11 @@
 }
 
 .PortfolioItem-image {
-  border-bottom: 1px solid $cu-border;
+  border-bottom: 1px solid variables.$cu-border;
 }
 
 .PortfolioItem-content {
-  padding: $su-lg1;
+  padding: variables.$su-lg1;
 }
 
 .PortfolioItem-title,
@@ -101,11 +104,11 @@
 
 .PortfolioItem-link {
   display: inline-block;
-  color: $color-blue;
+  color: variables.$color-blue;
   position: relative;
 
-  @include max-width('sm') {
-    margin-top: $su-base;
+  @include spacing.max-width('sm') {
+    margin-top: variables.$su-base;
   }
 
   &:before { 
@@ -113,7 +116,7 @@
     position: absolute;
     height: 1px;
     width: 100%;
-    background-color: $color-blue;
-    bottom: $su-base - 1px;
+    background-color: variables.$color-blue;
+    bottom: variables.$su-base - 1px;
   }
 }

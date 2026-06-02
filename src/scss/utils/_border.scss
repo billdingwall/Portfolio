@@ -13,7 +13,8 @@
 
 // * 1. Contents Grouping One
 
-@import "../config/index.scss";
+@use "../config/index.scss";
+@use "../config/variables";
 
 $borders: (
   'Right': right,
@@ -22,7 +23,7 @@ $borders: (
   'Top': top
 );
 
-$border-style: 1px solid $cu-border;
+$border-style: 1px solid variables.$cu-border;
 
 .u-border {
   border: $border-style;
@@ -41,9 +42,9 @@ $border-style: 1px solid $cu-border;
   }
 }
 
-@if $responsive == true {
+@if variables.$responsive == true {
 
-  @each $bp-name, $bp-value in $breakpoints {
+  @each $bp-name, $bp-value in variables.$breakpoints {
 
     @media (min-width: $bp-value) {
 

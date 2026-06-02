@@ -1,3 +1,6 @@
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * Home Page Introduction
@@ -14,12 +17,12 @@
 // * 1. Contents Grouping One
 
 .About-introText h1 {
-  margin-left: 0-$su-lg3;
+  margin-left: 0-(variables.$su-lg3);
 }
 
 .About-introPhoto {
 
-  @include min-width('md') {
+  @include spacing.min-width('md') {
     max-width: 440px;
     &:after {
       content: '';
@@ -29,8 +32,8 @@
       position: absolute;
       top: -82px;
       left: 50%;
-      background: $cu-Background-dark;
-      border-bottom: 1px solid $cu-border;
+      background: variables.$cu-Background-dark;
+      border-bottom: 1px solid variables.$cu-border;
       z-index: -1;
     }
     &:before {
@@ -41,21 +44,21 @@
       top: -82px;
       left: 50%;
       position: absolute;
-      background: $cu-border;
+      background: variables.$cu-border;
     }
     .splide__pagination {
       display: none;
     }
   }
 
-  @include max-width('md') {
+  @include spacing.max-width('md') {
     display: none;
   }
 
 }
 
 .ProfilePic-image {
-  border: 1px solid $cu-border;
+  border: 1px solid variables.$cu-border;
 }
 
 .About-introPhotoSlider.splide {
@@ -82,26 +85,26 @@
 }
 
 .ContactList-link {
-  color: $color-blue-d1;
+  color: variables.$color-blue-d1;
 
   .Icon {
-    font-size: $su-lg3;
-    color: $color-blue;
-    width: $su-lg3;
-    height: $su-lg3;
+    font-size: variables.$su-lg3;
+    color: variables.$color-blue;
+    width: variables.$su-lg3;
+    height: variables.$su-lg3;
     margin-right: 8px;
 
-    @include max-width('sm') {
-      font-size: $su-lg2;
-      width: $su-lg2;
-      height: $su-lg2;
+    @include spacing.max-width('sm') {
+      font-size: variables.$su-lg2;
+      width: variables.$su-lg2;
+      height: variables.$su-lg2;
       margin-right: 4px;
     }
 
   }
 
-  @include max-width('sm') {
-    font-size: $tuSize-sm1;
+  @include spacing.max-width('sm') {
+    font-size: variables.$tuSize-sm1;
   }
 
 }
@@ -110,12 +113,12 @@
   content: '';
   height: 100%;
   width: 1px;
-  background-color: $cu-border;
+  background-color: variables.$cu-border;
   position: absolute;
   top: 0;
   left: 50%;
 
-  @include max-width('md') {
+  @include spacing.max-width('md') {
     display: none;
   }
 

@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * Home Page Introduction
@@ -14,66 +18,65 @@
 // * 1. Contents Grouping One
 
 .ExperienceItem {
-  padding-bottom: $su-lg4;
+  padding-bottom: variables.$su-lg4;
   &:last-child {
     padding-bottom: 0;
   }
 }
 
 .ExperienceItem-content {
-
-  padding-right: $su-lg2/2;
+  padding-right: math.div(variables.$su-lg2, 2);
 
 }
 
 .ExperienceItem-description {
-  padding-left: $su-lg2/2;
-  @include max-width('sm') {
+  padding-left: math.div(variables.$su-lg2, 2);
+  @include spacing.max-width('sm') {
     padding-left: 0;
   }
 }
 
 .ExperienceItem-role {
 
-  font-size: $tuSize-lg1;
-  padding-bottom: $su-lg1;
+  font-size: variables.$tuSize-lg1;
+  padding-bottom: variables.$su-lg1;
 
 }
 
 .ExperienceItem-details {
-  color: $color-white;
-  font-size: $tuSize-base;
-  padding-bottom: $su-lg3;
-  @include max-width('sm') {
-    padding-bottom: $su-lg1;
+  color: variables.$color-white;
+  font-size: variables.$tuSize-base;
+  padding-bottom: variables.$su-lg3;
+  @include spacing.max-width('sm') {
+    padding-bottom: variables.$su-lg1;
   }
 }
 
 .ExperienceItem-detailsDivider {
-  padding: 0 $su-sm1;
-  color: $color-blue;
+  padding: 0 variables.$su-sm1;
+  color: variables.$color-blue;
 }
 
 .ExperienceItem-detailsDuration {
-  color: $color-blue;
+  color: variables.$color-blue;
 }
 
 // TODO: when refactoring move this to a base component
 
 .Download-link {
-  border: 2px solid $color-blue;
-  padding: $su-lg1;
+  border: 2px solid variables.$color-blue;
+  padding: variables.$su-lg1;
   display: inline-block;
 
   .Icon {
-    padding-right: $su-lg1;
+    padding-right: variables.$su-lg1;
   }
 
   &:hover, &:active {
-    background: $color-blue;
+    background: variables.$color-blue;
     transition: all .25s ease-in-out;
     &, .Icon {
-      color: $cu-Background-dark;
+      color: variables.$cu-Background-dark;
     }
   }
 
