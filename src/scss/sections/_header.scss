@@ -1,3 +1,6 @@
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * File Title
@@ -14,10 +17,10 @@
 // * 1. Contents Grouping One
 
 .SiteNav {
-  height: $su-lg5;
+  height: variables.$su-lg5;
   width: 100%;
 
-  @include siteContainer;
+  @include spacing.siteContainer;
 
   .Grid {
     align-items: center;
@@ -37,11 +40,11 @@
 
 .SiteNav-title,
 .SiteNav-link {
-  color: $cu-Paragraph;
+  color: variables.$cu-Paragraph;
 }
 
 .SiteNav-title {
-  font-size: $tuSize-lg2;
+  font-size: variables.$tuSize-lg2;
   
   &Text {
     display: none;
@@ -50,7 +53,7 @@
 }
 
 .SiteNav-links {
-  padding-right: $su-lg1;
+  padding-right: variables.$su-lg1;
 
   &:last-child {
     padding-right: 0;
@@ -62,7 +65,7 @@
   }
 
   &.u-textRight {
-    @include max-width('sm') {
+    @include spacing.max-width('sm') {
       display: none;
     }
   }
@@ -70,9 +73,9 @@
 }
 
 .SiteNav-link, {
-  font-family: $tu-HeadingFont;
-  font-size: $tu-HeadingSize-6;
-  margin-left: $su-lg2;
+  font-family: variables.$tu-HeadingFont;
+  font-size: variables.$tu-HeadingSize-6;
+  margin-left: variables.$su-lg2;
   display: block;
 
   &:first-child {
@@ -80,24 +83,24 @@
   }
 
   a {
-    color: $cu-Paragraph;
+    color: variables.$cu-Paragraph;
   }
 
   .Icon {
-    font-size: $su-lg3;
-    color: $color-blue;
-    width: $su-lg3;
-    height: $su-lg3;
+    font-size: variables.$su-lg3;
+    color: variables.$color-blue;
+    width: variables.$su-lg3;
+    height: variables.$su-lg3;
   } 
 
   .Icon--logo {
-    font-size: $su-lg4;
-    width: $su-lg4;
-    height: $su-lg4;
+    font-size: variables.$su-lg4;
+    width: variables.$su-lg4;
+    height: variables.$su-lg4;
   }
 
 }
 
 .SiteNav-link--social {
-  margin-left: $su-lg1;
+  margin-left: variables.$su-lg1;
 }

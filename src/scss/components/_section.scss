@@ -1,3 +1,7 @@
+@use "../config/sizing";
+@use "../config/spacing";
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * File Title
@@ -15,24 +19,24 @@
 
 .Section {
 
-  border-top: $buSize-base solid $cu-border-dark;
-  padding: 0 $su-lg1;
+  border-top: variables.$buSize-base solid variables.$cu-border-dark;
+  padding: 0 variables.$su-lg1;
   position: relative;
 
-  @include max-width('sm') {
-    padding: 0 $su-lg1;
+  @include spacing.max-width('sm') {
+    padding: 0 variables.$su-lg1;
   }
   
   &.Section--grey {
-    background-color: $cu-Background-grey;
+    background-color: variables.$cu-Background-grey;
   }
 
   &.Section--dark {
-    background-color: $cu-Background-dark;
-    color: $color-white;
+    background-color: variables.$cu-Background-dark;
+    color: variables.$color-white;
 
     h1, h2, h3, h4, h6, p, li {
-      color: $color-white;
+      color: variables.$color-white;
     }
 
   }
@@ -48,24 +52,24 @@
 }
 
 .Section-content {
-  @include siteContainer;
-  padding: $su-lg5 0;
+  @include spacing.siteContainer;
+  padding: variables.$su-lg5 0;
 
-  @include max-width('sm') {
-    padding: $su-lg3 0;
+  @include spacing.max-width('sm') {
+    padding: variables.$su-lg3 0;
   }
 
 
 }
 
 .Section-subSection {
- padding-bottom: $su-lg4;
+ padding-bottom: variables.$su-lg4;
 }
 
 .Section-subTitle {
-  font-family: $tu-ParagraphFont;
-  font-size: $tuSize-base;
+  font-family: variables.$tu-ParagraphFont;
+  font-size: variables.$tuSize-base;
   text-transform: uppercase;
-  color: $color-blue;
-  padding-bottom: $su-lg3;
+  color: variables.$color-blue;
+  padding-bottom: variables.$su-lg3;
 }

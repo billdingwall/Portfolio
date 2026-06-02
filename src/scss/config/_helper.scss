@@ -1,3 +1,4 @@
+@use "sass:math";
 //------------------------------------------------------------//
 
 // * Math
@@ -14,22 +15,22 @@
 // * 1. ....
 
 @function quarter($number) {
-  $number: round($number / 4);
+  $number: math.round($number / 4);
   @return $number
 }
 
 @function halve($number) {
-  $number: round($number / 2);
+  $number: math.round($number / 2);
   @return $number
 }
 
 @function double($number) {
-  $number: round($number * 2);
+  $number: math.round($number * 2);
   @return $number
 }
 
 @function quadruple($number) {
-  $number: round($number * 4);
+  $number: math.round($number * 4);
   @return $number
 }
 

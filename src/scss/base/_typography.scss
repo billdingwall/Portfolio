@@ -1,3 +1,5 @@
+@use "../config/variables";
+
 //------------------------------------------------------------//
 
 // * Base Typography
@@ -15,40 +17,40 @@
 // * 1. Base
 
 body {
-  color: $cu-Paragraph;
-  font-family: $tu-ParagraphFont;
-  font-size: $tuSize-base;
-  font-weight: $tu-ParagraphWeight;
+  color: variables.$cu-Paragraph;
+  font-family: variables.$tu-ParagraphFont;
+  font-size: variables.$tuSize-base;
+  font-weight: variables.$tu-ParagraphWeight;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: $font-LineHeight;
-  letter-spacing: $font-LetterSpace;
+  line-height: variables.$font-LineHeight;
+  letter-spacing: variables.$font-LetterSpace;
 }
 
 // * 2. Paragraph & Sub Text
 
 p, li, dl, blockquote {
-  padding-bottom: $su-lg1;
-  line-height: $font-LineHeight;
+  padding-bottom: variables.$su-lg1;
+  line-height: variables.$font-LineHeight;
 
   b,
   strong {
-    font-weight: $tu-ParagraphWeight-Bold;
+    font-weight: variables.$tu-ParagraphWeight-Bold;
   }
 
   i {
     font-style: italic;
-    font-weight: $tu-ParagraphWeight-smBold;
+    font-weight: variables.$tu-ParagraphWeight-smBold;
   }
 
 }
 
 small {
-  color: $cu-Paragraph;
-  font-size: $tuSize-sm1;
-  line-height: $font-LineHeight;
-  letter-spacing: $font-LetterSpace;
+  color: variables.$cu-Paragraph;
+  font-size: variables.$tuSize-sm1;
+  line-height: variables.$font-LineHeight;
+  letter-spacing: variables.$font-LetterSpace;
 }
 
 a {
@@ -58,7 +60,7 @@ a {
   &:active,
   &:hover {
     outline: 0;
-    color: $color-blue;
+    color: variables.$color-blue;
     text-decoration: underline;
   }
 }
@@ -66,44 +68,44 @@ a {
 // * 3. Headings & Sub Headings
 
 h1, h2, h3, h4, h5, h6 {
-  color: $cu-Heading;
-  font-family: $tu-HeadingFont;
-  font-weight: $tu-HeadingWeight;
-  line-height: $font-LineHeight;
+  color: variables.$cu-Heading;
+  font-family: variables.$tu-HeadingFont;
+  font-weight: variables.$tu-HeadingWeight;
+  line-height: variables.$font-LineHeight;
 }
 
 h1 {
-  font-size: $tuSize-lg4;
+  font-size: variables.$tuSize-lg4;
 }
 
 h2 {
-  font-size: $tuSize-lg3;
+  font-size: variables.$tuSize-lg3;
 }
 
 h3 {
-  font-size: $tuSize-lg2;
+  font-size: variables.$tuSize-lg2;
 }
 
 h4 {
-  font-size: $tuSize-lg1;
+  font-size: variables.$tuSize-lg1;
 }
 
 h5 {
-  font-size: $tuSize-base;
+  font-size: variables.$tuSize-base;
 }
 
 h6 {
-  font-size: $tuSize-sm1;
+  font-size: variables.$tuSize-sm1;
 }
 
 // * 4. Headings & Sub Headings
 
 blockquote,
 .Blockquote {
-  font-size: $tu-ParagraphSize-lg;
-  border-left: $su-base solid $color-blue;
-  padding: $su-lg1;
-  margin-bottom: $su-lg1;
+  font-size: variables.$tu-ParagraphSize-lg;
+  border-left: variables.$su-base solid variables.$color-blue;
+  padding: variables.$su-lg1;
+  margin-bottom: variables.$su-lg1;
   max-width: 900px;
-  transform: translate((0-$su-lg2, 0));
+  transform: translate((0-(variables.$su-lg2), 0));
 }

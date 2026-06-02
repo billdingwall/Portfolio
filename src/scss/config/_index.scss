@@ -7,13 +7,13 @@
 
 //------------------------------------------------------------//
 
-@import 'fonts';
+@use 'fonts';
 
-@import 'helper';
-@import 'sizing';
-@import 'color';
-@import 'typography';
+@use 'helper';
+@use 'sizing';
+@use 'color';
+@use 'typography';
 
-@import 'variables';
+@use 'variables';
 
-@import 'spacing';
+@use 'spacing';

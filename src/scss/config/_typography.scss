@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "helper";
+
 //------------------------------------------------------------//
 
 // * Font Scaling
@@ -20,9 +23,9 @@ $font-ScaleRate:    1.333;
 
   // handles nagative steps for font scale
   @if ($step < 0) {
-    $step: convertNegative($step);
+    $step: helper.convertNegative($step);
     @for $i from 1 through $step {
-      $property: $property / $ratio;
+      $property: math.div($property, $ratio);
     }
   }
 
@@ -34,8 +37,8 @@ $font-ScaleRate:    1.333;
   }
 
   // round pixel values to nearest whole number
-  @if (unit($property) == 'px') {
-    $property: round($property);
+  @if (math.unit($property) == 'px') {
+    $property: math.round($property);
   }
 
   @return $property;

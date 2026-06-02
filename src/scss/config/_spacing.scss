@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "variables";
+
 //------------------------------------------------------------//
 
 // * Stencil Mixins
@@ -55,12 +58,12 @@
   $breakpoint-found: false;
 
   // Loop through the list of breakpoints we’ve provided in our settings file.
-  @each $breakpoint in $breakpoints {
+  @each $breakpoint in variables.$breakpoints {
 
     // Grab the alias and the condition from their respective locations in
     // the list.
-    $alias:     nth($breakpoint, 1);
-    $condition: nth($breakpoint, 2);
+    $alias:     list.nth($breakpoint, 1);
+    $condition: list.nth($breakpoint, 2);
 
     // If the media query we’ve specified has an alias and a condition...
     @if $mq == $alias and $condition {
@@ -98,25 +101,25 @@
 @mixin min-width($width) {
 
   @if $width == xs {
-    @media only screen and (min-width: $breakpoint-xs) {
+    @media only screen and (min-width: variables.$breakpoint-xs) {
       @content;
     }
   }
 
   @else if $width == sm {
-    @media only screen and (min-width: $breakpoint-sm) {
+    @media only screen and (min-width: variables.$breakpoint-sm) {
       @content;
     }
   }
 
   @else if $width == md {
-    @media only screen and (min-width: $breakpoint-md) {
+    @media only screen and (min-width: variables.$breakpoint-md) {
       @content;
     }
   }
 
   @else if $width == lg {
-    @media only screen and (min-width: $breakpoint-lg) {
+    @media only screen and (min-width: variables.$breakpoint-lg) {
       @content;
     }
   }
@@ -137,25 +140,25 @@
 @mixin max-width($width) {
 
   @if $width == xs {
-    @media only screen and (max-width: $breakpoint-xs) {
+    @media only screen and (max-width: variables.$breakpoint-xs) {
       @content;
     }
   }
 
   @else if $width == sm {
-    @media only screen and (max-width: $breakpoint-sm) {
+    @media only screen and (max-width: variables.$breakpoint-sm) {
       @content;
     }
   }
 
   @else if $width == md {
-    @media only screen and (max-width: $breakpoint-md) {
+    @media only screen and (max-width: variables.$breakpoint-md) {
       @content;
     }
   }
 
   @else if $width == lg {
-    @media only screen and (max-width: $breakpoint-lg) {
+    @media only screen and (max-width: variables.$breakpoint-lg) {
       @content;
     }
   }
