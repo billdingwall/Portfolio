@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "specifics": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "string"
+    },
+    "productdesign": {
+      "default": 0,
+      "type": "number"
+    },
+    "designsystems": {
+      "default": 0,
+      "type": "number"
+    },
+    "researchandanalysis": {
+      "default": 0,
+      "type": "number"
+    },
+    "leadershipandmentorship": {
+      "default": 0,
+      "type": "number"
+    },
+    "productandstrategy": {
+      "default": 0,
+      "type": "number"
+    },
+    "frontenddevelopment": {
+      "default": 0,
+      "type": "number"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "company": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "years": {
+      "type": "number"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "collection",
+    "date"
+  ]
+}

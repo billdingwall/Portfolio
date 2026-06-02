@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  thumb: string;
+}
+
+const { thumb } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/img/**/*.{jpg,jpeg,png,gif,webp,svg}');
+const imagePath = `/src/assets${thumb}`;
+const resolvedImage = images[imagePath] ? (await images[imagePath]()).default : null;
+---
+
+<div class="GalleryItem Grid-cell u-size1of3">
+  {resolvedImage
+    ? <Image src={resolvedImage} alt="Gallery item" class="GalleryItem-image" width={400} />
+    : <img class="GalleryItem-image" src={thumb} alt="Gallery item" />
+  }
+</div>

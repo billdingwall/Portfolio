@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  thumb: string;
+}
+
+const { thumb } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/img/**/*.{jpg,jpeg,png,gif,webp,svg}');
+const imagePath = `/src/assets${thumb}`;
+const resolvedImage = images[imagePath] ? (await images[imagePath]()).default : null;
+---
+
+<li class="ProfilePic splide__slide">
+  <div class="ProfilePic-content">
+    {resolvedImage
+      ? <Image src={resolvedImage} alt="Profile picture" class="ProfilePic-image" width={600} />
+      : <img class="ProfilePic-image" src={thumb} alt="Profile picture" />
+    }
+  </div>
+</li>

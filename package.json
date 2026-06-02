@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "author": "william dingwall",
   "description": "my personal portfolio",
-  "main": "build.js",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -15,9 +14,11 @@
   "homepage": "https://github.com/williamdingwall/portfolio-metalsmith#readme",
   "dependencies": {
     "@astrojs/react": "^5.0.6",
+    "@splidejs/splide": "^4.1.4",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "astro": "^6.4.2",
+    "photoswipe": "^5.4.4",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "typescript": "^6.0.3"
