@@ -1,7 +1,7 @@
 ---
 title: "Tree One"
 intro: tree painting
-thumb: ../img/gallery/design-elphantlogo.jpg
+thumb: /img/gallery/design-elphantlogo.jpg
 collection: galleryImage
 collection_label: Product Design
 project_link: true

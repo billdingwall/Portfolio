@@ -4,12 +4,22 @@ import AboutLayout from '../layouts/AboutLayout.astro';
 const profilePics = Object.values(import.meta.glob('../posts/profile-pic/*.md', { eager: true }));
 const galleryImages = Object.values(import.meta.glob('../posts/gallery/*.md', { eager: true }));
 
-const mappedProfilePics = profilePics.map((p: any) => ({ ...p.frontmatter, contents: p.compiledContent() }));
-const mappedGalleryImages = galleryImages.map((g: any) => ({ ...g.frontmatter, contents: g.compiledContent() }));
+const mappedProfilePics = await Promise.all(
+  profilePics.map(async (p: any) => ({ ...p.frontmatter, contents: await p.compiledContent() }))
+);
+const mappedGalleryImages = await Promise.all(
+  galleryImages.map(async (g: any) => ({ ...g.frontmatter, contents: await g.compiledContent() }))
+);
+
+const socialMedia = Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }));
+const mappedSocialMedia = await Promise.all(
+  socialMedia.map(async (s: any) => ({ ...s.frontmatter, contents: await s.compiledContent() }))
+);
 ---
 
 <AboutLayout
-  title="About Me"
+  title="William Dingwall | Product designer | Identity Design"
   profilePics={mappedProfilePics}
   galleryImages={mappedGalleryImages}
+  socialMedia={mappedSocialMedia}
 />

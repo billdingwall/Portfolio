@@ -85,9 +85,20 @@
   color: variables.$cu-Paragraph;
   font-family: variables.$tu-HeadingFont;
   font-size: variables.$tuSize-lg1;
-  padding-bottom: variables.$su-lg3;
+  padding-bottom: variables.$su-base;
   @include spacing.max-width('sm') {
     padding-bottom: 0;
+  }
+}
+
+.PortfolioItem-desc {
+  color: variables.$color-grey;
+  font-family: variables.$tu-ParagraphFont;
+  font-size: variables.$tuSize-sm1;
+  padding-bottom: variables.$su-lg2;
+  line-height: variables.$font-LineHeight;
+  @include spacing.max-width('sm') {
+    padding-bottom: variables.$su-base;
   }
 }
 

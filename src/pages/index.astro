@@ -12,16 +12,19 @@ const mappedPortfolioWork = portfolioWork.map((p: any) => ({
   path: p.url || p.file.split('/').pop().replace('.md', ''),
 }));
 
-const mappedWorkExperience = workExperience
-  .map((w: any) => ({ ...w.frontmatter, contents: w.compiledContent() }))
-  // You might need to sort workExperience if it was previously sorted by date
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const mappedWorkExperience = await Promise.all(
+  workExperience
+    .filter((w: any) => w.frontmatter.collection === 'workExperience')
+    .map(async (w: any) => ({ ...w.frontmatter, contents: await w.compiledContent() }))
+).then(items => items.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()));
 
-const mappedReferral = referral.map((r: any) => ({ ...r.frontmatter, contents: r.compiledContent() }));
+const mappedReferral = await Promise.all(
+  referral.map(async (r: any) => ({ ...r.frontmatter, contents: await r.compiledContent() }))
+);
 ---
 
 <HomeLayout
-  title="William Dingwall | Designer + Developer"
+  title="William Dingwall | Product designer | Identity Design"
   portfolioWork={mappedPortfolioWork}
   workExperience={mappedWorkExperience}
   referral={mappedReferral}

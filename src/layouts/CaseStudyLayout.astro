@@ -24,7 +24,7 @@ const { title, collection_label, thumb, intro, path, id } = Astro.props;
     <header class="Article-header">
       <h1>{title}</h1>
       <p>{collection_label}</p>
-      {thumb && <img src={`/${thumb}`} alt={title} />}
+      {thumb && <img src={thumb} alt={title} />}
     </header>
     <slot />
   </article>

@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import { PortfolioItem } from '../components/PortfolioItem';
 import { ExperienceItem } from '../components/ExperienceItem';
 import { ReferralItem } from '../components/ReferralItem';
+import { Header } from '../components/Header';
 
 export interface Props {
   title?: string;
@@ -20,10 +21,17 @@ const {
   workExperience = [],
   referral = []
 } = Astro.props;
+
+// We fetch social media here globally to pass into Header
+const socialMedia = await Promise.all(
+  Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }))
+    .map(async (s: any) => ({ ...s.frontmatter, contents: await s.compiledContent() }))
+);
 ---
 
-<BaseLayout title={title} bodyId={id}>
+<BaseLayout title={title} bodyId={id} showHeader={false}>
   <header class="Section Section--illustrated" id="Intro">
+    <Header socialMedia={socialMedia} />
     <div class="Section-content">
         <h1 class="IntroTitle u-textSize-Lg2 u-xs-textSize-Lg3 u-sm-textSize-Lg4">
           <span class="IntroTitle-secondary">Hello, I'm Bill,</span>

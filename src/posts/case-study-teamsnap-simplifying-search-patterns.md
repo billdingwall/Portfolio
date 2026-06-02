@@ -1,7 +1,7 @@
 ---
 title: "TeamSnap Search Patterns"
 intro: Simplifying search patterns for TeamSnap's enterprise app.
-thumb: img/teamsnap-search-cover.jpg
+thumb: /img/teamsnap-search-cover.jpg
 collection: portfolioWork
 collection_label: UX, UI, Research, Design Systems
 project_link: true
@@ -54,19 +54,19 @@ Our search experiences weren't great to say the least and we were getting a lot 
 </blockquote>
 
 <figure class="Article-image">
-  <img  class="u-border" src="/../../img/search-patterns/Old_UI_article.jpg" />
+  <img  class="u-border" src="/img/search-patterns/Old_UI_article.jpg" />
   <figcaption>Member Tab Search</figcaption>
 </figure>
 
 <figure class="Article-image">
-  <img  class="u-border" src="/../../img/search-patterns/Old_UI_two_article.jpg" />
+  <img  class="u-border" src="/img/search-patterns/Old_UI_two_article.jpg" />
   <figcaption>Rostering Tab Search</figcaption>
 </figure>
 
 Digging into FullStory and running some un-moderated user tests, there were a handful of things that stood out pretty quickly. When one of those issues caused an invalid search, all the other issues were magnified as the user tried to evaluate the UI and self correct. Frustration and abandonment was the usual result.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/Qualitative_findings_article.jpg" />
+  <img src="/img/search-patterns/Qualitative_findings_article.jpg" />
   <figcaption>Specific Issues with Our Search UI</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ Our search experiences needed to be simple, consistent and relatable. The needed
 After watching different teams work on the same search experiences across the app and seeing them approach each problem quick fix to solve 1 issue at a time, I felt like there was better approach. I decided to approached these search updates as a system, a path forward, rather then a quick fix. I wanted to build a search experience that scaled across the app. 
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/search-scope.jpg" />
+  <img src="/img/search-patterns/search-scope.jpg" />
 </figure>
 
 #### Research
@@ -104,7 +104,7 @@ The goal was to see if I could determine any intent. Based on some conversations
 That assumption proved out to be true, but we also got some really good info for setting scope and selecting what criteria was needed on which feature. 
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/Quanitative_members-tab.jpg" />
+  <img src="/img/search-patterns/Quanitative_members-tab.jpg" />
   <figcaption>Members Tab Search History</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ That assumption proved out to be true, but we also got some really good info for
 3. Almost always just a single criteria used 
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/Quanitativ_rostering_tab.jpg" />
+  <img src="/img/search-patterns/Quanitativ_rostering_tab.jpg" />
   <figcaption>Rostering Tab Search History</figcaption>
 </figure>
 
@@ -136,13 +136,13 @@ It seemed like there were 2 primary use cases to solve for. Finding a specific p
 With those 2 use cases in mind, I started looking around different search experiences to see how they we're solving those uses cases.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/interaction_study_intro.jpg" />
+  <img src="/img/search-patterns/interaction_study_intro.jpg" />
 </figure>
 
 Since our users we're primarily parents of children on travel sports teams, I initially started looking at travel sites and popular social media sites, then expanded out to other interesting search UX. Spokeo had an interesting <a href="https://uxdesign.cc/death-to-complexity-how-we-simplified-advanced-search-a9ab2940acf0" target="_blank">case study</a> about how they simplified a complex search UI. 
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/Searches.jpg" />
+  <img src="/img/search-patterns/Searches.jpg" />
   <figcaption class="u-spaceBottomSm">Differing Search Experiences</figcaption>
 </figure>
 
@@ -161,19 +161,19 @@ Based on my findings from Fullstory, UserTesting, Search Data and comparative re
 2. <b class="u-block">Categorize inputs to guide users to successful searches</b> By organizing inputs into categories we can help users enter better combinations of criteria and give them clearer paths in compound searches. Ideally building around the most important piece of criteria then giving them the means to refine or change that initial search type. 
 
 <figure class="Article-image u-padTopMd">
-  <img src="/../../img/search-patterns/patterns_catergorize.jpg" />
+  <img src="/img/search-patterns/patterns_catergorize.jpg" />
 </figure>
 
 This can be expanded upon for complex segment builders by giving them categories to interact with. Those categorizations of search inputs builds can be built up to satisfy varying complexity of needs; ranging from a single input to many.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/patterns_building.jpg" />
+  <img src="/img/search-patterns/patterns_building.jpg" />
 </figure>
 
 3. <b class="u-block">Condense inputs to remove complexity</b> By removing options they don’t need and condensing complex options we can limit the clicks needed as well as remove extraneous inputs that lead to invalid searches. For example first, last and an operator into a single full name input. Stepped inputs like registration form, fee and option could also benefit from this approach; especially with a Type Ahead component.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/patterns_condense.jpg" />
+  <img src="/img/search-patterns/patterns_condense.jpg" />
 </figure>
 
 
@@ -194,13 +194,13 @@ This can be expanded upon for complex segment builders by giving them categories
 The primary use case here was to help admins easily find a specific person. So initially after reviewing some of the search research with the team we wanted to dive into that notion of a condensed search input, using tool called Type Ahead. The team felt that was the most streamlined way for users to find someone.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/typeahead.jpg" />
+  <img src="/img/search-patterns/typeahead.jpg" />
 </figure>
 
 However, the scope of the Type Ahead component was just too much, because that meant all member, team and registration data would have to be loaded and indexed in the front end. So ultimately we went with a simple text input that could be changed to changed to search by full name, email, team or registration. No matter what the search criteria was the results we're still member based. Additionally a basic "role" filter could be applied to the results, to differentiate between players, coaches and parents.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/members-tab-breakdown.jpg" />
+  <img src="/img/search-patterns/members-tab-breakdown.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--centered u-spaceTopMd">
@@ -208,7 +208,7 @@ We felt like the quicker iteration was still a big improvement and really wanted
 </blockquote>
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/Members_final.jpg" />
+  <img src="/img/search-patterns/Members_final.jpg" />
 </figure>
 
 </div>
@@ -220,14 +220,14 @@ We felt like the quicker iteration was still a big improvement and really wanted
 With the rostering team, they initially wanted to go with the old version of member tab style search, the query builder pattern, since their was already code in place. They wanted to see how what kind of feedback users would have with that type of search experience instead of the large up front set inputs that was on the search tab.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/compound_interction-comp.jpg" />
+  <img src="/img/search-patterns/compound_interction-comp.jpg" />
   <figcaption>Searching for groups of people with one of the older search interfaces</figcaption>
 </figure>
 
 Taking the use case of searching for groups of people on various teams and divisions and comparing the old members search interface to the new pattern driven approach though, it was easy to see that the new approach was clearly the more streamlined approach. I also found that it was also easier to understand the criteria that had been entered, since it repeated the inputs back to users in a more human readable way.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/compound_interction-comp_two.jpg" />
+  <img src="/img/search-patterns/compound_interction-comp_two.jpg" />
   <figcaption>Searching for groups of people with the new search patterns</figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ After walking through and breaking down the interactions of the new design with 
 </blockquote>
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/Rostering_final.jpg" />
+  <img src="/img/search-patterns/Rostering_final.jpg" />
 </figure>
 
 </div>
@@ -248,29 +248,29 @@ After walking through and breaking down the interactions of the new design with 
 As I was working with the two teams and the two different search projects, I also started taking those patterns and building them out into a full fledge UI kit to include with <a href="/posts/teamsnap-design-system/" target="_blank">our design system</a>.
 
 <figure class="Article-image">
-  <img src="/../../img/search-patterns/uI-kit.jpg" />
+  <img src="/img/search-patterns/uI-kit.jpg" />
 </figure>
 
 Them I gave guidance as to how they could fit in with other parts of the Club & League app. I gave examples for how these components could be used as page level filters and used in different types of searches.
 
 <figure class="Article-image">
   <figcaption class="u-padBottomMd">Simple Search</figcaption>
-  <img src="/../../img/search-patterns/future_usage_simple.jpg" />
+  <img src="/img/search-patterns/future_usage_simple.jpg" />
 </figure>
 
 <figure class="Article-image">
   <figcaption class="u-padBottomMd">Simple Search & Filter</figcaption>
-  <img src="/../../img/search-patterns/future_usage_simple_plus.jpg" />
+  <img src="/img/search-patterns/future_usage_simple_plus.jpg" />
 </figure>
 
 <figure class="Article-image">
   <figcaption class="u-padBottomMd">Page Level Filter</figcaption>
-  <img src="/../../img/search-patterns/future_usage_page-filter.jpg" />
+  <img src="/img/search-patterns/future_usage_page-filter.jpg" />
 </figure>
 
 <figure class="Article-image">
   <figcaption class="u-padBottomMd">Compound Searching</figcaption>
-  <img src="/../../img/search-patterns/future_usage_compound.jpg" />
+  <img src="/img/search-patterns/future_usage_compound.jpg" />
 </figure>
 
 <blockquote class="u-spaceBottomLg u-spaceTopLg Blockquote--centered">
@@ -293,7 +293,7 @@ Providing patterns, principles and tasks to tie our efforts back to worked well 
 We didn’t have a lot of resources dedicated to setting up analytics so getting some of these numbers were difficult to do at scale, but measuring a small sample size through FullStory the number of bad searches had dropped to nearly nothing since we weren’t allowing it in the UI, which in term sped up time to results and ultimately time to action significantly. We didn't have a well defined funnel, but we did seem to be having a very positive impact on search abandonment rates and time to results. I think search abandonment and time to search could be measured more closely though.
 
 <figure class="Article-image u-padTopMd">
-  <img src="/../../img/search-patterns/goals_metrics_funnels.jpg" />
+  <img src="/img/search-patterns/goals_metrics_funnels.jpg" />
 </figure>
 
 #### Measure the Impact of Search
@@ -301,7 +301,7 @@ We didn’t have a lot of resources dedicated to setting up analytics so getting
 Then I'd like to directly correlate search funnel metrics back to larger product and business goals to try and put a dollar amount on our efforts as a team. The goal is to get it down to a formula of as x decreases, y increases by z.
 
 <figure class="Article-image u-padTopMd">
-  <img src="/../../img/search-patterns/next_steps.jpg" />
+  <img src="/img/search-patterns/next_steps.jpg" />
 </figure>
 
 </section>
@@ -309,6 +309,6 @@ Then I'd like to directly correlate search funnel metrics back to larger product
 <footer class="Article-footer">
 <a class="figma_badge" href="https://www.figma.com/file/IhYzCH8PprPUFOP2N6jyK3/TeamSnap-Search-Patterns?node-id=734%3A12319" target="_blank">
 <strong class="u-block u-padBottomMd">View the Project on Figma</strong>
-<img src="/../../img/figma_badge.png" />
+<img src="/img/figma_badge.png" />
 </a>
 </footer>

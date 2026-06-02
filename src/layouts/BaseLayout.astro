@@ -5,6 +5,7 @@ export interface Props {
   ogImage?: string;
   ogUrl?: string;
   bodyId?: string;
+  showHeader?: boolean;
 }
 
 const {
@@ -12,17 +13,22 @@ const {
   description = "I build stuff",
   ogImage,
   ogUrl,
-  bodyId = ""
+  bodyId = "",
+  showHeader = true
 } = Astro.props;
 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { PhotoSwipe } from '../components/PhotoSwipe';
+import '../scss/photoswipe/photoswipe.scss';
+import '../scss/photoswipe/default-skin.scss';
 import '../scss/main.scss';
 
 // We fetch social media here globally to pass into Header
-const socialMedia = Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }))
-  .map((s: any) => ({ ...s.frontmatter, contents: s.compiledContent() }));
+const socialMedia = await Promise.all(
+  Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }))
+    .map(async (s: any) => ({ ...s.frontmatter, contents: await s.compiledContent() }))
+);
 ---
 
 <!DOCTYPE html>
@@ -44,8 +50,6 @@ const socialMedia = Object.values(import.meta.glob('../posts/socials/*.md', { ea
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/photoswipe.css">
-  <link rel="stylesheet" href="/css/default-skin.css">
   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
@@ -58,7 +62,7 @@ const socialMedia = Object.values(import.meta.glob('../posts/socials/*.md', { ea
   <script is:inline src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </head>
 <body id={bodyId}>
-  <Header socialMedia={socialMedia} />
+  {showHeader && <Header socialMedia={socialMedia} />}
 
   <slot />
 

@@ -1,6 +1,6 @@
 ---
 title: "Fishing Photo"
-thumb: ../img/profile-pic/Dingwall-profile-3.jpg
+thumb: /img/profile-pic/Dingwall-profile-3.jpg
 collection: ProfilePic
 collection_label: Profile Picture
 project_link: true

@@ -1,7 +1,7 @@
 ---
 title: "Matic Servicing Funnel"
 intro: Refining the growth funnel for Matic's servicing line of business
-thumb: img/Matic-funnel-cover.jpg
+thumb: /img/Matic-funnel-cover.jpg
 collection: portfolioWork
 collection_label: Product Design, Product Management, Research, AB Testing
 project_link: true
@@ -49,7 +49,7 @@ For customers, the further down the funnel customers went, the more value they a
 
 <figure class="Article-image">
   <figcaption>Funnel Conversion Rates</figcaption>
-  <img src="/../../img/matic-testing/matic-funnel-cohort.jpg" />
+  <img src="/img/matic-testing/matic-funnel-cohort.jpg" />
 </figure>
 
 #### Funnel Breakdown
@@ -66,7 +66,7 @@ For customers, the further down the funnel customers went, the more value they a
 
 <figure class="Article-image">
   <figcaption>Servicing User Journey</figcaption>
-  <img src="/../../img/matic-testing/Matic-customer-journey.jpg" />
+  <img src="/img/matic-testing/Matic-customer-journey.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--largeText">
@@ -88,7 +88,7 @@ The agency was growing and could easily handle any lead that came it’s way. So
 
 <figure class="Article-image">
   <figcaption>Contact Preferences Survey Data Point</figcaption>
-  <img src="/../../img/matic-testing/Research-findings.jpg" />
+  <img src="/img/matic-testing/Research-findings.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--largeText">
@@ -111,21 +111,21 @@ We had the ability run A/B tests across all the digital touch points in the serv
 
 <figure class="Article-image">
   <figcaption>Servicing User Flow</figcaption>
-  <img src="/../../img/matic-testing/User-Flow.jpg" />
+  <img src="/img/matic-testing/User-Flow.jpg" />
 </figure>
 
 As tests we’re run on various parts of the funnel I’d look at results for key metrics like lead generation (conversion%), contact rate(APIC%) and policies sold(monetization%) to determine winners. Then I’d dimension the data by things like device, age, location, etc, to determine next steps.
 
 <figure class="Article-image">
   <figcaption>A/B Test Funnel</figcaption>
-  <img src="/../../img/matic-testing/matic-ab-testing.jpg" />
+  <img src="/img/matic-testing/matic-ab-testing.jpg" />
 </figure>
 
 Tests took about 2-3 weeks to collect statistically significant data. So in order to at times, tests had to run concurrently in different parts of the funnel. How different tests interacted was definitely under consideration when stacking. At times, end to end tests we're run across multiple test lanes.
 
 <figure class="Article-image">
   <figcaption>A/B Test Lanes</figcaption>
-  <img src="/../../img/matic-testing/matic-funnel-test-lanes.jpg" />
+  <img src="/img/matic-testing/matic-funnel-test-lanes.jpg" />
 </figure>
 
 </section>
@@ -143,7 +143,7 @@ Tests took about 2-3 weeks to collect statistically significant data. So in orde
 #### Before
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/SF-before.jpg" />
+  <img src="/img/matic-testing/SF-before.jpg" />
 </figure>
 
 **Conversation Rate:** 22%
@@ -155,7 +155,7 @@ Tests took about 2-3 weeks to collect statistically significant data. So in orde
 #### Experiment 1: Savings Revamp
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/Savings-revamp.jpg" />
+  <img src="/img/matic-testing/Savings-revamp.jpg" />
 </figure>
 
 **Background:** Given the FAQ interaction this seemed like a great fit for testing the agent focus strategy, or in this case just agency in general.
@@ -171,7 +171,7 @@ Tests took about 2-3 weeks to collect statistically significant data. So in orde
 #### Experiment 2: Savings Mobile Update
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/Savings-revamp-mobile.jpg" />
+  <img src="/img/matic-testing/Savings-revamp-mobile.jpg" />
 </figure>
 
 **Background:** looking back at the original version on mobile, it was less cluttered and did a better job drawing attention to the quote. I wanted to keep the CTA above the fold however.
@@ -190,7 +190,7 @@ Tests took about 2-3 weeks to collect statistically significant data. So in orde
 #### Before
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/Quotes-before.jpg" />
+  <img src="/img/matic-testing/Quotes-before.jpg" />
 </figure>
 
 **Conversation Rate:** 6%
@@ -202,7 +202,7 @@ Background: We knew that if a customer selected a quote, they were much more lik
 #### Experiment 1: Agent Services
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/Quotes-agent-services.jpg" />
+  <img src="/img/matic-testing/Quotes-agent-services.jpg" />
 </figure>
 
 **Background:** given the research findings that customers would want to talk to insurance advisors (agents) as long as the goal was to help them sift through the noise, this seemed like a great space to play up our agents in that manor. Promoting agent services as a secondary option also gave users something else to click on if the quotes didn’t hit the mark.
@@ -218,7 +218,7 @@ Background: We knew that if a customer selected a quote, they were much more lik
 #### Experiment 2: Bundle Prompt
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/Quotes-agent-services-savings.jpg" />
+  <img src="/img/matic-testing/Quotes-agent-services-savings.jpg" />
 </figure>
 
 **Background:** Given the value of that agent services messaging, the next logical step seemed expand on that in other parts of the customer journey and test to confirm the value of that content.
@@ -238,7 +238,7 @@ Background: We knew that if a customer selected a quote, they were much more lik
 #### Before
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/AF-E2E-Before.jpg" />
+  <img src="/img/matic-testing/AF-E2E-Before.jpg" />
 </figure>
 
 **Conversation Rate:** 6%
@@ -251,12 +251,12 @@ Background: We knew that if a customer selected a quote, they were much more lik
 
 <figure class="Article-image">
   <figcaption>Florida Landing Page</figcaption>
-  <img src="/../../img/matic-testing/Florida-Landing.jpg" />
+  <img src="/img/matic-testing/Florida-Landing.jpg" />
 </figure>
 
 <figure class="Article-image">
   <figcaption>Florida Quotes Page</figcaption>
-  <img src="/../../img/matic-testing/Florida-Quotes.jpg" />
+  <img src="/img/matic-testing/Florida-Quotes.jpg" />
 </figure>
 
 **Background:** For customers in Florida however, there were so many regulatory loops to jump through and extra inspections required, that our pre-score and quoting services didn’t return savings very often. It was a struggle to show them value up front in the UI, so to find quotes customers most likely needed work directly with an agent.
@@ -285,7 +285,7 @@ I worked pretty closely with our Florida agents to better understand that user s
 </h2>
 
 <figure class="Article-image">
-  <img src="/../../img/matic-testing/matic-funnel-cohort-update.jpg" />
+  <img src="/img/matic-testing/matic-funnel-cohort-update.jpg" />
 </figure>
 
 ### Key Wins:
@@ -304,7 +304,7 @@ I worked pretty closely with our Florida agents to better understand that user s
     <div class="Grid-Cell u-size1of1 u-sm-size1of2 u-textCenter">
       <a class="figma_badge" href="https://www.figma.com/file/5pc3cUy4luRjZMPExKhCpH/Kava-Asset-Onboarding?type=design&node-id=1%3A6&t=02MYcXclO9OkMuvA-1" target="_blank">
       <strong class="u-block u-padBottomMd">View the Project on Figma</strong>
-      <img src="/../../img/figma_badge.png" />
+      <img src="/img/figma_badge.png" />
       </a>
     </div>
   </div>
