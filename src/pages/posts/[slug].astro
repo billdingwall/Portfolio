@@ -1,9 +1,9 @@
 ---
-import CaseStudyLayout from '../layouts/CaseStudyLayout.astro';
+import CaseStudyLayout from '../../layouts/CaseStudyLayout.astro';
 
 export async function getStaticPaths() {
   // Use Vite's import.meta.glob since Astro.glob isn't available inside getStaticPaths
-  const posts = import.meta.glob('../posts/case-study-*.md', { eager: true });
+  const posts = import.meta.glob('../../posts/case-study-*.md', { eager: true });
   return Object.values(posts).map((post: any) => ({
     params: { slug: post.file.split('/').pop().replace('.md', '') },
     props: { post },
@@ -14,5 +14,5 @@ const { post } = Astro.props;
 ---
 
 <CaseStudyLayout {...post.frontmatter}>
-  <div set:html={post.compiledContent()} />
+  <div set:html={await post.compiledContent()} />
 </CaseStudyLayout>

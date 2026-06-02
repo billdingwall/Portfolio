@@ -1,7 +1,7 @@
 ---
 title: "TeamSnap Dashboard"
 intro: Upgrading the onboarding experiences for TeamSnap's club & league app.
-thumb: img/teamsnap-dashboard-cover.jpg
+thumb: /img/teamsnap-dashboard-cover.jpg
 collection: portfolioWork
 collection_label: UX + UI Design, Visual Design
 project_link: true
@@ -54,7 +54,7 @@ This may have been the most challenging part of the project. Being a hackathon p
 To kick things off I scheduled a meeting for the team to pair with customer facing parts of the company like sales and CX to better understand our users and their issues. We discussed some user pain points, their journey as a whole and some potential opportunities.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/Journey-map.jpg" />
+  <img src="/img/dashboard/Journey-map.jpg" />
 </figure>
 
 ##### Key Journey Mapping Insights:
@@ -68,7 +68,7 @@ There was data to back all this up too. We were seeing extremely low product ado
 </blockquote>
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/adoption_funnel.jpg" />
+  <img src="/img/dashboard/adoption_funnel.jpg" />
 </figure>
 
 #### Reviewing the Onboarding UX
@@ -79,7 +79,7 @@ When comparing notes from the journey mapping session to the UI it was really ea
 * Also when ranking the key tasks for user success, they’re very scattered through the products tab order and don’t necessarily follow a common order for setting up a sports organization.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/Old-Site-Arch.jpg" />
+  <img src="/img/dashboard/Old-Site-Arch.jpg" />
 </figure>
 
 <blockquote class="Blockquote Blockquote--centered Blockquote--largeText u-spaceBottomXl">
@@ -96,7 +96,7 @@ After working with CX and reviewing the UI, we had our problem identified and ag
 I wanted to make sure everyone was included from the start so we were all invested and in lock step throughout. We new the issues, now it was time to find a solution. So to kick this part of the project off I ran a brainstorming session with our project team as well as members from CX and sales. It was a simple prompt, **how might we improve the onboarding experience for Club & League Users?**.
  
 <figure class="Article-image u-spaceTopMD">
-  <img src="/../../img/dashboard/Impact-graph.jpg" />
+  <img src="/img/dashboard/Impact-graph.jpg" />
 </figure>
 
 We decided to move forward with a few ideas but the primary was to build an **org level dashboard that could both help new users get started with the product** and give seasoned users a space to see a consolidated overview of key org functions. 
@@ -104,7 +104,7 @@ We decided to move forward with a few ideas but the primary was to build an **or
 However, a dashboard can consist of a lot of things and provide a lot of detail into many things, so I added one more cross department brainstorming session so we could dive more into specifics of content & functionality to include at different stages of the customer journey.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/Brainstorm-ideas.jpg" />
+  <img src="/img/dashboard/Brainstorm-ideas.jpg" />
 </figure>
 
 #### Refining & Scoping
@@ -112,28 +112,28 @@ However, a dashboard can consist of a lot of things and provide a lot of detail 
 I then took those ideas and started mocking up how they might work in a set of componentized widgets. Below are a just a couple examples. We went through a process of vetting scope on a handful of ideas, talking through endpoints that would be required, ones we already had and level of difficulty in the new ones that were needed. 
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/wireframes_getting-started.jpg" />
+  <img src="/img/dashboard/wireframes_getting-started.jpg" />
   <figcaption>Getting Started Panel Scoping</figcaption>
 </figure>
 
 State management was also a key talking point since we many of these widgets would ideally change based on the stage of the journey the user was in. Getting started would go away after completing all the tasks and the body widgets would respond to various system states.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/wireframe_body.jpg" />
+  <img src="/img/dashboard/wireframe_body.jpg" />
   <figcaption>Widget Scoping</figcaption>
 </figure>
 
 While refining the the component design, as issued popped up I would hop on quick meetings with devs to discuss and find solutions that both solved the user problem and fit well within the timeline we were working with.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/component_links-upsell_widget.jpg" />
+  <img src="/img/dashboard/component_links-upsell_widget.jpg" />
   <figcaption>Messaging & Quick links</figcaption>
 </figure>
 
 As different components became more defined from a technical standpoint I started adding in the visual design and outlining any added details so we could hit the ground running the week of development.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/component_getting_started.jpg" />
+  <img src="/img/dashboard/component_getting_started.jpg" />
   <figcaption>Getting Started Widget</figcaption>
 </figure>
 
@@ -149,18 +149,18 @@ With the scope of the work being so well defined heading into the week and the t
 Throughout this whole project we really tried to anchor design decisions and component states to the customer journey, both in each individual component and the dashboard as a whole. The week of development was no different. All the parts and pieces we're outlined and divided up to various team members based on skill set.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/Invision-board.jpg" />
+  <img src="/img/dashboard/Invision-board.jpg" />
    <figcaption>Putting it all together</figcaption>
 </figure>
 
 As we started building though, everyone jumped in and contributed where they could to meet the goal.  Backend devs and design wrote react, react devs created endpoints and QA & PMs created AppCues walkthroughs. If someone had time to pick up something a little outside their skill set, another team member would walk them through a few pointers to get them up and running. I walked our PM & QA through Appcues, our backend devs walked the front end devs through creating an endpoint and everyone picked up what they could.
 
 <figure class="Article-image u-spaceTopMd">
-  <img src="/../../img/dashboard/dashboard-mockup.jpg" />
+  <img src="/img/dashboard/dashboard-mockup.jpg" />
 </figure>
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/New-dashboard-full.jpg" />
+  <img src="/img/dashboard/New-dashboard-full.jpg" />
   <figcaption>Adjusting to different states of user journey</figcaption>
 </figure>
 
@@ -172,13 +172,13 @@ Early collaboration between the entire team was really effective in defining sco
 With the dashboard work coming to an end, I started going back and knocking out some of the smaller projects that played off of and enanced the dashboard changes. For example paring with marketing to update the email to provide more direct entries into specific tasks, then update the screens they landed on had much more contextual help to get them going.
 
 <figure class="Article-image">
-  <img src="/../../img/dashboard/new-onboarding-email-no-data.jpg" />
+  <img src="/img/dashboard/new-onboarding-email-no-data.jpg" />
 </figure>
 
 And updated reorder the tab structure to flow that better follow the user journey; “being people in”, “organize them on teams” and “run the day to day operations”.
 
 <figure class="Article-image u-padTopMd">
-  <img src="/../../img/dashboard/New-Site-Arch.jpg" />
+  <img src="/img/dashboard/New-Site-Arch.jpg" />
 </figure>
 
 </section>
@@ -190,7 +190,7 @@ And updated reorder the tab structure to flow that better follow the user journe
 The one piece I think that was missing from this project was measuring the impact it had. From talking with CX, Sales and users, we knew it had a positive effect, but didn't have the analytics in place to really understand the quantitative impact of our efforts. We had some click tracking setup and could see usage of the dashboard, but looking back I'd like run an A/B test measure some of the other effects of the dashboard.
 
 <figure class="Article-image u-padTopMd">
-  <img src="/../../img/dashboard/adoption_map.jpg" />
+  <img src="/img/dashboard/adoption_map.jpg" />
 </figure>
 
 </section>
@@ -200,7 +200,7 @@ The one piece I think that was missing from this project was measuring the impac
     <div class="Grid-Cell u-size1of1 u-sm-size1of2 u-textCenter">
       <a class="figma_badge" href="https://projects.invisionapp.com/freehand/document/RkvEijVl7" target="_blank">
       <strong class="u-block u-padBottomMd">View the Project on Invision</strong>
-      <img src="/../../img/invision_badge.png" />
+      <img src="/img/invision_badge.png" />
       </a>
     </div>
   </div>

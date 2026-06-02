@@ -1,6 +1,6 @@
 ---
 title: Wedding Photo"
-thumb: ../img/profile-pic/Dingwall-profile-1.jpg
+thumb: /img/profile-pic/Dingwall-profile-1.jpg
 collection: ProfilePic
 collection_label: Profile Picture
 project_link: true

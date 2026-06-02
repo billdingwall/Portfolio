@@ -1,7 +1,7 @@
 ---
 title: "Danger Mouse"
 intro: Oil Pastel Sketch
-thumb: ../img/gallery/photo-mauntain2.jpg
+thumb: /img/gallery/photo-mauntain2.jpg
 collection: galleryImage
 collection_label: art
 featured: true
