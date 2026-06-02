@@ -19,9 +19,6 @@ const {
 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
-import { PhotoSwipe } from '../components/PhotoSwipe';
-import '../scss/photoswipe/photoswipe.scss';
-import '../scss/photoswipe/default-skin.scss';
 import '../scss/main.scss';
 
 // We fetch social media here globally to pass into Header
@@ -56,9 +53,6 @@ const socialMedia = await Promise.all(
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH99855ZFW"></script>
 
   <script is:inline src="/js/index.js"></script>
-  <script is:inline src="/js/umbrella/umbrella.min.js"></script>
-  <script is:inline src="/js/photoswipe/photoswipe.min.js"></script>
-  <script is:inline src="/js/photoswipe/photoswipe-ui-default.min.js"></script>
   <script is:inline src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </head>
 <body id={bodyId}>
@@ -67,38 +61,5 @@ const socialMedia = await Promise.all(
   <slot />
 
   <Footer />
-  <PhotoSwipe />
-
-  <script is:inline>
-    // selecting the gallery markup
-    var pswpElement = document.querySelectorAll('.pswp')[0];
-    var slides = [];
-
-    // fills the slides array
-    function setupSlides() {
-      if (typeof u === 'undefined') return; // Umbrella JS dependency
-      slides = [];
-      u('.Article-image img').each(function(img, i){
-        u(img).attr('slideIndex', i);
-        var object =  {
-          src: u(img).attr('src'),
-          w: img.naturalWidth,
-          h: img.naturalHeight
-        };
-        slides.push(object);
-      });
-    }
-
-    if (typeof u !== 'undefined') {
-      u('.Article-image img').on('click', function(e) {
-        setupSlides();
-        var start = { index: parseInt(u(this).attr('slideIndex')) };
-        if (typeof PhotoSwipe !== 'undefined' && typeof PhotoSwipeUI_Default !== 'undefined') {
-          var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, slides, start);
-          gallery.init();
-        }
-      });
-    }
-  </script>
 </body>
 </html>
