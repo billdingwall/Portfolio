@@ -136,11 +136,27 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
+"profilePics": Record<string, {
+  id: string;
+  body?: string;
+  collection: "profilePics";
+  data: InferEntrySchema<"profilePics">;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
 "referrals": Record<string, {
   id: string;
   body?: string;
   collection: "referrals";
   data: InferEntrySchema<"referrals">;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
+"socialMedia": Record<string, {
+  id: string;
+  body?: string;
+  collection: "socialMedia";
+  data: InferEntrySchema<"socialMedia">;
   rendered?: RenderedContent;
   filePath?: string;
 }>;
