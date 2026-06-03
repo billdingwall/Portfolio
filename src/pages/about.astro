@@ -1,19 +1,30 @@
 ---
 import AboutLayout from '@layouts/AboutLayout.astro';
+import { getCollection, render } from 'astro:content';
 
-const profilePics = Object.values(import.meta.glob('../posts/profile-pic/*.md', { eager: true }));
-const galleryImages = Object.values(import.meta.glob('../posts/gallery/*.md', { eager: true }));
+const profilePics = await getCollection('profilePics');
+const galleryImages = await getCollection('gallery');
+const socialMedia = await getCollection('socialMedia');
 
 const mappedProfilePics = await Promise.all(
-  profilePics.map(async (p: any) => ({ ...p.frontmatter, contents: await p.compiledContent() }))
-);
-const mappedGalleryImages = await Promise.all(
-  galleryImages.map(async (g: any) => ({ ...g.frontmatter, contents: await g.compiledContent() }))
+  profilePics.map(async (p) => {
+    const { html } = await render(p);
+    return { ...p.data, contents: html };
+  })
 );
 
-const socialMedia = Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }));
+const mappedGalleryImages = await Promise.all(
+  galleryImages.map(async (g) => {
+    const { html } = await render(g);
+    return { ...g.data, contents: html };
+  })
+);
+
 const mappedSocialMedia = await Promise.all(
-  socialMedia.map(async (s: any) => ({ ...s.frontmatter, contents: await s.compiledContent() }))
+  socialMedia.map(async (s) => {
+    const { html } = await render(s);
+    return { ...s.data, contents: html };
+  })
 );
 ---
 

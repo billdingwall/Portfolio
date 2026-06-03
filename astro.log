@@ -1,0 +1,62 @@
+
+> portfolio@1.0.0 prestart
+> npm install
+
+
+up to date, audited 313 packages in 1s
+
+145 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> portfolio@1.0.0 start
+> astro dev
+
+[vite] connected.
+21:14:21 [types] Generated 1ms
+[vite] connected.
+21:14:22 [content] Syncing content
+21:14:23 [content] Synced content
+21:14:23 [vite] Re-optimizing dependencies because vite config has changed
+ astro  v6.4.2 ready in 3537 ms
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+21:14:23 watching for file changes...
+21:15:23 [200] / 981ms
+21:15:24 [vite] ✨ new dependencies optimized: @splidejs/splide
+21:15:24 [vite] ✨ optimized dependencies changed. reloading
+21:15:24 [200] /_image 221ms
+21:15:24 [200] /_image 291ms
+21:15:24 [200] /_image 307ms
+21:15:27 [200] /about 103ms
+21:15:27 [200] /_image 58ms
+21:15:27 [200] /_image 129ms
+21:15:27 [200] /_image 130ms
+21:15:27 [200] /_image 129ms
+21:15:27 [200] /_image 144ms
+21:15:27 [200] /_image 114ms
+21:15:27 [200] /_image 55ms
+21:15:27 [200] /_image 75ms
+21:15:27 [200] /_image 81ms
+21:15:29 [200] /posts/case-study-teamsnap-design-system 48ms
+21:15:30 [200] /_image 219ms
+21:15:30 [vite] ✨ new dependencies optimized: photoswipe/lightbox, photoswipe
+21:15:30 [vite] ✨ optimized dependencies changed. reloading
+21:15:30 [200] /posts/case-study-teamsnap-design-system 9ms
+21:15:58 [200] / 47ms
+21:15:58 [200] /_image 153ms
+21:15:58 [200] /_image 168ms
+21:15:58 [200] /_image 182ms
+21:16:00 [200] /about 14ms
+21:16:00 [200] /_image 93ms
+21:16:00 [200] /_image 129ms
+21:16:00 [200] /_image 147ms
+21:16:00 [200] /_image 160ms
+21:16:00 [200] /_image 168ms
+21:16:00 [200] /_image 193ms
+21:16:00 [200] /_image 118ms
+21:16:00 [200] /_image 94ms
+21:16:00 [200] /_image 107ms
+21:16:00 [200] /posts/case-study-teamsnap-design-system 10ms
+21:16:00 [200] /_image 173ms

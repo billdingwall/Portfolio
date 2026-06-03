@@ -22,10 +22,15 @@ const {
   referral = []
 } = Astro.props;
 
+import { getCollection, render } from 'astro:content';
+
 // We fetch social media here globally to pass into Header
+const socialMediaCollection = await getCollection('socialMedia');
 const socialMedia = await Promise.all(
-  Object.values(import.meta.glob('../posts/socials/*.md', { eager: true }))
-    .map(async (s: any) => ({ ...s.frontmatter, contents: await s.compiledContent() }))
+  socialMediaCollection.map(async (s) => {
+    const { html } = await render(s);
+    return { ...s.data, contents: html };
+  })
 );
 ---
 

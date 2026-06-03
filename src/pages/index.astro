@@ -1,25 +1,33 @@
 ---
 import HomeLayout from '@layouts/HomeLayout.astro';
 
-// We need to fetch the collections that were previously in Metalsmith
-const portfolioWork = Object.values(import.meta.glob('../posts/case-study-*.md', { eager: true }));
-const workExperience = Object.values(import.meta.glob('../posts/experience/*.md', { eager: true }));
-const referral = Object.values(import.meta.glob('../posts/referral/*.md', { eager: true }));
+import { getCollection, render } from 'astro:content';
+
+// Fetch the collections using Astro's content layer
+const portfolioWork = await getCollection('caseStudies');
+const workExperience = await getCollection('workExperience');
+const referrals = await getCollection('referrals');
 
 // Map frontmatter to the shape expected by the layout/components
-const mappedPortfolioWork = portfolioWork.map((p: any) => ({
-  ...p.frontmatter,
-  path: p.url || p.file.split('/').pop().replace('.md', ''),
+const mappedPortfolioWork = portfolioWork.map((p) => ({
+  ...p.data,
+  path: p.id,
 }));
 
 const mappedWorkExperience = await Promise.all(
   workExperience
-    .filter((w: any) => w.frontmatter.collection === 'workExperience')
-    .map(async (w: any) => ({ ...w.frontmatter, contents: await w.compiledContent() }))
+    .filter((w) => w.data.collection === 'workExperience')
+    .map(async (w) => {
+      const { html } = await render(w);
+      return { ...w.data, contents: html };
+    })
 ).then(items => items.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()));
 
 const mappedReferral = await Promise.all(
-  referral.map(async (r: any) => ({ ...r.frontmatter, contents: await r.compiledContent() }))
+  referrals.map(async (r) => {
+    const { html } = await render(r);
+    return { ...r.data, contents: html };
+  })
 );
 ---
 

@@ -83,9 +83,29 @@ const gallery = defineCollection({
   }),
 });
 
+const profilePics = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/posts/profile-pic' }),
+  schema: z.object({
+    title: z.string().optional(),
+    thumb: z.string(),
+    featured: z.boolean().default(false),
+  }),
+});
+
+const socialMedia = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/posts/socials' }),
+  schema: z.object({
+    title: z.string(),
+    link: z.string(),
+    collection: z.string().optional(),
+  }),
+});
+
 export const collections = {
   caseStudies,
   workExperience,
   referrals,
   gallery,
+  profilePics,
+  socialMedia,
 };
