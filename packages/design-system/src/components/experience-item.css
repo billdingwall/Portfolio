@@ -1,0 +1,87 @@
+/*
+ * ExperienceItem Component
+ *
+ * Skeletal HTML:
+ * <article class="ExperienceItem">
+ *   <div class="ExperienceItem-content">...</div>
+ *   <div class="ExperienceItem-description">...</div>
+ *   <h3 class="ExperienceItem-role">...</h3>
+ *   <div class="ExperienceItem-details">
+ *      ...
+ *      <span class="ExperienceItem-detailsDivider">|</span>
+ *      <span class="ExperienceItem-detailsDuration">...</span>
+ *   </div>
+ * </article>
+ */
+
+.ExperienceItem {
+  padding-bottom: var(--sys-layout-gap-large);
+}
+
+.ExperienceItem:last-child {
+  padding-bottom: 0;
+}
+
+.ExperienceItem-content {
+  padding-right: calc(var(--sys-layout-gap) / 2);
+}
+
+.ExperienceItem-description {
+  padding-left: calc(var(--sys-layout-gap) / 2);
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .ExperienceItem-description {
+    padding-left: 0;
+  }
+}
+
+.ExperienceItem-role {
+  font-size: var(--sys-font-size-body-lg);
+  padding-bottom: var(--sys-layout-padding-small);
+}
+
+.ExperienceItem-details {
+  color: var(--sys-color-background); /* $color-white */
+  font-size: var(--sys-font-size-body);
+  padding-bottom: var(--sys-layout-gap-medium);
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .ExperienceItem-details {
+    padding-bottom: var(--sys-layout-padding-small);
+  }
+}
+
+.ExperienceItem-detailsDivider {
+  padding: 0 var(--sys-layout-padding-xs);
+  color: var(--sys-color-primary);
+}
+
+.ExperienceItem-detailsDuration {
+  color: var(--sys-color-primary);
+}
+
+/* Moved DownloadLink to its own logical block but keeping here for simplicity, or refactor to another file if needed */
+.DownloadLink {
+  border: 2px solid var(--sys-color-primary);
+  padding: var(--sys-layout-padding-small);
+  display: inline-block;
+}
+
+.DownloadLink .Icon {
+  padding-right: var(--sys-layout-padding-small);
+}
+
+.DownloadLink:hover,
+.DownloadLink:active {
+  background: var(--sys-color-primary);
+  transition: all var(--sys-transition-short) ease-in-out;
+}
+
+.DownloadLink:hover,
+.DownloadLink:active,
+.DownloadLink:hover .Icon,
+.DownloadLink:active .Icon {
+  color: var(--sys-color-background-dark);
+}

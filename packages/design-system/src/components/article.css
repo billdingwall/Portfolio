@@ -1,0 +1,103 @@
+/*
+ * Article Component
+ *
+ * Skeletal HTML:
+ * <article class="Article">
+ *   <header class="Article-header">
+ *     <h1 class="Article-sectionTitle">...</h1>
+ *   </header>
+ *   <section class="Article-section">
+ *     <h2 class="Article-sectionSubTitle">...</h2>
+ *     <p class="Article-sectionSubText">...</p>
+ *     <figure class="Article-image Article-image--center">
+ *       <img src="..." alt="..." />
+ *       <figcaption>...</figcaption>
+ *     </figure>
+ *   </section>
+ *   <div class="Article-feature">...</div>
+ *   <footer class="Article-footer">...</footer>
+ * </article>
+ */
+
+.Article {
+  max-width: 1200px; /* @include siteContainer */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Article h4 {
+  padding: var(--sys-layout-padding) 0;
+}
+
+.Article-header,
+.Article-section,
+.Article-footer {
+  padding: calc(var(--sys-layout-padding-small) * 6) 5% 0 5%; /* sizing.scaleGrid(6) */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Article-sectionTitle {
+  padding-bottom: var(--sys-layout-gap);
+}
+
+.Article-sectionSubTitle {
+  padding-bottom: var(--sys-layout-padding-small);
+  padding-top: var(--sys-layout-padding-small); /* su-lg1 approx */
+}
+
+.Article-sectionSubText {
+  font-family: var(--sys-font-family-body);
+  font-size: var(--sys-font-size-body-sm);
+  text-transform: uppercase;
+  color: var(--sys-color-border-dark);
+  font-weight: 400;
+
+  padding-bottom: var(--sys-layout-gap) !important;
+  padding-top: 0 !important;
+}
+
+.Article-image {
+  padding-bottom: var(--sys-layout-gap);
+}
+
+.Article-image img {
+  cursor: pointer;
+}
+
+.Article-image figcaption {
+  color: var(--sys-color-text);
+  font-size: var(--sys-font-size-body-sm);
+}
+
+.Article-image--center {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Article-feature {
+  padding: var(--sys-layout-padding-small);
+  margin-bottom: var(--sys-layout-gap-large);
+}
+
+.Article-badge {
+  text-align: center;
+  display: block;
+}
+
+.Article-badge img {
+  margin: 0 auto;
+  max-width: calc(var(--sys-layout-padding-small) * 30); /* sizing.scaleGrid(30) */
+}
+
+.Article-footer {
+  padding-bottom: calc(var(--sys-layout-padding-small) * 7); /* sizing.scaleGrid(7) */
+  padding-top: calc(var(--sys-layout-padding-small) * 7);
+  margin-top: calc(var(--sys-layout-padding-small) * 4); /* sizing.scaleGrid(4) */
+  border-top: 1px solid var(--sys-color-primary); /* $spot-color */
+  max-width: 100%;
+}
+
+.Article-section--fullWidth {
+  max-width: 100%;
+}

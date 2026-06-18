@@ -1,0 +1,91 @@
+/*
+ * Slider Component
+ * Note: Assumes splide.js overrides, wrapping in SUIT CSS where possible.
+ *
+ * Skeletal HTML:
+ * <div class="splide Slider">
+ *   <div class="splide__slider Slider-slider">
+ *     <div class="splide__track Slider-track">
+ *       <ul class="splide__list Slider-list">
+ *         <li class="splide__slide Slider-slide">...</li>
+ *       </ul>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+.splide__arrows {
+    display: none;
+}
+
+button.splide__pagination__page {
+    background: var(--sys-color-primary);
+    height: var(--sys-layout-padding-small);
+    width: var(--sys-layout-padding-small);
+    opacity: 0.5;
+}
+
+button.splide__pagination__page.is-active {
+    background: var(--sys-color-primary);
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+ul.splide__pagination {
+    bottom: var(--sys-layout-padding-small);
+}
+
+.Slider-slide,
+.splide__slide {
+    padding-bottom: 0;
+}
+
+.splide {
+   padding-bottom: var(--sys-layout-gap-large); /* $su-lg4 */
+}
+
+div.splide__progress__bar {
+    height: var(--sys-layout-padding-small);
+    background: var(--sys-color-primary);
+}
+
+div.splide__progress {
+    margin-top: -8px;
+    z-index: 100;
+    position: relative;
+    /* rgba(variables.$cu-border, 0.24) */
+    background: var(--sys-color-primary-alpha);
+}
+
+.splide__toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: calc(var(--sys-layout-padding-small) * 10); /* sizing.scaleGrid(10) */
+    width: calc(var(--sys-layout-padding-small) * 10);
+}
+
+.splide__toggle {
+    background: transparent;
+    border: none;
+    color: var(--sys-color-primary);
+    z-index: -100;
+    opacity: 0;
+    transition: all .5s ease;
+    display: none;
+}
+
+.splide__toggle,
+.splide__toggle svg {
+    height: calc(var(--sys-layout-padding-small) * 10);
+    width: calc(var(--sys-layout-padding-small) * 10);
+    fill: currentColor;
+}
+
+.splide:hover .splide__toggle {
+    z-index: 100;
+    opacity: 1;
+}

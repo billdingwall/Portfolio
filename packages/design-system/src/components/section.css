@@ -1,0 +1,70 @@
+/*
+ * Section Component
+ *
+ * Skeletal HTML:
+ * <section class="Section Section--grey Section--illustrated">
+ *   <div class="Section-content">
+ *     <div class="Section-subSection">
+ *       <h2 class="Section-subTitle">...</h2>
+ *     </div>
+ *   </div>
+ * </section>
+ */
+
+.Section {
+  border-top: var(--sys-border-width-base) solid var(--sys-color-border-dark);
+  padding: 0 var(--sys-layout-padding);
+  position: relative;
+}
+
+.Section.Section--grey {
+  background-color: var(--sys-color-background-alt);
+}
+
+.Section.Section--dark {
+  background-color: var(--sys-color-background-dark);
+  color: var(--sys-color-background);
+}
+
+.Section.Section--dark h1,
+.Section.Section--dark h2,
+.Section.Section--dark h3,
+.Section.Section--dark h4,
+.Section.Section--dark h6,
+.Section.Section--dark p,
+.Section.Section--dark li {
+  color: var(--sys-color-background);
+}
+
+.Section.Section--illustrated {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  background-image: url('/img/hero.svg');
+  padding-bottom: calc(var(--sys-layout-padding-small) * 25); /* sizing.scaleGrid(25) */
+}
+
+.Section-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--sys-layout-gap-huge) 0;
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .Section-content {
+    padding: var(--sys-layout-gap-medium) 0;
+  }
+}
+
+.Section-subSection {
+  padding-bottom: var(--sys-layout-gap-large);
+}
+
+.Section-subTitle {
+  font-family: var(--sys-font-family-body);
+  font-size: var(--sys-font-size-body);
+  text-transform: uppercase;
+  color: var(--sys-color-primary);
+  padding-bottom: var(--sys-layout-gap-medium);
+}

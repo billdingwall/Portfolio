@@ -1,0 +1,54 @@
+/*
+ * Grid Component
+ *
+ * Skeletal HTML:
+ * <div class="Grid Grid--withGutter">
+ *   <div class="Grid-cell">...</div>
+ *   <div class="Grid-cell Grid-cell--center">...</div>
+ * </div>
+ */
+
+.Grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.Grid--alignCenter {
+  justify-content: center;
+}
+
+.Grid--alignMiddle {
+  align-items: center;
+}
+
+.Grid--fit > .Grid-cell {
+  flex: 1 1 0%;
+}
+
+.Grid--equalHeight > .Grid-cell {
+  display: flex;
+}
+
+.Grid--withGutter {
+  /* Using standard gap rather than negative margin hack where possible, but mapping closely to original */
+  margin: 0 calc(-0.5 * var(--sys-layout-padding));
+  width: calc(100% + var(--sys-layout-padding));
+}
+
+.Grid--withGutter > .Grid-cell {
+  padding: 0 calc(0.5 * var(--sys-layout-padding));
+}
+
+.Grid-cell {
+  box-sizing: inherit;
+  flex-basis: 100%;
+  min-width: 0;
+}
+
+.Grid-cell--center {
+  margin: 0 auto;
+}

@@ -1,0 +1,139 @@
+/*
+ * PortfolioItem Component
+ *
+ * Skeletal HTML:
+ * <article class="PortfolioItem">
+ *   <div class="PortfolioItem-contentContainer">
+ *     <div class="PortfolioItem-content">
+ *       <span class="PortfolioItem-collection">...</span>
+ *       <h3 class="PortfolioItem-title">...</h3>
+ *       <p class="PortfolioItem-desc">...</p>
+ *       <ul class="List List--dotSeparated">...</ul>
+ *       <a class="PortfolioItem-link" href="...">...</a>
+ *     </div>
+ *   </div>
+ *   <div class="PortfolioItem-imageContainer">
+ *     <img class="PortfolioItem-image" src="..." alt="..." />
+ *   </div>
+ * </article>
+ */
+
+.PortfolioItem {
+  margin-bottom: var(--sys-layout-gap-medium);
+  height: calc(var(--sys-layout-gap-huge) * 4); /* variables.$su-lg5 * 4 */
+  border: 1px solid var(--sys-color-border-dark);
+  position: relative;
+}
+
+.PortfolioItem:hover {
+  transition: box-shadow var(--sys-transition-short) ease-in-out;
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .PortfolioItem {
+    height: auto;
+  }
+}
+
+.PortfolioItem-contentContainer {
+  flex: 0 0 400px !important;
+  padding: var(--sys-layout-gap-medium);
+  background: var(--sys-color-background-dark); /* variables.$color-black */
+}
+
+/* Scoped List modifier specifically for PortfolioItem to match original nesting */
+.PortfolioItem-contentContainer .List--dotSeparated {
+  padding-top: var(--sys-layout-gap-medium);
+}
+
+.PortfolioItem-contentContainer .List--dotSeparated li {
+  font-size: var(--sys-font-size-body-sm);
+  padding-top: var(--sys-layout-padding-xs);
+  padding-bottom: var(--sys-layout-padding-xs);
+}
+
+.PortfolioItem-contentContainer .List--dotSeparated li:before {
+  font-size: var(--sys-font-size-body-xs); /* mapped to tuSize-sm2 */
+}
+
+.PortfolioItem-contentContainer .List--dotSeparated li,
+.PortfolioItem-contentContainer .List--dotSeparated li:before {
+  color: var(--sys-color-background);
+  padding-right: var(--sys-layout-padding-small);
+  float: left;
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .PortfolioItem-contentContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.PortfolioItem-imageContainer {
+  height: 100%;
+  overflow: hidden;
+}
+
+.PortfolioItem-image {
+  border-bottom: 1px solid var(--sys-color-border);
+}
+
+.PortfolioItem-content {
+  padding: var(--sys-layout-padding);
+}
+
+.PortfolioItem-title,
+.PortfolioItem-collection {
+  display: block;
+}
+
+.PortfolioItem-title {
+  font-weight: bolder;
+  color: var(--sys-color-text);
+  font-family: var(--sys-font-family-heading);
+  font-size: var(--sys-font-size-heading-5); /* mapped to tuSize-lg1 */
+  padding-bottom: var(--sys-layout-padding-small);
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .PortfolioItem-title {
+    padding-bottom: 0;
+  }
+}
+
+.PortfolioItem-desc {
+  color: var(--sys-color-text-muted); /* mapped to color-grey */
+  font-family: var(--sys-font-family-body);
+  font-size: var(--sys-font-size-body-sm);
+  padding-bottom: var(--sys-layout-gap);
+  line-height: var(--sys-line-height-body);
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .PortfolioItem-desc {
+    padding-bottom: var(--sys-layout-padding-small);
+  }
+}
+
+.PortfolioItem-link {
+  display: inline-block;
+  color: var(--sys-color-primary);
+  position: relative;
+}
+
+@media only screen and (max-width: 659px) { /* $breakpoint-sm - 1px */
+  .PortfolioItem-link {
+    margin-top: var(--sys-layout-padding-small);
+  }
+}
+
+.PortfolioItem-link:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: var(--sys-color-primary);
+  bottom: calc(var(--sys-layout-padding-small) - 1px);
+}

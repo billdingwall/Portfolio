@@ -1,0 +1,15 @@
+{
+  "name": "@portfolio/design-system",
+  "version": "1.0.0",
+  "description": "Design tokens, CSS, and UI assets extracted from the portfolio",
+  "main": "src/index.css",
+  "style": "src/index.css",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
