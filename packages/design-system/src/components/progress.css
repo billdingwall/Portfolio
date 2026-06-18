@@ -1,0 +1,49 @@
+/*
+ * Progress Component
+ *
+ * Skeletal HTML:
+ * <div class="Progress">
+ *   <div class="Progress-label">...</div>
+ *   <div class="Progress-bar" data-label="..." style="width: 75%;"></div>
+ * </div>
+ */
+
+.Progress {
+    /* mapped rgba(variables.$color-black, 0.2) */
+    background-color: var(--sys-color-background-dark-alpha);
+    display: block;
+    height: var(--sys-layout-gap);
+    margin-bottom: var(--sys-layout-padding-small);
+    position: relative;
+}
+
+.Progress:last-child {
+    margin-bottom: 0;
+}
+
+.Progress-label {
+    color: var(--sys-color-text-muted); /* mapped to color-grey-d1 */
+    position: relative;
+}
+
+.Progress-bar {
+    background-color: var(--sys-color-primary-dark); /* mapped to color-blue-d1 */
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Progress-bar::before {
+    content: attr(data-label);
+    color: var(--sys-color-background); /* mapped to color-white */
+    white-space: nowrap;
+}
+
+.Progress-label,
+.Progress-bar:before {
+    font-size: var(--sys-font-size-xs); /* mapped to 11px */
+    position: absolute;
+    height: var(--sys-layout-gap);
+    line-height: var(--sys-layout-gap);
+    padding-left: var(--sys-layout-padding-small);
+}

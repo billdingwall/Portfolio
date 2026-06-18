@@ -1,0 +1,51 @@
+:root {
+  /* Color Semantics */
+  --sys-color-background: var(--ref-color-grey-100);
+  --sys-color-background-alt: var(--ref-color-blue-100);
+  --sys-color-background-dark: var(--ref-color-blue-900);
+
+  --sys-color-text: var(--ref-color-grey-900);
+  --sys-color-text-muted: var(--ref-color-grey-700);
+  --sys-color-text-heading: var(--ref-color-blue-900);
+  --sys-color-text-subheading: var(--ref-color-blue-700);
+
+  --sys-color-primary: var(--ref-color-blue-500);
+  --sys-color-primary-alpha: rgba(40, 177, 204, 0.24);
+  --sys-color-primary-dark: var(--ref-color-blue-700);
+  --sys-color-background-dark-alpha: rgba(9, 10, 10, 0.2);
+  --sys-color-border: var(--ref-color-blue-500);
+  --sys-color-border-dark: var(--ref-color-blue-700);
+
+  /* Typography Semantics */
+  --sys-font-family-body: var(--ref-font-family-sans);
+  --sys-font-family-heading: var(--ref-font-family-display);
+
+  --sys-font-size-xs: var(--ref-font-size-xs);
+  --sys-font-size-body-xs: var(--ref-font-size-xs);
+  --sys-font-size-body: var(--ref-font-size-base);
+  --sys-font-size-body-sm: var(--ref-font-size-sm);
+  --sys-font-size-body-lg: var(--ref-font-size-md);
+  --sys-font-size-heading-4: var(--ref-font-size-lg);
+  --sys-font-size-heading-5: var(--ref-font-size-md);
+
+  --sys-line-height-body: 1.5;
+
+  /* Layout Semantics */
+  --sys-layout-gap: var(--ref-space-24);
+  --sys-layout-gap-medium: var(--ref-space-32);
+  --sys-layout-gap-large: var(--ref-space-64);
+  --sys-layout-gap-huge: var(--ref-space-80);
+
+  --sys-layout-padding-xs: var(--ref-space-4);
+  --sys-layout-padding-small: var(--ref-space-8);
+  --sys-layout-padding: var(--ref-space-16);
+
+  /* Border Semantics */
+  --sys-border-width-base: var(--ref-space-1);
+  --sys-border-width-lg1: var(--ref-space-2);
+  --sys-border-width-lg2: var(--ref-space-4);
+
+  /* Transition Semantics */
+  --sys-transition-short: var(--ref-duration-short);
+  --sys-transition-long: var(--ref-duration-long);
+}

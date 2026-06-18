@@ -1,0 +1,63 @@
+/*
+ * ExperienceCard Component
+ *
+ * Skeletal HTML:
+ * <ul class="ExperienceCard">
+ *   <li class="ExperienceCard-item">
+ *     <div class="ExperienceCard-focus">...</div>
+ *     <div class="ExperienceCard-year">
+ *       <span class="ExperienceCard-yearText">...</span>
+ *       <sup>...</sup>
+ *     </div>
+ *   </li>
+ * </ul>
+ */
+
+.ExperienceCard {
+  list-style: none;
+  gap: var(--sys-layout-gap);
+  /* Added base flex properties assuming it's a grid/flex container */
+  display: flex;
+  flex-direction: column;
+}
+
+.ExperienceCard-item {
+  position: relative;
+  padding: var(--sys-layout-padding);
+  border: var(--sys-border-width-base) solid var(--sys-color-border-dark);
+}
+
+.ExperienceCard-focus {
+  position: relative;
+  font-size: var(--sys-font-size-body-lg);
+  z-index: 10;
+}
+
+.ExperienceCard-year {
+  font-size: var(--sys-font-size-body-lg);
+}
+
+@media only screen and (max-width: 959px) { /* $breakpoint-md - 1px */
+  .ExperienceCard-year {
+    font-size: var(--sys-font-size-heading-4); /* approximation */
+  }
+}
+
+.ExperienceCard-year sup {
+  font-size: 30%;
+  vertical-align: super;
+}
+
+.ExperienceCard-yearText {
+  position: relative;
+  color: var(--sys-color-primary);
+  font-size: var(--sys-font-size-body-lg);
+  z-index: 10;
+}
+
+@media only screen and (max-width: 959px) { /* $breakpoint-md - 1px */
+  .ExperienceCard-yearText,
+  .ExperienceCard-focus {
+    font-size: var(--sys-font-size-body);
+  }
+}

@@ -1,0 +1,31 @@
+/*
+ * Divider Component
+ *
+ * Skeletal HTML:
+ * <hr class="Divider" />
+ * <hr class="Divider Divider--indented" />
+ * <hr class="Divider Divider--thick" />
+ * <hr class="Divider Divider--space" />
+ */
+
+.Divider {
+  border: none;
+  border-top: 1px solid var(--sys-color-border);
+  background: transparent;
+  color: transparent;
+  margin: var(--sys-layout-padding-small) 0;
+}
+
+.Divider--indented {
+  border-bottom: 1px solid var(--sys-color-background-dark);
+}
+
+.Divider--thick {
+  border-top-width: var(--sys-border-width-lg2);
+}
+
+.Divider--space {
+  border: none;
+  margin: 0;
+  padding: var(--sys-layout-padding);
+}

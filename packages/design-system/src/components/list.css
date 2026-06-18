@@ -1,0 +1,52 @@
+/*
+ * List Component
+ *
+ * Skeletal HTML:
+ * <ul class="List">
+ *   <li class="List-item">...</li>
+ * </ul>
+ * <ol class="List List--nostyle">...</ol>
+ * <ul class="List List--dotSeparated">...</ul>
+ */
+
+/* SUIT CSS translation from raw HTML tags to explicit classes */
+.List {
+  padding-bottom: var(--sys-layout-padding);
+  padding-left: var(--sys-layout-padding);
+}
+
+.List:last-child {
+  padding-bottom: 0;
+}
+
+.List-item {
+  padding: var(--sys-layout-padding-small) 0;
+}
+
+.List--nostyle {
+  list-style: none;
+  padding: 0;
+}
+
+.List--dotSeparated {
+  list-style: none;
+  padding: 0;
+}
+
+.List--dotSeparated .List-item {
+  display: inline-block;
+  padding-right: var(--sys-layout-padding);
+}
+
+.List--dotSeparated .List-item:before {
+  content: '•';
+  display: inline-block;
+  color: var(--sys-color-text);
+  font-size: var(--sys-font-size-body-sm);
+  padding-right: var(--sys-layout-padding);
+}
+
+.List--dotSeparated .List-item:first-child:before {
+  content: '';
+  display: none;
+}

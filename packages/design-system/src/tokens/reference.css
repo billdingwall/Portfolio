@@ -1,0 +1,42 @@
+:root {
+  /* Colors */
+  --ref-color-blue-100: #F7F9FA; /* $color-blue-l2 */
+  --ref-color-blue-500: #28B1CC; /* $color-blue */
+  --ref-color-blue-700: #006A80; /* $color-blue-d1 */
+  --ref-color-blue-900: #1B2426; /* $color-blue-d2 */
+
+  --ref-color-grey-100: #ffffff; /* $color-white */
+  --ref-color-grey-300: #BCC9CC; /* $color-grey */
+  --ref-color-grey-700: #6C7C80; /* $color-grey-d1 */
+  --ref-color-grey-900: #090A0A; /* $color-black */
+
+  /* Typography: Fonts */
+  --ref-font-family-sans: Helvetica, sans-serif;
+  --ref-font-family-display: 'Antonio', Helvetica, sans-serif;
+
+  /* Typography: Sizes (Calculated based on 20px base & 1.333 scale) */
+  --ref-font-size-xs: 11px;
+  --ref-font-size-sm: 15px;
+  --ref-font-size-base: 20px;
+  --ref-font-size-md: 27px;
+  --ref-font-size-lg: 36px;
+  --ref-font-size-xl: 47px;
+  --ref-font-size-xxl: 63px;
+  --ref-font-size-xxxl: 84px;
+
+  /* Spacing / Sizing Utilities */
+  --ref-space-0: 0px;
+  --ref-space-1: 1px;
+  --ref-space-2: 2px;
+  --ref-space-4: 4px;
+  --ref-space-8: 8px;
+  --ref-space-16: 16px;
+  --ref-space-24: 24px;
+  --ref-space-32: 32px;
+  --ref-space-64: 64px;
+  --ref-space-80: 80px;
+
+  /* Transitions */
+  --ref-duration-short: 250ms;
+  --ref-duration-long: 750ms;
+}

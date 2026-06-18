@@ -1,0 +1,19 @@
+/*
+ * Icon Component
+ *
+ * Skeletal HTML:
+ * <svg class="Icon" viewBox="0 0 24 24">
+ *   <path d="..." />
+ * </svg>
+ */
+
+.Icon {
+  margin: 0;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  fill: currentColor;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
