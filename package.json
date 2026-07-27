@@ -26,7 +26,12 @@
   "scripts": {
     "prestart": "npm install",
     "start": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "021-status": "node scripts/workflow-status.js",
+    "021-qa": "sh scripts/run-qa.sh",
+    "021-spec:status": "node scripts/speckit/spec-status.js",
+    "021-spec:context": "node scripts/speckit/fetch-speckit-context.js",
+    "021-spec:verify": "node scripts/speckit/verify-spec-compliance.js"
   },
   "devDependencies": {
     "sass": "^1.100.0"
